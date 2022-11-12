@@ -1,0 +1,183 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="talks_style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Talks</title>
+  </head>
+  <body>
+
+
+<!-- navBar -->
+<nav id="primary">
+  <img id="logo" src="./Images/TEDx logo.png" alt="TEDx logo">
+  <div id="list">
+    <a href="../Home.html" class="tabs">HOME</a>
+    <a href=# class="tabs" onclick="myFunction()">TALKS</a>
+      <div class="dropDownMenu close" id="myDropdown">
+          <a href="../Talks/talks.html" id="dropDownTabs" class="active">TEDxIITGuwahati</a>
+          <a href="../Talks_Studio/talk_studio.html" id="dropDownTabs">TEDxIITGuwahatiStudio</a>
+      </div>
+    <a href="../About_Us/AboutUs.html" class="tabs">ABOUT US</a>
+    <a href="../Contact_Us/ContactUs.html" class="tabs">CONTACT US</a>
+    <img src="./Images/toggleMenuIcon-white.jpg" alt="MENU" width="50px" id="toggleMenu">
+  </div>
+</nav>
+<div id="leftContainer" class="close">
+  <nav id="leftNav">
+    <img src="./Images/b_cross.svg" width="20px" id="closeMenu">
+    <a href="../Home.html" class="leftTabs">HOME</a>
+    <a href=# class="leftTabs" onclick="myFunctionleft()" id="myDropdownleft">TALKS</a>
+    <div class="leftdropDownMenu" id="myDropdown">
+      <a href="../Talks/talks.html" id="leftdropDownTabs">TEDxIITGuwahati</a>
+      <a href="../Talks_Studio/talk_studio.html" id="leftdropDownTabs">TEDxIITGuwahatiStudio</a>
+    </div>
+    <a href="../About_Us/AboutUs.html" class="leftTabs">ABOUT US</a>
+    <a href="../Contact_Us/ContactUs.html" class="leftTabs">CONTACT US</a>
+  </nav>
+</div>
+
+
+
+
+    <section>
+      <div class="row">
+        <!-- BOX 1 -->
+        <div class="col-sm-12 col-lg-6 col-md-6 box" style="background-color:black">
+          <h1>Contact Us</h1>
+          <p>
+            TEDxIITGuwahati is an extraordinary event that invites pioneers, innovators and thinkers from various background enlighten the common folks with their radical.
+          </p> 
+          <br>
+          <!--icon -->  
+          <div class="icon">
+            <a href="https://www.facebook.com/TEDxIITGuwahati/"><img src="https://res.cloudinary.com/dtkm20qt9/image/upload/v1667643535/Facebook_ioggph.svg" alt="facebook"
+              width="40px"></a>
+            <a href="https://www.instagram.com/tedxiitguwahati/"><img src="https://res.cloudinary.com/dtkm20qt9/image/upload/v1667643535/Instagram_cjb2le.svg" alt="instagram"
+                    width="40px"></a>
+            <a href="https://twitter.com/tedxiitg"><img src="https://res.cloudinary.com/dtkm20qt9/image/upload/v1667643537/Twitter_vgkazq.svg" alt="twitter" width="40px"></a>
+            <a href="https://www.linkedin.com/company/tedx-iit-guwahati/"><img src="https://res.cloudinary.com/dtkm20qt9/image/upload/v1667643535/Linkedin_mymtth.svg"
+                    alt="linkdin" width="40px"></a>
+            <a href="https://tedxiitguwahati.medium.com/"><img src="https://res.cloudinary.com/dtkm20qt9/image/upload/v1667643535/Medium_uy1xu2.svg" class="ted" alt="medium" width="40px"></a>
+          </div> 
+          <!--Phone-->
+          <span class="cred">
+            <a href="tel:+917014724546"><img src="https://res.cloudinary.com/dtkm20qt9/image/upload/v1667643537/phone_nkjtun.svg" alt="" width="40px"></a>
+            <p>Pramiti:+91 7014724546</p>
+          </span>
+          <!--Location-->
+          <span class="cred">
+            <a href="https://goo.gl/maps/NmmNtAe37C4u5ngBA"><img src="https://res.cloudinary.com/dtkm20qt9/image/upload/v1667643535/location_jzvize.svg" alt="" width="40px"></a>
+            <p>IIT Guwahati, North Guwahati, Assam, India Pin No - 781039</p>
+          </span>
+          <!--Email -->
+          <span class="cred">
+            <a href="mailto:tedxiitg@iitg.ac.in"><img src="https://res.cloudinary.com/dtkm20qt9/image/upload/v1667643535/mail_bld1lh.svg" alt="" width="40px"></a>
+            <p> tedxiitg@iitg.ac.in</p>
+          </span>
+        </div>
+
+        <!-- BOX 2 -->
+        <form name="email_sub" class="col-sm-12 col-lg-6 col-md-6 box" id="myform" style="background-color:black">
+          <h1>Message us</h1>
+          <p>Name</p>
+          <input type="text" name="Name" required>
+          <p>Email Address</p>
+          <input type="email" name="Email" required>
+          <p>Phone</p>
+          <input type="number" name="Phone">
+          <p>Message</p>
+          <textarea id="Message" name="Message" style="height:150px"></textarea>
+          <button type="submit" class="btn"><h4>Submit</h4></button>
+        </form>
+      </div>
+      <div class="map">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d28639.96781520655!2d91.67868423317816!3d26.196809147871495!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x375a5aea122132c3%3A0x44767bb468a831d1!2sIIT%20Guwahati%2C%20Guwahati%2C%20Assam!5e0!3m2!1sen!2sin!4v1666704835251!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+  </section>
+
+  
+
+
+ <!-- java script -->
+    <script>
+      const scriptURL = 'https://script.google.com/macros/s/AKfycbxsaGg8oYfq9_DsQrzWN--QutW9vYZDGwgBgXv_GHG_SwjaCxyfijVe4KTbH_-hjsXi/exec'
+      const form = document.forms['email_sub']
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault();
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(res => {alert('Submited Succesfully');
+      })
+        .catch(error => {
+          console.error('Error!', error.message);
+          alert('Error submission unsuccesfull');
+        })
+        .then( a => (form.reset()));
+      
+    })
+    </script>
+
+    <script>
+      function toggleMenu(){
+
+          const navbar = document.getElementById('navbar-wrapper');
+          navbar.classList.toggle("visible");
+      }
+
+      // Debounce wrapper would be more optimized
+      // but since this a POC of the navbar, this
+      // should suffice
+      function createOnScroll(){
+          let isAtTop = true;
+
+          return function(e){
+              const positionFromTop = document.documentElement.scrollTop
+              const navbar = document.getElementsByClassName('tedx-navbar')[0]
+              if(positionFromTop > 0 && isAtTop){
+                  isAtTop = !isAtTop;
+                  navbar.classList.add('shrink-navbar')
+              }else if(positionFromTop == 0 && !isAtTop){
+                  isAtTop = !isAtTop;
+                  navbar.classList.remove('shrink-navbar');
+              }
+
+          }
+      }
+
+      window.onscroll = createOnScroll()
+
+    </script>
+
+    <script>
+      const toggleMenu = document.getElementById('toggleMenu');
+    toggleMenu.addEventListener('click', changeMenu);
+
+    const clossMenu = document.getElementById('closeMenu');
+    clossMenu.addEventListener('click', changeMenu);
+
+    const talksbutton = document.getElementById('talksbutton');
+    talksbutton.addEventListener('click', openMenu)
+
+
+    function changeMenu()
+    {
+      const leftMenu = document.getElementById('leftContainer');
+      leftMenu.classList.toggle('close');
+    } 
+
+    function myFunction() 
+    {
+      document.getElementById("myDropdown").classList.toggle("close");
+    }
+
+    </script>
+
+  </body>
+</html>
