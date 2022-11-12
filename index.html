@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>My Website</title>
+    <link rel="stylesheet" href="home.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="Stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="script.js"></script>
+  </head>
+  <body>
+    <nav id="primary" h="14">
+        <img id="logo" src="TEDxlogo.png" alt="TEDx logo">
+        <div id="list">
+            <a href=# class="tabs" id="home">HOME</a>
+            <a class="tabs" id="talks">TALKS</a>
+            <a href=# class="tabs" id="blogs">BLOGS</a>
+            <a href=# class="tabs" id="aboutUs">ABOUT US</a>
+            <a href=# class="tabs" id="contactUs">CONTACT US</a>
+            <img src="./Images/toggleMenuIcon-white.jpg" alt="MENU" width="50px" id="toggleMenu">
+        </div>
+        <div class="talk-extra" id="talkExtra">
+            <div class=" item" id="first"><a href="">TEDxIITGuwahati</a></div>
+            <div class=" item" id="second"><a href="">TEDxIITGuwahatiStudio</a></div>
+        </div>
+    </nav>
+    <div id="leftContainer" class="close">
+        <nav id="leftNav">
+            <img src="./Images/b_cross.svg" width="20px" id="closeMenu">
+            <a href=# class="leftTabs">HOME</a>
+            <a href=# class="leftTabs">TALKS</a>
+            <a href=# class="leftTabs">BLOGS</a>
+            <a href=# class="leftTabs">ABOUT US</a>
+            <a href=# class="leftTabs">CONTACT US</a>
+        </nav>
+    </div>
+    
+    <main>
+        <div class="background_image" id="body">
+            <div class="block">
+                <p class="welcome"><span style="color:#ffffff">Welcome to</span></p>
+                <p class="tedxiitg"><span style="color:#FF2B06"> TEDxIITGuwahati </span></p>
+                <p class="and"><span style="color:#ffffff">&</span></p>
+                <p class="studio"><span style="color:#FF2B06">TEDxIITGuwahati Studio</span></p>
+            </div>
+            <div class="btn_nominate">  
+                <a href="https://forms.gle/Txa4Ue7FbtxP2WWe8" target="_blank" class="nominateBtn">NOMINATE SPEAKER &nbsp<i class="fa-solid fa-arrow-right">&nbsp</i></a>
+            </div>
+            
+        </div>
+        <div class="about_tedx">
+            <h3>About TEDx</h3>
+            <p class="description_about">TED, when independently organized by a group of organizations, community, or an institution is licensed as TEDx. As much as it promises autonomy, 
+                such events continue to adhere to the principles of an ideal TED talk. It’s not only diverse but also spreads the reach. The essentialities of 
+                independent TED is devoted to speaking to a specific community, that are a conglomeration of people representing the same ideas of work, education, 
+                interests, or belongingness from a region. It is meant to highlight voices within and around the community catering to mutual notions. The event 
+                revolves around a theme such that it is responsive to the majority of the audience.</p>
+        </div>
+    </main>
+    <h3>RECENT TALKS</h3>
+    <div class="carousel">
+        <button class='flt-left' onclick="slideRight(this,0);"><i class="fa fa-circle-chevron-left" aria-hidden="true" style="color:red;font-size:25px"></i></button>
+        <div class="row flt-left">
+         <div class="row-container row-container1">
+        <div class="card">
+                <div class="card-content">
+                    <iframe src="https://www.youtube.com/embed/FEHbet4YX78" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    <h5>Dr. Baland Jalal</h5>
+                    <p>Nuclear power is our best hope to ditch fossil fuels...</p>
+                </div>
+        </div>
+        <div class="card">
+            <div class="card-content">
+                <iframe src="https://www.youtube.com/embed/gtG7dUZK7PM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <h5>Pritam Patra</h5>
+                <p>Nuclear power is our best hope to ditch fossil fuels...</p>
+            </div>
+    </div>
+    <div class="card">
+        <div class="card-content">
+            <iframe src="https://www.youtube.com/embed/bIbuzgdCYtg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <h5>Parvathy Sailesh</h5>
+            <p>Nuclear power is our best hope to ditch fossil fuels...</p>
+        </div>
+</div>
+<div class="card">
+    <div class="card-content">
+        <iframe src="https://www.youtube.com/embed/l-TnmjqTlec" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <h5>Abhimanyu Singh</h5>
+        <p>Nuclear power is our best hope to ditch fossil fuels...</p>
+    </div>
+</div>
+<div class="card">
+    <div class="card-content">
+        <iframe src="https://www.youtube.com/embed/4Gc_-_Ngfxk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <h5>Rishabh Jain and Mandeep Gill</h5>
+        <p>Nuclear power is our best hope to ditch fossil fuels...</p>
+    </div>
+</div>
+<div class="card">
+    <div class="card-content">
+        <iframe src="https://www.youtube.com/embed/jruIzjq6q54" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <h5>Rohan Agrawal</h5>
+        <p>Nuclear power is our best hope to ditch fossil fuels...</p>
+    </div>
+</div>
+<div class="card">
+    <div class="card-content">
+        <iframe src="https://www.youtube.com/embed/SebJfNFOSnY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <h5>Dr. Sawmya Ray</h5>
+        <p>Nuclear power is our best hope to ditch fossil fuels...</p>
+    </div>
+</div>
+<div class="card">
+    <div class="card-content">
+        <iframe src="https://www.youtube.com/embed/z0ZiINCpID0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <h5>Richard James MacCowan</h5>
+        <p>Nuclear power is our best hope to ditch fossil fuels...</p>
+    </div>
+</div>  
+          <div class="clear"></div>
+          </div>
+         
+          </div>
+         <button class='flt-left'  onclick="slideLeft(this,0);"><i class="fa fa-circle-chevron-right" aria-hidden="true" style="color:red;font-size:25px"></i></button>
+          <div class="clear"></div>
+      </div>
+      <h3>LATEST BLOGS</h3>
+      <div class="carousel">
+          <button class='flt-left' onclick="slideRight(this,1);"><i class="fa fa-circle-chevron-left" aria-hidden="true" style="color:red;font-size:25px"></i></button>
+          <div class="row flt-left">
+           <div class="row-container row-container2">
+          <div class="card">
+                  <div class="card-content">
+                    <img src="https://tedxiitguwahati.in/static/img/bg-img/levelupblog.png">
+                      <h5>Dr. Baland Jalal</h5>
+                      <p>Nuclear power is our best hope to ditch fossil fuels...</p>
+                  </div>
+          </div>
+          <div class="card">
+              <div class="card-content">
+                <img src="https://tedxiitguwahati.in/static/img/bg-img/levelupblog.png">
+                  <h5>Pritam Patra</h5>
+                  <p>Nuclear power is our best hope to ditch fossil fuels...</p>
+              </div>
+      </div>
+      <div class="card">
+          <div class="card-content">
+            <img src="https://tedxiitguwahati.in/static/img/bg-img/levelupblog.png">
+              <h5>Parvathy Sailesh</h5>
+              <p>Nuclear power is our best hope to ditch fossil fuels...</p>
+          </div>
+  </div>
+  <div class="card">
+      <div class="card-content">
+        <img src="https://tedxiitguwahati.in/static/img/bg-img/levelupblog.png">
+          <h5>Abhimanyu Singh</h5>
+          <p>Nuclear power is our best hope to ditch fossil fuels...</p>
+      </div>
+  </div>
+  <div class="card">
+      <div class="card-content">
+        <img src="https://tedxiitguwahati.in/static/img/bg-img/levelupblog.png">
+          <h5>Rishabh Jain and Mandeep Gill</h5>
+          <p>Nuclear power is our best hope to ditch fossil fuels...</p>
+      </div>
+  </div>
+  <div class="card">
+      <div class="card-content">
+        <img src="https://tedxiitguwahati.in/static/img/bg-img/levelupblog.png">
+          <h5>Rohan Agrawal</h5>
+          <p>Nuclear power is our best hope to ditch fossil fuels...</p>
+      </div>
+  </div>
+  <div class="card">
+      <div class="card-content">
+        <img src="https://tedxiitguwahati.in/static/img/bg-img/levelupblog.png">
+          <h5>Dr. Sawmya Ray</h5>
+          <p>Nuclear power is our best hope to ditch fossil fuels...</p>
+      </div>
+  </div>
+  <div class="card">
+      <div class="card-content">
+        <img src="https://tedxiitguwahati.in/static/img/bg-img/levelupblog.png">
+          <h5>Richard James MacCowan</h5>
+          <p>Nuclear power is our best hope to ditch fossil fuels...</p>
+      </div>
+  </div>  
+            <div class="clear"></div>
+            </div>
+           
+            </div>
+           <button class='flt-left'  onclick="slideLeft(this,1);"><i class="fa fa-circle-chevron-right" aria-hidden="true" style="color:red;font-size:25px"></i></button>
+            <div class="clear"></div>
+        </div>
+  <!-- footer code starts here -->
+  <div class="footer_mainbox">
+    <div><hr></div>
+    
+    <div class="footer_box">
+        <div  class="tedex_logo footer_sub_boxes" id="sub_box1"><img src="ted.png" alt="ted_image" id="ted_image" ></div>
+  
+  
+        <div class="footer_sub_boxes" id="sub_box2">
+            <div class="headings_top"> <b>TEDxIITGuwahati </b> </div>
+            <div class="links">Home</div>
+            <div class="links">Talks</div>
+            <div class="links">About Us</div>
+            <div class="links">Contact Us</div>
+        </div>
+  
+  
+  
+        <div class="footer_sub_boxes" id="sub_box3">
+            <div class="headings_top"> <b> Events</b></div>
+            <div class="links">TEDxIITGuwahati</div>
+            <div class="links"> TEDxIITGuwahati Studio</div>
+        </div>
+  
+  
+        <div class="footer_sub_boxes" id="sub_box4">
+            <div class="headings_top" id="follow_us"> <b> Follow Us</b></div>
+            <div class=" links3">Facebook</div>
+            <div class=" links3">Instagram</div>
+            <div class=" links3">LinkedIn</div>
+            <div class=" links3">Twitter</div>
+            <div class=" links3">Medium</div>
+        </div>
+    </div>
+    <div><hr ></div>
+    
+  
+    <div>
+        <div class="headings_bottom"> <b> Ideas Worth Spreading  </b></div>
+        <div class="footer_foot">
+        <div class="foot_text" id="license_text">This independent TEDx is operated under license from TED.</div>
+        <div class="foot_text" id="copyright_text">© 2019-2022 TEDxIITGuwahati. All rights reserved</div>
+    </div>
+    </div>
+  
+  
+  </div>
+  <!-- footer code ends here -->
+  </body>
+  <script>
+    var talk = document.getElementById("talks");
+    talk.addEventListener("click",()=>{
+        var talkExtra = document.getElementById("talkExtra");
+        if(talkExtra.style.display=="none")
+            talkExtra.style.display = "flex";
+        else
+            talkExtra.style.display = "none";
+    });
+    var welcome = document.getElementsByClassName("welcome");
+    window.addEventListener("scroll",()=>{
+        var nav = document.getElementById("primary");
+        var rect = welcome[0].getBoundingClientRect();
+        if(rect.top<0){
+            nav.style.height = 10 + "vh";
+            nav.style.opacity=1;
+            nav.setAttribute("h","10");
+        }else{
+            nav.style.height = 14 + "vh";
+            nav.setAttribute("h","14");
+            nav.style.opacity = 0.85;
+        }
+    });
+</script>
+</html>

@@ -1,21 +1,19 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="AboutUs_style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <title>About US</title>
-  </head>
-  <body>
+  
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.1/font/bootstrap-icons.css">
 
 
-  <!-- navBar -->
-  <nav id="primary">
+    <title>Document</title>
+</head>
+<body>
+<!-- Navbar -->
+<nav id="primary">
     <img id="logo" src="../Images/TEDx logo.png" alt="TEDx logo">
     <div id="list">
       <a href="../Home.html" class="tabs">HOME</a>
@@ -24,159 +22,254 @@
             <a href="../Talks/talks.html" id="dropDownTabs">TEDxIITGuwahati</a>
             <a href="../Talks_Studio/talk_studio.html" id="dropDownTabs">TEDxIITGuwahatiStudio</a>
         </div>
-      <a href="../About_Us/AboutUs.html" class="tabs active">ABOUT US</a>
-      <a href="../Contact_Us/ContactUs.html" class="tabs">CONTACT US</a>
-      <img src="./Images/toggleMenuIcon-white.jpg" alt="MENU" width="50px" id="toggleMenu">
+      <a href="./About_Us/AboutUs.html" class="tabs">ABOUT US</a>
+      <a href=# class="tabs active">CONTACT US</a>
+      <img src="../Images/toggleMenuIcon-white.jpg" alt="MENU" width="50px" id="toggleMenu">
     </div>
   </nav>
   <div id="leftContainer" class="close">
     <nav id="leftNav">
-      <img src="./Images/b_cross.svg" width="20px" id="closeMenu">
-      <a href="../Home.html" class="leftTabs">HOME</a>
+      <img src="../Images/b_cross.svg" width="20px" id="closeMenu">
+      <a href=# class="leftTabs">HOME</a>
       <a href=# class="leftTabs" onclick="myFunctionleft()" id="myDropdownleft">TALKS</a>
       <div class="leftdropDownMenu" id="myDropdown">
         <a href="../Talks/talks.html" id="leftdropDownTabs">TEDxIITGuwahati</a>
         <a href="../Talks_Studio/talk_studio.html" id="leftdropDownTabs">TEDxIITGuwahatiStudio</a>
       </div>
       <a href="../About_Us/AboutUs.html" class="leftTabs">ABOUT US</a>
-      <a href="../Contact_Us/ContactUs.html" class="leftTabs">CONTACT US</a>
+      <a href=# class="leftTabs">CONTACT US</a>
     </nav>
   </div>
+<!-- navbar ends -->
+    <!-- data box starts here  -->
+    <div  class="main_data_box">
+        <div class="data_heading" id="box1_heading1">WHAT IS TED?</div>
+        <div class="content_1stcolumn">
+            <div  class="data_content class_width" id="box1_column1"> TED, as it reads Technology, Entertainment, and Design - is a nonprofit organization performing live talks dedicated to the spread of ideas empowered by knowledge at its absolute core. It caters to varied talking points in terms of the fields it deals with, which can be extendable to any possible abstraction from experiences worth sharing. However, at the same time, each experience shared is highly specific to the motive and concrete about the content of the subject. Talks intended with purpose and information are what inspired TED to bring it to the ground and the people.</div>
 
-
-
-
-    <section>
-      <div class="row">
-        <!-- BOX 1 -->
-        <div class="col-sm-12 col-lg-6 col-md-6 box" style="background-color:black">
-          <h1>About US</h1>
-          <p>
-            TEDxIITGuwahati is an extraordinary event that invites pioneers, innovators and thinkers from various background enlighten the common folks with their radical.
-          </p> 
-          <br>
-          <!--icon -->  
-          <div class="icon">
-            <a href="https://www.facebook.com/TEDxIITGuwahati/"><img src="https://res.cloudinary.com/dtkm20qt9/image/upload/v1667643535/Facebook_ioggph.svg" alt="facebook"
-              width="40px"></a>
-            <a href="https://www.instagram.com/tedxiitguwahati/"><img src="https://res.cloudinary.com/dtkm20qt9/image/upload/v1667643535/Instagram_cjb2le.svg" alt="instagram"
-                    width="40px"></a>
-            <a href="https://twitter.com/tedxiitg"><img src="https://res.cloudinary.com/dtkm20qt9/image/upload/v1667643537/Twitter_vgkazq.svg" alt="twitter" width="40px"></a>
-            <a href="https://www.linkedin.com/company/tedx-iit-guwahati/"><img src="https://res.cloudinary.com/dtkm20qt9/image/upload/v1667643535/Linkedin_mymtth.svg"
-                    alt="linkdin" width="40px"></a>
-            <a href="https://tedxiitguwahati.medium.com/"><img src="https://res.cloudinary.com/dtkm20qt9/image/upload/v1667643535/Medium_uy1xu2.svg" class="ted" alt="medium" width="40px"></a>
-          </div> 
-          <!--Phone-->
-          <span class="cred">
-            <a href="tel:+917014724546"><img src="https://res.cloudinary.com/dtkm20qt9/image/upload/v1667643537/phone_nkjtun.svg" alt="" width="40px"></a>
-            <p>Pramiti:+91 7014724546</p>
-          </span>
-          <!--Location-->
-          <span class="cred">
-            <a href="https://goo.gl/maps/NmmNtAe37C4u5ngBA"><img src="https://res.cloudinary.com/dtkm20qt9/image/upload/v1667643535/location_jzvize.svg" alt="" width="40px"></a>
-            <p>IIT Guwahati, North Guwahati, Assam, India Pin No - 781039</p>
-          </span>
-          <!--Email -->
-          <span class="cred">
-            <a href="mailto:tedxiitg@iitg.ac.in"><img src="https://res.cloudinary.com/dtkm20qt9/image/upload/v1667643535/mail_bld1lh.svg" alt="" width="40px"></a>
-            <p> tedxiitg@iitg.ac.in</p>
-          </span>
+            <div  class="data_content class_width" id="box1_column2" >All of this may sound too heavy and intense for a first-time listener but here comes the fun part - it's NOT! One may end up binging TED talks when they just want some food for thought for the field of their choice. And the best part is, that, one can always explore.
+                So, why is it fun?
+                It’s fun because TED talks come with a character - of its speaker and the speaker’s story, place, and incidents involved. Hence, one ends up knowing a lot more than they would expect. It’s a perception of all aspects of an anecdote and one genuinely gets driven by the direction of the story, and what was intended as a big or small tangible change is served.</div>
         </div>
 
-        <!-- BOX 2 -->
-        <form name="email_sub" class="col-sm-12 col-lg-6 col-md-6 box" id="myform" style="background-color:black">
-          <h1>Message us</h1>
-          <p>Name</p>
-          <input type="text" name="Name" required>
-          <p>Email Address</p>
-          <input type="email" name="Email" required>
-          <p>Phone</p>
-          <input type="number" name="Phone">
-          <p>Message</p>
-          <textarea id="Message" name="Message" style="height:150px"></textarea>
-          <button type="submit" class="btn"><h4>Submit</h4></button>
-        </form>
-      </div>
-      <div class="map">
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d28639.96781520655!2d91.67868423317816!3d26.196809147871495!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x375a5aea122132c3%3A0x44767bb468a831d1!2sIIT%20Guwahati%2C%20Guwahati%2C%20Assam!5e0!3m2!1sen!2sin!4v1666704835251!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-      </div>
-  </section>
+        <div class="content_2ndcolumn">
+            <div  id="secondcolumn_box1" class="class_width">
+                <div class="data_heading" id="box2_heading1">WHAT IS TEDx?</div>
+                <div class="data_content" id="box2_column1">TED, when independently organized by a group of organizations, community, or an institution is licensed as TEDx. As much as it promises autonomy, such events continue to adhere to the principles of an ideal TED talk. It’s not only diverse but also spreads the reach.
 
+                    The essentialities of independent TED is devoted to speaking to a specific community, that are a conglomeration of people representing the same ideas of work, education, interests, or belongingness from a region. It is meant to highlight voices within and around the community catering to mutual notions. The event revolves around a theme such that it is responsive to the majority of the audience.</div>
+            </div>
+
+            <div  id="secondcolumn_box2" class="class_width">
+                <div class="data_heading" id="box2_heading2">WHAT IS TEDxIITGuwahati?</div>
+                <div class="data_content" id="box2_column2">   We are pleased to announce that the IIT Guwahati version of TEDx i.e TEDxIITGuwahati is expected to roll out in February of 2022. The event may be held online, depending on the circumstances of the global pandemic we are in now and considering the safety of the audience as well as the organizing committee.
+
+                    We will abide by the maximum cap of 100 audience members put by TED.</div>
+            </div>
+        </div>
+
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <div id="the_team_text">  THE TEAM</div>
+    <div class="team_heads_box">
+        <div class="head_card" id="head_card1" onmouseenter="myfunction1()" onmouseleave="myfunction2()">
+            <img src="../Images/pramiti2.jpg" alt="image" class="image_class" >
+            <div class="intro">
+                <div class="head_name  " id="head_name1">Pramiti Gupta</div>
+                <div class="head_desg" id="head_desg1" ><h3>Overall Coordinator</h3></div>
+                <div class="head_desc" id="head_desc1">A keen observant and a physics enthusiast, she is determined toward her goals. As a big picture person and a good listener, she likes collecting viewpoints on anything under the sun. She can be found spending her leisure time reading books and watching k-dramas. Thoroughly enjoys theatres, dance performances, concerts and exhibitions. <br> <br> <a href="https://www.instagram.com/pramiti_04/"><i class="bi bi-instagram color_icon"></i></a> 
+                    <a href="https://www.linkedin.com/in/pramiti-gupta07/"><i class="bi bi-linkedin color_icon"></i></a>  </div>
+            </div>
+        </div>
+
+<!-- ///////// -->
+<div class="head_card" id="head_card1" onmouseenter="myfunction1()" onmouseleave="myfunction2()">
+    <img src="../Images/kavin.jpg" alt="image" class="image_class">
+    <div class="intro" id="intro_kavin">
+        <div class="head_name  " id="head_name1">Kavin Manimudichozhan</div>
+        <div class="head_desg" id="head_desg1" ><h3>Speakers Head</h3></div>
+        <div class="head_desc" id="head_desc1">A thinker and a philosopher lost in the labyrinth of science and technology. Always ready to ponder over ideas in depth, sometimes farther than advised. He is the jack of all trades hoping to master a few. An ardent music, movie and cricket lover. Calm and cool at most times, quirkiness sinks in with the right company.  <br> <br> <a href="https://www.facebook.com/kavin.manimudichozhan/"><i class="bi bi-facebook color_icon"></i></a> 
+            <a href="https://www.instagram.com/starknight_002/"><i class="bi bi-instagram color_icon"></i></a> </div>
+    </div>
+</div>
+      <!-- /////////// -->
+      <div class="head_card" id="head_card1" onmouseenter="myfunction1()" onmouseleave="myfunction2()">
+        <img src="../Images/parth.jpg" alt="image" class="image_class">
+        <div class="intro">
+            <div class="head_name  " id="head_name1">Parth Rathod</div>
+            <div class="head_desg" id="head_desg1" ><h3>Marketing Head</h3></div>
+            <div class="head_desc" id="head_desc1">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tempora repellendus vero qui voluptates aperiam. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Recusandae odit amet placeat! Id sed minima modi aliquam impedit quam, dignissimos cupiditate labore consectetur placeat facere, deserunt reprehenderit voluptate, rerum ratione laborum accusantium omnis?</div>
+        </div>
+    </div>
+      <!-- /////////////////// -->
+      <div class="head_card" id="head_card1" onmouseenter="myfunction1()" onmouseleave="myfunction2()">
+        <img src="../Images/shashank.jpg" alt="image" class="image_class">
+        <div class="intro">
+            <div class="head_name  " id="head_name1">Shashank Mishra</div>
+            <div class="head_desg" id="head_desg1" ><h3>Design Head</h3></div>
+            <div class="head_desc" id="head_desc1">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tempora repellendus vero qui voluptates aperiam. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Recusandae odit amet placeat! Id sed minima modi aliquam impedit quam, dignissimos cupiditate labore consectetur placeat facere, deserunt reprehenderit voluptate, rerum ratione laborum accusantium omnis?  </div>
+        </div>
+    </div>
+      <!--  -->
+      <div class="head_card" id="head_card1" onmouseenter="myfunction1()" onmouseleave="myfunction2()">
+        <img src="../Images/Abhiram2.jpg" alt="image" class="image_class">
+        <div class="intro">
+            <div class="head_name  " id="head_name1">Abhiram Goud Bingi</div>
+            <div class="head_desg" id="head_desg1" ><h3>Web Ops Head</h3></div>
+            <div class="head_desc" id="head_desc1">His enthusiasm and love for technology are the qualities that set him apart. Whenever He sees a website, he can't help but think of ways to hack it. A passionate Web developer and a Cyber security enthusiastic who loves to build Websites and avidly take part in bug bounty programs. Code and caffeine are his addictions. <br> <br> <a href="https://www.facebook.com/bingi.abhiram/"><i class="bi bi-facebook color_icon"></i></a> 
+                <a href="https://www.instagram.com/bingi_abhiram_goud/"><i class="bi bi-instagram color_icon"></i></a> <a href="https://twitter.com/AbhiramBingi"><i class="bi bi-twitter color_icon"></i></a> <a href="https://www.linkedin.com/in/abhiram-bag003/"><i class="bi bi-linkedin color_icon"></i></a> </div>
+        </div>
+    </div>
+      <!--  -->
+      <div class="head_card" id="head_card1" onmouseenter="myfunction1()" onmouseleave="myfunction2()">
+        <img src="../Images/Nandini.jpg" alt="image" class="image_class">
+        <div class="intro">
+            <div class="head_name  " id="head_name1">Nandini Sharma</div>
+            <div class="head_desg" id="head_desg1" ><h3>Content Head</h3></div>
+            <div class="head_desc" id="head_desc1">Happiness comes in small packages, and she is most definitely the smallest package one would find out there. Always found as giggling and chatting. Loves to talk and make friends. Always ready to discuss anime, BlackPink and new ideas. <br> <br> <a href="https://www.linkedin.com/in/snandini050/"><i class="bi bi-linkedin color_icon"></i></a> 
+                <a href="https://www.instagram.com/__bc__efgh__jklm__opqrstuvwxyz/?utm_source=qr"><i class="bi bi-instagram color_icon"></i></a> </div>
+        </div>
+    </div>
+      <!--  -->
+      <div class="head_card" id="head_card1" onmouseenter="myfunction1()" onmouseleave="myfunction2()">
+        <img src="../Images/sreelakshmi.jpg" alt="image" class="image_class">
+        <div class="intro">
+            <div class="head_name  " id="head_name1">Sreelakshmi Aneesh</div>
+            <div class="head_desg" id="head_desg1" ><h3>Curation Head</h3></div>
+            <div class="head_desc" id="head_desc1">She is optimistic; no matter the situation, she always expects things to turn out all right. An aesthete who loves visiting museums and shores. Her altruistic nature and listening skills make her the go-to person. Meeting new people and involving in healthy discussions always excites her.  <br> <br> <a href="https://www.linkedin.com/in/sreelakshmianeesh"><i class="bi bi-linkedin color_icon"></i></a> 
+                <a href="https://www.instagram.com/sreelakshmi___aneesh/"><i class="bi bi-instagram color_icon"></i></a> </div>
+        </div>
+    </div>
+      <!--  -->
+      <div class="head_card" id="head_card1" onmouseenter="myfunction1()" onmouseleave="myfunction2()">
+        <img src="../Images/abhinav2.jpg" alt="image" class="image_class">
+        <div class="intro">
+            <div class="head_name  " id="head_name1">Abhinav Choudhary</div>
+            <div class="head_desg" id="head_desg1" ><h3>PR and Branding Head</h3></div>
+            <div class="head_desc" id="head_desc1">Late nights bring out the best in him. He loves reading books, singing and running. He has a passion for technology and loves building cool stuff. He is a real foodie at heart and overall a fun guy to be around. The qualities that truly set him apart are empathy and self-awareness.  <br> <br> <a href="https://www.linkedin.com/in/abhinav-choudhary-a57698202/"><i class="bi bi-linkedin color_icon"></i></a> 
+                <a href="https://www.instagram.com/abhichoudhary78/"><i class="bi bi-instagram color_icon"></i></a> </div>
+        </div>
+    </div>
+      <!--  -->
+      <div class="head_card" id="head_card1" onmouseenter="myfunction1()" onmouseleave="myfunction2()">
+        <img src="../Images/vamsi.jpg" alt="image" class="image_class">
+        <div class="intro">
+            <div class="head_name  " id="head_name1">P.N.V.Sai Vamsi</div>
+            <div class="head_desg" id="head_desg1" ><h3>Speaker Core</h3></div>
+            <div class="head_desc" id="head_desc1">He Loves mingling with people and dancing without limits. Enthusiastic about new ideas. Likes playing cricket and solving puzzles. His determination and hardworking nature are assets worthy for any team. <br> <br> <a href="https://www.linkedin.com/in/pynda-naga-venkata-sai-vamsi-b73765205"><i class="bi bi-linkedin color_icon"></i></a> 
+                <a href="https://www.instagram.com/saivamsipynda/"><i class="bi bi-instagram color_icon"></i></a>  </div>
+        </div>
+    </div>
+      <!--  -->
+      <div class="head_card" id="head_card1" onmouseenter="myfunction1()" onmouseleave="myfunction2()">
+        <img src="../Images/pavan.jpg" alt="image" class="image_class">
+        <div class="intro">
+            <div class="head_name  " id="head_name1">Pavan Dev</div>
+            <div class="head_desg" id="head_desg1" ><h3>Curation Core</h3></div>
+            <div class="head_desc" id="head_desc1"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae dolores illum perferendis impedit facilis, quo aperiam, non ab autem quasi tenetur ut neque error debitis deserunt numquam delectus vel sit provident asperiores maxime ad magnam dolore laudantium. Praesentium eaque maiores totam cupiditate ad aliquid? Aperiam exercitationem provident quis adipisci nihil! </div>
+        </div>
+    </div>
+      <!--  -->
+    </div>
+
+    <!-- footer code starts here -->
+  <div class="footer_mainbox">
+    <div><hr></div>
+    
+    <div class="footer_box">
+        <div  class="tedex_logo footer_sub_boxes" id="sub_box1"><img src="https://res.cloudinary.com/dtkm20qt9/image/upload/v1667908600/ted_nauf8g.png" alt="ted_image" id="ted_image" ></div>
   
-
-
- <!-- java script -->
-    <script>
-      const scriptURL = 'https://script.google.com/macros/s/AKfycbxsaGg8oYfq9_DsQrzWN--QutW9vYZDGwgBgXv_GHG_SwjaCxyfijVe4KTbH_-hjsXi/exec'
-      const form = document.forms['email_sub']
   
-    form.addEventListener('submit', e => {
-      e.preventDefault();
-      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
-        .then(res => {alert('Submited Succesfully');
-      })
-        .catch(error => {
-          console.error('Error!', error.message);
-          alert('Error submission unsuccesfull');
-        })
-        .then( a => (form.reset()));
-      
-    })
-    </script>
+        <div class="footer_sub_boxes" id="sub_box2">
+            <div class="headings_top"> <b>TEDxIITGuwahati </b> </div>
+            <div class="links">Home</div>
+            <div class="links">Talks</div>
+            <div class="links">About Us</div>
+            <div class="links">Contact Us</div>
+        </div>
+  
+  
+  
+        <div class="footer_sub_boxes" id="sub_box3">
+            <div class="headings_top"> <b> Events</b></div>
+            <div class="links">TEDxIITGuwahati</div>
+            <div class="links"> TEDxIITGuwahati Studio</div>
+        </div>
+  
+  
+        <div class="footer_sub_boxes" id="sub_box4">
+            <div class="headings_top" id="follow_us"> <b> Follow Us</b></div>
+            <div class=" links3">Facebook</div>
+            <div class=" links3">Instagram</div>
+            <div class=" links3">LinkedIn</div>
+            <div class=" links3">Twitter</div>
+            <div class=" links3">Medium</div>
+        </div>
+    </div>
+    <div><hr ></div>
+    
+  
+    <div>
+        <div class="headings_bottom"> <b> Ideas Worth Spreading  </b></div>
+        <div class="footer_foot">
+        <div class="foot_text" id="license_text">This independent TEDx is operated under license from TED.</div>
+        <div class="foot_text" id="copyright_text">© 2019-2022 TEDxIITGuwahati. All rights reserved</div>
+    </div>
+    </div>
+  
+  
+  </div>
+  <!-- footer code ends here -->
+</body>
+<!-- <script>
+    // document.getElementsByClassName("head_card").addEventListener("hover",myfunction);
+    function myfunction1(){
+       let var1=document.getElementById("head_desg1");
+       var1.style.display="none";
+       let var2=document.getElementById("head_desc1");
+       var2.style.display="block";
 
-    <script>
-      function toggleMenu(){
-
-          const navbar = document.getElementById('navbar-wrapper');
-          navbar.classList.toggle("visible");
-      }
-
-      // Debounce wrapper would be more optimized
-      // but since this a POC of the navbar, this
-      // should suffice
-      function createOnScroll(){
-          let isAtTop = true;
-
-          return function(e){
-              const positionFromTop = document.documentElement.scrollTop
-              const navbar = document.getElementsByClassName('tedx-navbar')[0]
-              if(positionFromTop > 0 && isAtTop){
-                  isAtTop = !isAtTop;
-                  navbar.classList.add('shrink-navbar')
-              }else if(positionFromTop == 0 && !isAtTop){
-                  isAtTop = !isAtTop;
-                  navbar.classList.remove('shrink-navbar');
-              }
-
-          }
-      }
-
-      window.onscroll = createOnScroll()
-
-    </script>
-    <script>
-      const toggleMenu = document.getElementById('toggleMenu');
-    toggleMenu.addEventListener('click', changeMenu);
-
-    const clossMenu = document.getElementById('closeMenu');
-    clossMenu.addEventListener('click', changeMenu);
-
-    const talksbutton = document.getElementById('talksbutton');
-    talksbutton.addEventListener('click', openMenu)
-
-
-    function changeMenu()
-    {
-      const leftMenu = document.getElementById('leftContainer');
-      leftMenu.classList.toggle('close');
-    } 
-
-    function myFunction() 
-    {
-      document.getElementById("myDropdown").classList.toggle("close");
     }
 
-    </script>
+    function myfunction2(){
+        let var1=document.getElementById("head_desg1");
+       var1.style.display="block";
+        let var2=document.getElementById("head_desc1");
+       var2.style.display="none";
+    }
 
-  </body>
+</script> -->
 </html>
