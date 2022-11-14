@@ -56,19 +56,26 @@ input{
     margin-bottom: 20px;
     outline: none;
     border-radius: 7px;
+    padding: 5px;
 }
-.btn{
-    width: 15vh;
-    height: 5vh;
-    border: 7px;
-    background-color: red;
-    
-}
+.button {
+    width: 7rem;
+    background-color: #f4511e;
+    border: none;
+    border-radius: 10px;
+    color: black;
+    padding: .3rem 0 .3rem;
+    text-align: center;
+    font-size: 25px;
+    opacity: 0.6;
+    transition: 0.3s;
+    display: inline-block;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  
+  .button:hover {opacity: 1}
 
-.btn:hover{
-    background-color: white;
-    transition-duration: 0.3s;
-}
 p{  
     margin: 0px;
     /* padding: 5px; */
@@ -115,6 +122,7 @@ h1{
     padding-top: auto;
     padding-bottom: auto;
     z-index: 1;
+    width: 100%;
 }
 
 #logo
@@ -130,33 +138,23 @@ h1{
     display: inline-flex;
     color: white;
     margin:auto;
+    
 }
 
 .tabs
 {
     background-color: black;
     color: white;
-    margin: 17px 40px;
-    padding: 10px 3px;
+    margin: 15px 18px;
     font-family: 'Poppins', sans-serif;
     cursor: pointer;
     transition: color 0.25s ease-in-out;
     text-decoration: none;
-    font-weight: 500;
 }
 
 .tabs:hover
 {
     color: red;
-    text-decoration: none;
-}
-
-.temp{
-    display: none;
-}
-
-.temp:hover{
-    display: block;
 }
 
 #toggleMenu
@@ -203,86 +201,18 @@ h1{
 .leftTabs:hover
 {
     color: red;
-    text-decoration: none;
-
 }
 
 .close
 {
     display: none;
 }
-
 
 #closeMenu
 {
     margin:auto 200px;
     margin-bottom: 50px;
     cursor: pointer;
-}
-
-.dropDownMenu
-{
-    position: absolute;
-    background-color: black;
-    display: flex;
-    flex-direction: column;
-    top: 10vh;
-    right: 26.5vw;
-    border-radius: 4px;
-    z-index: 1;
-    box-shadow:1px 0.5px 0.5px rgb(49, 49, 49);
-}
-
-#dropDownTabs
-{
-    margin: 13px ;
-    transition: all 0.2s ease-in-out;
-    letter-spacing: 0.05rem;
-    color: white;
-}
-
-#dropDownTabs:hover
-{
-    text-decoration: none;
-}
-
-
-.leftdropDownMenu
-{
-    display: flex;
-    flex-direction: column;
-}
-
-#leftdropDownTabs
-{
-    text-decoration: none;
-    padding: 20px 40px;
-    color: white;
-    font-family: 'Poppins', sans-serif;
-    border-bottom:0.5px solid white;
-    transition: color 0.25s ease-in-out;
-    letter-spacing: 0.08rem;
-}
-
-#dropDownTabs:hover
-{
-    color: red;
-}
-
-#leftdropDownTabs:hover
-{
-    color: red;
-    cursor: pointer;
-}
-
-.close
-{
-    display: none;
-}
-
-.active
-{
-    color: red;
 }
 
 
