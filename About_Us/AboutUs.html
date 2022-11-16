@@ -69,40 +69,6 @@
         </div>
 
     </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
     <div id="the_team_text">  THE TEAM</div>
     <div class="team_heads_box">
         <div class="head_card" id="head_card1" onmouseenter="myfunction1()" onmouseleave="myfunction2()">
@@ -220,21 +186,6 @@
             <div class="links">About Us</div>
             <div class="links">Contact Us</div>
         </div>
-  
-  
-    form.addEventListener('submit', e => {
-      e.preventDefault();
-      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
-        .then(res => {alert('Submited Succesfully');
-      })
-        .catch(error => {
-          console.error('Error!', error.message);
-          alert('Error submission unsuccesfull');
-        })
-        .then( a => (form.reset()));
-      
-    })
-    </script>
 
     <script>
       function toggleMenu(){
@@ -267,26 +218,19 @@
 
     </script>
     <script>
-      const toggleMenu = document.getElementById('toggleMenu');
-    toggleMenu.addEventListener('click', changeMenu);
-
-    const clossMenu = document.getElementById('closeMenu');
-    clossMenu.addEventListener('click', changeMenu);
-
-    const talksbutton = document.getElementById('talksbutton');
-    talksbutton.addEventListener('click', openMenu)
+     
 
 
-    function changeMenu()
-    {
-      const leftMenu = document.getElementById('leftContainer');
-      leftMenu.classList.toggle('close');
-    } 
+      function changeMenu()
+      {
+        const leftMenu = document.getElementById('leftContainer');
+        leftMenu.classList.toggle('close');
+      } 
 
-    function myFunction() 
-    {
-      document.getElementById("myDropdown").classList.toggle("close");
-    }
+      function myFunction() 
+      {
+        document.getElementById("myDropdown").classList.toggle("close");
+      }
 
     </script>
 
