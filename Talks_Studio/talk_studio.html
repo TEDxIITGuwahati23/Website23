@@ -16,28 +16,28 @@
 
 <!-- navBar -->
 <nav id="primary">
-  <img id="logo" src="./Images/TEDx logo.png" alt="TEDx logo">
+  <img id="logo" src="../Images/TEDx logo.png" alt="TEDx logo">
   <div id="list">
     <a href="../Home.html" class="tabs">HOME</a>
-    <a href=# class="tabs" onclick="myFunction()">TALKS</a>
+    <a href="#" class="tabs active" onclick="myFunction()">TALKS</a>
       <div class="dropDownMenu close" id="myDropdown">
           <a href="../Talks/talks.html" id="dropDownTabs">TEDxIITGuwahati</a>
-          <a href="../Talks_Studio/talk_studio.html" id="dropDownTabs" class="active">TEDxIITGuwahatiStudio</a>
+          <a href=# id="dropDownTabs" class="active">TEDxIITGuwahatiStudio</a>
       </div>
     <a href="../About_Us/AboutUs.html" class="tabs">ABOUT US</a>
-    <a href="../Contact_Us/ContactUs.html" class="tabs active">CONTACT US</a>
-    <img src="./Images/toggleMenuIcon-white.jpg" alt="MENU" width="50px" id="toggleMenu">
+    <a href="../Contact_Us/ContactUs.html" class="tabs">CONTACT US</a>
+    <img src="../Images/toggleMenuIcon-white.jpg" alt="MENU" width="50px" id="toggleMenu" onclick="changeMenu()">
   </div>
 </nav>
 <div id="leftContainer" class="close">
   <nav id="leftNav">
-    <img src="./Images/b_cross.svg" width="20px" id="closeMenu">
+    <img src="../Images/b_cross.svg" width="20px" id="closeMenu" onclick="changeMenu()">
     <a href="../Home.html" class="leftTabs">HOME</a>
-    <a href=# class="leftTabs" onclick="myFunctionleft()" id="myDropdownleft">TALKS</a>
-    <div class="leftdropDownMenu" id="myDropdown">
-      <a href="../Talks/talks.html" id="leftdropDownTabs">TEDxIITGuwahati</a>
-      <a href="../Talks_Studio/talk_studio.html" id="leftdropDownTabs">TEDxIITGuwahatiStudio</a>
-    </div>
+    <a href="" class="leftTabs" onclick="myFunctionleft()" id="myDropdownleft">TALKS</a>
+      <div class="leftdropDownMenu close" id="myDropdown">
+        <a href="../Talks/talks.html" id="leftdropDownTabs">TEDxIITGuwahati</a>
+        <a href="../Talks_Studio/talk_studio.html" id="leftdropDownTabs">TEDxIITGuwahatiStudio</a>
+      </div>
     <a href="../About_Us/AboutUs.html" class="leftTabs">ABOUT US</a>
     <a href="../Contact_Us/ContactUs.html" class="leftTabs">CONTACT US</a>
   </nav>
@@ -50,7 +50,7 @@
       <div class="row">
         <!-- BOX 1 -->
         <div class="col-sm-12 col-lg-6 col-md-6 box" style="background-color:black">
-          <h1>Contact Us</h1>
+          <h1>Talks_Studio</h1>
           <p>
             TEDxIITGuwahati is an extraordinary event that invites pioneers, innovators and thinkers from various background enlighten the common folks with their radical.
           </p> 
@@ -125,47 +125,38 @@
     </script>
 
     <script>
-      function toggleMenu(){
+      // function toggleMenu(){
 
-          const navbar = document.getElementById('navbar-wrapper');
-          navbar.classList.toggle("visible");
-      }
+      //     const navbar = document.getElementById('navbar-wrapper');
+      //     navbar.classList.toggle("visible");
+      // }
 
       // Debounce wrapper would be more optimized
       // but since this a POC of the navbar, this
       // should suffice
-      function createOnScroll(){
-          let isAtTop = true;
+      // function createOnScroll(){
+      //     let isAtTop = true;
 
-          return function(e){
-              const positionFromTop = document.documentElement.scrollTop
-              const navbar = document.getElementsByClassName('tedx-navbar')[0]
-              if(positionFromTop > 0 && isAtTop){
-                  isAtTop = !isAtTop;
-                  navbar.classList.add('shrink-navbar')
-              }else if(positionFromTop == 0 && !isAtTop){
-                  isAtTop = !isAtTop;
-                  navbar.classList.remove('shrink-navbar');
-              }
+      //     return function(e){
+      //         const positionFromTop = document.documentElement.scrollTop
+      //         const navbar = document.getElementsByClassName('tedx-navbar')[0]
+      //         if(positionFromTop > 0 && isAtTop){
+      //             isAtTop = !isAtTop;
+      //             navbar.classList.add('shrink-navbar')
+      //         }else if(positionFromTop == 0 && !isAtTop){
+      //             isAtTop = !isAtTop;
+      //             navbar.classList.remove('shrink-navbar');
+      //         }
 
-          }
-      }
+      //     }
+      // }
 
       window.onscroll = createOnScroll()
 
     </script>
 
     <script>
-      const toggleMenu = document.getElementById('toggleMenu');
-    toggleMenu.addEventListener('click', changeMenu);
-
-    const clossMenu = document.getElementById('closeMenu');
-    clossMenu.addEventListener('click', changeMenu);
-
-    const talksbutton = document.getElementById('talksbutton');
-    talksbutton.addEventListener('click', openMenu)
-
-
+     
     function changeMenu()
     {
       const leftMenu = document.getElementById('leftContainer');
