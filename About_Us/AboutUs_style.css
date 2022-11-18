@@ -16,11 +16,7 @@
     position: sticky;
     top:0px;
     background-color: black; 
-    margin: -20px -10px;
     opacity: 0.85;
-    transition:"padding-top" 0.5s ;
-    padding-top: auto;
-    padding-bottom: auto;
     z-index: 1;
 }
 
@@ -111,7 +107,6 @@
 {
     color: red;
     text-decoration: none;
-
 }
 
 .close
@@ -146,6 +141,7 @@
     transition: all 0.2s ease-in-out;
     letter-spacing: 0.05rem;
     color: white;
+    text-decoration: none;
 }
 
 #dropDownTabs:hover
@@ -571,6 +567,7 @@ body{
     background-color: black;
     color: white;
     font-family: 'Inter', sans-serif;
+    margin: auto;
 }
 
 .footer_mainbox{

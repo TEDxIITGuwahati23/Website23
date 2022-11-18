@@ -15,26 +15,31 @@
 
 
   <nav id="primary">
-      <img id="logo" src="https://res.cloudinary.com/dtkm20qt9/image/upload/v1667916210/TEDx_logo_twyvry.png" alt="TEDx logo">
-      <div id="list">
-          <a href=# class="tabs">HOME</a>
-          <a href=# class="tabs">TALKS</a>
-          <a href=# class="tabs">BLOGS</a>
-          <a href="../About_Us/AboutUs.html
-          " class="tabs">ABOUT US</a>
-          <a href=# class="tabs">CONTACT US</a>
-          <img src="https://res.cloudinary.com/dtkm20qt9/image/upload/v1667916210/toggleMenuIcon-white_otzat1.jpg" alt="MENU" width="50px" id="toggleMenu">
-      </div>
+    <img id="logo" src="../Images/TEDx logo.png" alt="TEDx logo">
+    <div id="list">
+      <a href="../index.html" class="tabs">HOME</a>
+      <a class="tabs" onclick="myFunction()">TALKS</a>
+        <div class="dropDownMenu close" id="myDropdown">
+            <a href="../Talks/Talks.html" id="dropDownTabs">TEDxIITGuwahati</a>
+            <a href="../Talks_Studio/Talks_Studio.html" id="dropDownTabs">TEDxIITGuwahatiStudio</a>
+        </div>
+      <a href="../About_Us/AboutUs.html" class="tabs">ABOUT US</a>
+      <a href=# class="tabs active">CONTACT US</a>
+      <img src="../Images/toggleMenuIcon-white.jpg" alt="MENU" width="50px" id="toggleMenu" onclick="changeMenu()">
+    </div>
   </nav>
   <div id="leftContainer" class="close">
-      <nav id="leftNav">
-          <img src="https://res.cloudinary.com/dtkm20qt9/image/upload/v1667916210/b_cross_pbpikq.svg" width="20px" id="closeMenu">
-          <a href=# class="leftTabs">HOME</a>
-          <a href=# class="leftTabs">TALKS</a>
-          <a href=# class="leftTabs">BLOGS</a>
-          <a href=# class="leftTabs">ABOUT US</a>
-          <a href=# class="leftTabs">CONTACT US</a>
-      </nav>
+    <nav id="leftNav">
+      <img src="../Images/b_cross.svg" width="20px" id="closeMenu" onclick="changeMenu()">
+      <a href="../index.html" class="leftTabs">HOME</a>
+      <a href="#" class="leftTabs" onclick="myFunctionleft()" id="myDropdown">TALKS</a>
+        <div class="leftdropDownMenu close" id="myDropdownleft">
+          <a href="../Talks/Talks.html" id="leftdropDownTabs">TEDxIITGuwahati</a>
+          <a href="../Talks_Studio/Talks_Studio.html" id="leftdropDownTabs">TEDxIITGuwahatiStudio</a>
+        </div>
+      <a href="../About_Us/AboutUs.html" class="leftTabs">ABOUT US</a>
+      <a href=# class="leftTabs">CONTACT US</a>
+    </nav>
   </div>
 
 
@@ -166,17 +171,21 @@
     </script>
 
     <script>
-      const toggleMenu = document.getElementById('toggleMenu');
-      toggleMenu.addEventListener('click', changeMenu);
-
-      const clossMenu = document.getElementById('closeMenu');
-      clossMenu.addEventListener('click', changeMenu);
-
 
       function changeMenu()
       {
-          const leftMenu = document.getElementById('leftContainer');
-          leftMenu.classList.toggle('close');
+        const leftMenu = document.getElementById('leftContainer');
+        leftMenu.classList.toggle('close');
+      } 
+
+      function myFunction() 
+      {
+        document.getElementById("myDropdown").classList.toggle("close");
+      }
+
+      function myFunctionleft()
+      {
+        document.getElementById("myDropdownleft").classList.toggle("close");
       }
 
     </script>

@@ -16,28 +16,28 @@
 <nav id="primary">
     <img id="logo" src="../Images/TEDx logo.png" alt="TEDx logo">
     <div id="list">
-      <a href="../Home.html" class="tabs">HOME</a>
-      <a href=# class="tabs" onclick="myFunction()">TALKS</a>
+      <a href="../index.html" class="tabs">HOME</a>
+      <a class="tabs" onclick="myFunction()">TALKS</a>
         <div class="dropDownMenu close" id="myDropdown">
-            <a href="../Talks/talks.html" id="dropDownTabs">TEDxIITGuwahati</a>
-            <a href="../Talks_Studio/talk_studio.html" id="dropDownTabs">TEDxIITGuwahatiStudio</a>
+            <a href="../Talks/Talks.html" id="dropDownTabs">TEDxIITGuwahati</a>
+            <a href="../Talks_Studio/Talks_Studio.html" id="dropDownTabs">TEDxIITGuwahatiStudio</a>
         </div>
-      <a href="./About_Us/AboutUs.html" class="tabs">ABOUT US</a>
-      <a href=# class="tabs active">CONTACT US</a>
-      <img src="../Images/toggleMenuIcon-white.jpg" alt="MENU" width="50px" id="toggleMenu">
+      <a href=# class="tabs active">ABOUT US</a>
+      <a href="../Contact_Us/ContactUs.html" class="tabs">CONTACT US</a>
+      <img src="../Images/toggleMenuIcon-white.jpg" alt="MENU" width="50px" id="toggleMenu" onclick="changeMenu()">
     </div>
   </nav>
   <div id="leftContainer" class="close">
     <nav id="leftNav">
-      <img src="../Images/b_cross.svg" width="20px" id="closeMenu">
-      <a href=# class="leftTabs">HOME</a>
-      <a href=# class="leftTabs" onclick="myFunctionleft()" id="myDropdownleft">TALKS</a>
-      <div class="leftdropDownMenu" id="myDropdown">
-        <a href="../Talks/talks.html" id="leftdropDownTabs">TEDxIITGuwahati</a>
-        <a href="../Talks_Studio/talk_studio.html" id="leftdropDownTabs">TEDxIITGuwahatiStudio</a>
-      </div>
-      <a href="../About_Us/AboutUs.html" class="leftTabs">ABOUT US</a>
-      <a href=# class="leftTabs">CONTACT US</a>
+      <img src="../Images/b_cross.svg" width="20px" id="closeMenu" onclick="changeMenu()">
+      <a href="../index.html" class="leftTabs">HOME</a>
+      <a href=# class="leftTabs" onclick="myFunctionleft()" id="myDropdown">TALKS</a>
+        <div class="leftdropDownMenu close" id="myDropdownleft">
+          <a href="../Talks/Talks.html" id="leftdropDownTabs">TEDxIITGuwahati</a>
+          <a href="../Talks_Studio/Talks_Studio.html" id="leftdropDownTabs">TEDxIITGuwahatiStudio</a>
+        </div>
+      <a href="#" class="leftTabs">ABOUT US</a>
+      <a href="../Contact_Us/ContactUs.html" class="leftTabs">CONTACT US</a>
     </nav>
   </div>
 <!-- navbar ends -->
@@ -69,40 +69,6 @@
         </div>
 
     </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
     <div id="the_team_text">  The Team</div>
     <div class="team_heads_box">
         <div class="head_card" id="head_card1" onmouseenter="myfunction1()" onmouseleave="myfunction2()">
@@ -220,56 +186,87 @@
             <div class="links">About Us</div>
             <div class="links">Contact Us</div>
         </div>
-  
-  
-  
+
         <div class="footer_sub_boxes" id="sub_box3">
-            <div class="headings_top"> <b> Events</b></div>
-            <div class="links">TEDxIITGuwahati</div>
-            <div class="links"> TEDxIITGuwahati Studio</div>
+          <div class="headings_top"> <b> Events</b></div>
+          <div class="links">TEDxIITGuwahati</div>
+          <div class="links"> TEDxIITGuwahati Studio</div>
         </div>
-  
-  
+
         <div class="footer_sub_boxes" id="sub_box4">
-            <div class="headings_top" id="follow_us"> <b> Follow Us</b></div>
-            <div class=" links3">Facebook</div>
-            <div class=" links3">Instagram</div>
-            <div class=" links3">LinkedIn</div>
-            <div class=" links3">Twitter</div>
-            <div class=" links3">Medium</div>
+          <div class="headings_top" id="follow_us"> <b> Follow Us</b></div>
+          <div class=" links3">Facebook</div>
+          <div class=" links3">Instagram</div>
+          <div class=" links3">LinkedIn</div>
+          <div class=" links3">Twitter</div>
+          <div class=" links3">Medium</div>
         </div>
-    </div>
-    <div><hr ></div>
-    
-  
-    <div>
+      </div>
+      <div><hr ></div>
+
+      <div>
         <div class="headings_bottom"> <b> Ideas Worth Spreading  </b></div>
         <div class="footer_foot">
         <div class="foot_text" id="license_text">This independent TEDx is operated under license from TED.</div>
         <div class="foot_text" id="copyright_text">© 2019-2022 TEDxIITGuwahati. All rights reserved</div>
-    </div>
+      </div>
     </div>
   
   
   </div>
   <!-- footer code ends here -->
-</body>
-<!-- <script>
-    // document.getElementsByClassName("head_card").addEventListener("hover",myfunction);
-    function myfunction1(){
-       let var1=document.getElementById("head_desg1");
-       var1.style.display="none";
-       let var2=document.getElementById("head_desc1");
-       var2.style.display="block";
 
-    }
 
-    function myfunction2(){
-        let var1=document.getElementById("head_desg1");
-       var1.style.display="block";
-        let var2=document.getElementById("head_desc1");
-       var2.style.display="none";
-    }
+    <script>
+      function toggleMenu(){
 
-</script> -->
+          const navbar = document.getElementById('navbar-wrapper');
+          navbar.classList.toggle("visible");
+      }
+
+      
+      // Debounce wrapper would be more optimized
+      // but since this a POC of the navbar, this
+      // should suffice
+      function createOnScroll(){
+          let isAtTop = true;
+
+          return function(e){
+              const positionFromTop = document.documentElement.scrollTop
+              const navbar = document.getElementsByClassName('tedx-navbar')[0]
+              if(positionFromTop > 0 && isAtTop){
+                  isAtTop = !isAtTop;
+                  navbar.classList.add('shrink-navbar')
+              }else if(positionFromTop == 0 && !isAtTop){
+                  isAtTop = !isAtTop;
+                  navbar.classList.remove('shrink-navbar');
+              }
+
+          }
+      }
+
+      window.onscroll = createOnScroll()
+
+    </script>
+    <script>
+     
+      function changeMenu()
+      {
+        const leftMenu = document.getElementById('leftContainer');
+        leftMenu.classList.toggle('close');
+      } 
+
+      function myFunction() 
+      {
+        document.getElementById("myDropdown").classList.toggle("close");
+      }
+
+      function myFunctionleft()
+      {
+        document.getElementById("myDropdownleft").classList.toggle("close");
+      }
+
+    </script>
+
+  </body>
 </html>

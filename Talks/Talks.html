@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body> 
+    <main id="main" style="background-color: black;">
+        <div>
+            <!-- navBar -->
+            <nav id="primary">
+                <img id="logo" src="../Images/TEDx logo.png" alt="TEDx logo">
+                <div id="list">
+                <a href="../index.html" class="tabs">HOME</a>
+                <a href="#" class="tabs active" onclick="myFunction()" id="talksTab">TALKS</a>
+                    <div class="dropDownMenu close" id="myDropdown">
+                        <a href="#" id="dropDownTabs">TEDxIITGuwahati</a>
+                        <a href="../Talks_Studio/Talks_Studio.html" id="dropDownTabs">TEDxIITGuwahatiStudio</a>
+                    </div>
+                <a href="../About_Us/AboutUs.html" class="tabs">ABOUT US</a>
+                <a href="../Contact_Us/ContactUs.html" class="tabs">CONTACT US</a>
+                <img src="../Images/toggleMenuIcon-white.jpg" alt="MENU" width="50px" id="toggleMenu" onclick="changeMenu()">
+                </div>
+            </nav>
+            <div id="leftContainer" class="close">
+                <nav id="leftNav">
+                <img src="../Images/b_cross.svg" width="20px" id="closeMenu" onclick="changeMenu()">
+                <a href="../index.html" class="leftTabs">HOME</a>
+                <a href="#" class="leftTabs" onclick="myFunctionleft()" id="myDropdown">TALKS</a>
+                    <div class="leftdropDownMenu close" id="myDropdownleft">
+                    <a href="#" id="leftdropDownTabs">TEDxIITGuwahati</a>
+                    <a href="../Talks_STalks_Studio.html" id="leftdropDownTabs">TEDxIITGuwahatiStudio</a>
+                    </div>
+                <a href="../About_Us/AboutUs.html" class="leftTabs">ABOUT US</a>
+                <a href="../Contact_Us/ContactUs.html" class="leftTabs">CONTACT US</a>
+                </nav>
+        
+            </div>
+        </div>
+<div class="body_content">
+        <h3 style="padding-top: 30px;">NOMINATE A SPEAKER</h3>
+        <p>
+            Do you know somebody you think would make an incredible TEDx speaker? Do you have your own idea or perspective, you believe, needs to be shared? We invite you to submit a speaker nomination!
+            <br><br><br>
+    
+    To nominate someone/yourself as a speaker for our TEDx event, fill out the speaker nomination form. Kindly keep in mind that our curators will choose speakers at their discretion, based on the ideal fit to our theme. Once submitted, all nominations will remain in our speaker database for further consideration, as we plan our upcoming flagship event in February 2022.
+    <br>
+    Thank you!
+        </p>
+    
+        <a href="https://forms.gle/Txa4Ue7FbtxP2WWe8" target="_blank" class="nominateBtn">NOMINATE SPEAKER &nbsp<i class="fa-solid fa-arrow-right">&nbsp</i></a>
+        <h3>2022 EVENTS TALK</h3>
+        <div class="carousel">
+            <button class='flt-left' onclick="slideRight(this,0);"><i class="fa fa-circle-chevron-left" aria-hidden="true" style="color:red;font-size:25px"></i></button>
+            <div class="row flt-left">
+            <div class="row-container row-container1">
+            <div class="card">
+                    <div class="card-content">
+                        <iframe src="https://www.youtube.com/embed/FEHbet4YX78" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        <h5>Dr. Baland Jalal</h5>
+                        <p>Nuclear power is our best hope to ditch fossil fuels...</p>
+                    </div>
+            </div>
+            <div class="card">
+                <div class="card-content">
+                    <iframe src="https://www.youtube.com/embed/gtG7dUZK7PM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    <h5>Pritam Patra</h5>
+                    <p>Nuclear power is our best hope to ditch fossil fuels...</p>
+                </div>
+        </div>
+        <div class="card">
+            <div class="card-content">
+                <iframe src="https://www.youtube.com/embed/bIbuzgdCYtg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <h5>Parvathy Sailesh</h5>
+                <p>Nuclear power is our best hope to ditch fossil fuels...</p>
+            </div>
+    </div>
+    <div class="card">
+        <div class="card-content">
+            <iframe src="https://www.youtube.com/embed/l-TnmjqTlec" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <h5>Abhimanyu Singh</h5>
+            <p>Nuclear power is our best hope to ditch fossil fuels...</p>
+        </div>
+    </div>
+    <div class="card">
+        <div class="card-content">
+            <iframe src="https://www.youtube.com/embed/4Gc_-_Ngfxk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <h5>Rishabh Jain and Mandeep Gill</h5>
+            <p>Nuclear power is our best hope to ditch fossil fuels...</p>
+        </div>
+    </div>
+    <div class="card">
+        <div class="card-content">
+            <iframe src="https://www.youtube.com/embed/jruIzjq6q54" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <h5>Rohan Agrawal</h5>
+            <p>Nuclear power is our best hope to ditch fossil fuels...</p>
+        </div>
+    </div>
+    <div class="card">
+        <div class="card-content">
+            <iframe src="https://www.youtube.com/embed/SebJfNFOSnY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <h5>Dr. Sawmya Ray</h5>
+            <p>Nuclear power is our best hope to ditch fossil fuels...</p>
+        </div>
+    </div>
+    <div class="card">
+        <div class="card-content">
+            <iframe src="https://www.youtube.com/embed/z0ZiINCpID0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <h5>Richard James MacCowan</h5>
+            <p>Nuclear power is our best hope to ditch fossil fuels...</p>
+        </div>
+    </div>  
+                <div class="clear"></div>
+                </div>
+            
+                </div>
+            <button class='flt-left'  onclick="slideLeft(this,0);"><i class="fa fa-circle-chevron-right" aria-hidden="true" style="color:red;font-size:25px"></i></button>
+                <div class="clear"></div>
+            </div>
+    
+            <h3>2021 EVENTS TALK</h3>
+            <div class="carousel">
+                <button class='flt-left' onclick="slideRight(this,1);"><i class="fa fa-circle-chevron-left" aria-hidden="true" style="color:red;font-size:25px"></i></button>
+                <div class="row flt-left">
+                <div class="row-container row-container2">
+                <div class="card">
+                        <div class="card-content">
+                            <iframe src="https://www.youtube.com/embed/4D9poUkjm5w" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                            <h5>Aashish Chandratreya</h5>
+                            <p>Nuclear power is our best hope to ditch fossil fuels...</p>
+                        </div>
+                </div>
+                <div class="card">
+                    <div class="card-content">
+                        <iframe src="https://www.youtube.com/embed/48JMTHxnQeI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        <h5>Aditya Gupta</h5>
+                        <p>Nuclear power is our best hope to ditch fossil fuels...</p>
+                    </div>
+            </div>
+            <div class="card">
+                <div class="card-content">
+                    <iframe src="https://www.youtube.com/embed/rTo5-NWFBzc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    <h5>Bhagvan Kommadi</h5>
+                    <p>Nuclear power is our best hope to ditch fossil fuels...</p>
+                </div>
+        </div>
+        <div class="card">
+            <div class="card-content">
+                <iframe src="https://www.youtube.com/embed/TgKj2Pkfh9E" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <h5>Bidisha Som</h5>
+                <p>Nuclear power is our best hope to ditch fossil fuels...</p>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-content">
+                <iframe src="https://www.youtube.com/embed/s5FrKqii280" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <h5>Nisha Bora</h5>
+                <p>Nuclear power is our best hope to ditch fossil fuels...</p>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-content">
+                <iframe src="https://www.youtube.com/embed/t0eaDurnftk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <h5>Prabhagaran Rakkiappan</h5>
+                <p>Nuclear power is our best hope to ditch fossil fuels...</p>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-content">
+                <iframe src="https://www.youtube.com/embed/GQwMjFz132E" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <h5>Rudy Wallang</h5>
+                <p>Nuclear power is our best hope to ditch fossil fuels...</p>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-content">
+                <iframe src="https://www.youtube.com/embed/IR7CUajjtzU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <h5>Seema Gupta</h5>
+                <p>Nuclear power is our best hope to ditch fossil fuels...</p>
+            </div>
+        </div>
+        <div class="card">
+        <div class="card-content">
+            <iframe src="https://www.youtube.com/embed/KhAKqghwnns" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <h5>Shiva Sah</h5>
+            <p>Nuclear power is our best hope to ditch fossil fuels...</p>
+        </div>
+    </div>  
+                <div class="clear"></div>
+                </div>
+                
+                </div>
+                <button class='flt-left'  onclick="slideLeft(this,1);"><i class="fa fa-circle-chevron-right" aria-hidden="true" style="color:red;font-size:25px"></i></button>
+                <div class="clear"></div>
+            </div>
+            <h3>2020 EVENTS TALK</h3>
+            <div class="carousel">
+                <button class='flt-left' onclick="slideRight(this,2);"><i class="fa fa-circle-chevron-left" aria-hidden="true" style="color:red;font-size:25px"></i></button>
+                <div class="row flt-left">
+                <div class="row-container row-container3">
+                <div class="card">
+                        <div class="card-content">
+                            <iframe src="https://www.youtube.com/embed/FEHbet4YX78" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                            <h5>Dr. Baland Jalal</h5>
+                            <p>Nuclear power is our best hope to ditch fossil fuels...</p>
+                        </div>
+                </div>
+                <div class="card">
+                    <div class="card-content">
+                        <iframe src="https://www.youtube.com/embed/gtG7dUZK7PM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        <h5>Pritam Patra</h5>
+                        <p>Nuclear power is our best hope to ditch fossil fuels...</p>
+                    </div>
+            </div>
+            <div class="card">
+                <div class="card-content">
+                    <iframe src="https://www.youtube.com/embed/bIbuzgdCYtg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    <h5>Parvathy Sailesh</h5>
+                    <p>Nuclear power is our best hope to ditch fossil fuels...</p>
+                </div>
+        </div>
+        <div class="card">
+            <div class="card-content">
+                <iframe src="https://www.youtube.com/embed/l-TnmjqTlec" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <h5>Abhimanyu Singh</h5>
+                <p>Nuclear power is our best hope to ditch fossil fuels...</p>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-content">
+                <iframe src="https://www.youtube.com/embed/4Gc_-_Ngfxk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <h5>Rishabh Jain and Mandeep Gill</h5>
+                <p>Nuclear power is our best hope to ditch fossil fuels...</p>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-content">
+                <iframe src="https://www.youtube.com/embed/jruIzjq6q54" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <h5>Rohan Agrawal</h5>
+                <p>Nuclear power is our best hope to ditch fossil fuels...</p>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-content">
+                <iframe src="https://www.youtube.com/embed/SebJfNFOSnY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <h5>Dr. Sawmya Ray</h5>
+                <p>Nuclear power is our best hope to ditch fossil fuels...</p>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-content">
+                <iframe src="https://www.youtube.com/embed/z0ZiINCpID0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <h5>Richard James MacCowan</h5>
+                <p>Nuclear power is our best hope to ditch fossil fuels...</p>
+            </div>
+        </div>  
+                    <div class="clear"></div>
+                    </div>
+                
+                    </div>
+                <button class='flt-left'  onclick="slideLeft(this,2);"><i class="fa fa-circle-chevron-right" aria-hidden="true" style="color:red;font-size:25px"></i></button>
+                    <div class="clear"></div>
+                </div>
+                <h3>2019 EVENTS TALK</h3>
+                <div class="carousel">
+                    <button class='flt-left' onclick="slideRight(this,3);"><i class="fa fa-circle-chevron-left" aria-hidden="true" style="color:red;font-size:25px"></i></button>
+                    <div class="row flt-left">
+                    <div class="row-container row-container4">
+                    <div class="card">
+                            <div class="card-content">
+                                <iframe src="https://www.youtube.com/embed/FEHbet4YX78" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                <h5>Dr. Baland Jalal</h5>
+                                <p>Nuclear power is our best hope to ditch fossil fuels...</p>
+                            </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-content">
+                            <iframe src="https://www.youtube.com/embed/gtG7dUZK7PM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                            <h5>Pritam Patra</h5>
+                            <p>Nuclear power is our best hope to ditch fossil fuels...</p>
+                        </div>
+                </div>
+                <div class="card">
+                    <div class="card-content">
+                        <iframe src="https://www.youtube.com/embed/bIbuzgdCYtg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        <h5>Parvathy Sailesh</h5>
+                        <p>Nuclear power is our best hope to ditch fossil fuels...</p>
+                    </div>
+            </div>
+            <div class="card">
+                <div class="card-content">
+                    <iframe src="https://www.youtube.com/embed/l-TnmjqTlec" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    <h5>Abhimanyu Singh</h5>
+                    <p>Nuclear power is our best hope to ditch fossil fuels...</p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-content">
+                    <iframe src="https://www.youtube.com/embed/4Gc_-_Ngfxk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    <h5>Rishabh Jain and Mandeep Gill</h5>
+                    <p>Nuclear power is our best hope to ditch fossil fuels...</p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-content">
+                    <iframe src="https://www.youtube.com/embed/jruIzjq6q54" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    <h5>Rohan Agrawal</h5>
+                    <p>Nuclear power is our best hope to ditch fossil fuels...</p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-content">
+                    <iframe src="https://www.youtube.com/embed/SebJfNFOSnY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    <h5>Dr. Sawmya Ray</h5>
+                    <p>Nuclear power is our best hope to ditch fossil fuels...</p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-content">
+                    <iframe src="https://www.youtube.com/embed/z0ZiINCpID0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    <h5>Richard James MacCowan</h5>
+                    <p>Nuclear power is our best hope to ditch fossil fuels...</p>
+                </div>
+            </div>  
+                    <div class="clear"></div>
+                    </div>
+                    
+                    </div>
+                    <button class='flt-left'  onclick="slideLeft(this,3);"><i class="fa fa-circle-chevron-right" aria-hidden="true" style="color:red;font-size:25px"></i></button>
+                    <div class="clear"></div>
+                </div>
+</div>
+
+
+
+<!-- footer code starts here -->
+<div class="footer_mainbox">
+    <div><hr></div>
+    
+    <div class="footer_box">
+        <div  class="tedex_logo footer_sub_boxes" id="sub_box1"><img src="../Images/ted.png" alt="ted_image" id="ted_image" ></div>
+  
+  
+        <div class="footer_sub_boxes" id="sub_box2">
+            <div class="headings_top"> <b>TEDxIITGuwahati </b> </div>
+            <div class="links">Home</div>
+            <div class="links">Talks</div>
+            <div class="links">About Us</div>
+            <div class="links">Contact Us</div>
+        </div>
+  
+  
+  
+        <div class="footer_sub_boxes" id="sub_box3">
+            <div class="headings_top"> <b> Events</b></div>
+            <div class="links">TEDxIITGuwahati</div>
+            <div class="links"> TEDxIITGuwahati Studio</div>
+        </div>
+  
+  
+        <div class="footer_sub_boxes" id="sub_box4">
+            <div class="headings_top" id="follow_us"> <b> Follow Us</b></div>
+            <div class=" links3">Facebook</div>
+            <div class=" links3">Instagram</div>
+            <div class=" links3">LinkedIn</div>
+            <div class=" links3">Twitter</div>
+            <div class=" links3">Medium</div>
+        </div>
+    </div>
+    <div><hr ></div>
+    
+  
+    <div>
+        <div class="headings_bottom"> <b> Ideas Worth Spreading  </b></div>
+        <div class="footer_foot">
+        <div class="foot_text" id="license_text">This independent TEDx is operated under license from TED.</div>
+        <div class="foot_text" id="copyright_text">© 2019-2022 TEDxIITGuwahati. All rights reserved</div>
+    </div>
+    </div>
+  
+  
+  </div>
+  <!-- footer code ends here -->
+
+
+
+
+    </main>
+    <script>
+
+        var right = [0,0,0,0];
+        var maxMargin=[];
+        var jumpMargin = 150;
+
+        function setWidth(){
+        var boxwidth = document.querySelector(".card").offsetWidth;
+        var displaywidth = document.querySelector(".row").offsetWidth;
+        var displayheight = document.querySelector(".card").offsetHeight;
+        let x=document.querySelectorAll(".row-container");
+        for (let i=0;i<x.length;i++){
+            var children = document.querySelectorAll(".row-container"+(i+1).toString()+" > .card").length;
+            x[i].style.width = children * boxwidth+"px";
+            maxMargin.push((children)*boxwidth - displaywidth);
+        }
+        document.querySelectorAll("button")[0].style.height = displayheight+"px";
+        document.querySelectorAll("button")[1].style.height = displayheight+"px";
+        }
+
+        function slideLeft(event,i){
+        var rowcont = document.querySelectorAll(".row-container")[i];
+        if(right[i] <= -maxMargin[i]){
+            event.preventDefault();
+        }
+        else{
+            right[i] -= jumpMargin;
+        }
+        rowcont.style.marginLeft = right[i]+"px";
+        }
+
+        function slideRight(event,i){
+        var rowcont = document.querySelectorAll(".row-container")[i];
+        if(right[i]==0){
+            event.preventDefault();
+        }
+        else if(right[i] >= maxMargin[i]){
+            event.preventDefault();
+        }
+        else{
+            right[i] += jumpMargin;
+        }
+        rowcont.style.marginLeft = right[i]+"px";
+        }
+
+        window.onload=setWidth;
+
+        function changeMenu()
+      {
+        const leftMenu = document.getElementById('leftContainer');
+        leftMenu.classList.toggle('close');
+      } 
+
+      function myFunction() 
+      {
+        document.getElementById("myDropdown").classList.toggle("close");
+      }
+
+      function myFunctionleft()
+      {
+        document.getElementById("myDropdownleft").classList.toggle("close");
+      }
+    </script>
+    
+</body>
+</html>
