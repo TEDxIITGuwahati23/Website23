@@ -1,3 +1,201 @@
+/* Navbar */
+
+#primary
+{
+    display: flex;
+    position: sticky;
+    top:0px;
+    background-color: black; 
+    opacity: 0.85;
+    transition:"padding-top" 0.5s ;
+    padding-top: auto;
+    padding-bottom: auto;
+    z-index: 1;
+}
+
+#logo
+{
+    display: inline;
+    margin: auto;
+    width: 260px;
+}
+
+
+#list
+{
+    display: inline-flex;
+    color: white;
+    margin:auto;
+}
+
+.tabs
+{
+    background-color: black;
+    color: white;
+    margin: 17px 40px;
+    padding: 10px 3px;
+    font-family: 'Poppins', sans-serif;
+    cursor: pointer;
+    transition: color 0.25s ease-in-out;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.tabs:hover
+{
+    color: red;
+    text-decoration: none;
+}
+
+.temp{
+    display: none;
+}
+
+.temp:hover{
+    display: block;
+}
+
+#toggleMenu
+{
+    margin:auto 20px;
+    width: 40px;
+    display: none;
+    cursor: pointer;
+}
+
+
+#leftContainer
+{
+    position: fixed;
+    float: left;
+    top:0px;
+    left: -2px;
+    height: 100vh;
+    background:linear-gradient(219deg, #ff0000, #000000), red;
+    width: 260px;
+    z-index: 1;
+    opacity: 1;
+    transition:all 1s ease-in-out;
+}
+
+
+#leftNav
+{
+    display: flex;
+    flex-direction: column;
+    margin-top: 40px;
+}
+
+.leftTabs
+{
+    text-decoration: none;
+    padding: 20px 20px;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    border-bottom:0.5px solid white;
+    transition: color 0.25s ease-in-out;
+}
+
+.leftTabs:hover
+{
+    color: red;
+    text-decoration: none;
+}
+
+.close
+{
+    display: none;
+}
+
+
+#closeMenu
+{
+    margin:auto 200px;
+    margin-bottom: 50px;
+    cursor: pointer;
+}
+
+.dropDownMenu
+{
+    position: absolute;
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    top: 10vh;
+    right: 25vw;
+    border-radius: 4px;
+    z-index: 1;
+    box-shadow:1px 0.5px 0.5px rgb(49, 49, 49);
+}
+
+#dropDownTabs
+{
+    margin: 13px ;
+    transition: all 0.2s ease-in-out;
+    letter-spacing: 0.05rem;
+    color: white;
+    text-decoration: none;
+}
+
+#dropDownTabs:hover
+{
+    text-decoration: none;
+}
+
+
+.leftdropDownMenu
+{
+    display: flex;
+    flex-direction: column;
+}
+
+#leftdropDownTabs
+{
+    text-decoration: none;
+    padding: 20px 40px;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    border-bottom:0.5px solid white;
+    transition: color 0.25s ease-in-out;
+    letter-spacing: 0.08rem;
+}
+
+#dropDownTabs:hover
+{
+    color: red;
+}
+
+#leftdropDownTabs:hover
+{
+    color: red;
+    cursor: pointer;
+}
+
+.close
+{
+    display: none;
+}
+
+.active
+{
+    color: red;
+}
+
+
+@media only screen and (max-width:1020px) {
+    .tabs
+    {
+        display: none;
+    }
+
+    #toggleMenu
+    {
+        display: block;
+    }
+}
+/* Nav bar ends here  */
+
+
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@500&display=swap'); 
 body{
     color: #FFFFFF;
