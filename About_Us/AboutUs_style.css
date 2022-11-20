@@ -14,17 +14,19 @@
 {
     display: flex;
     position: sticky;
-    top:0px;
-    background-color: black; 
-    opacity: 0.85;
-    z-index: 1;
+    top: 0px;
+    height: 110px;
+    background-color: rgba(0, 0, 0);
+    transition:"padding-top" 0.5s;
+    padding-top: auto;
+    padding-bottom: auto;
+    z-index: 123456;
 }
 
 #logo
 {
-    display: inline;
+    height: 70px;
     margin: auto;
-    width: 260px;
 }
 
 
@@ -37,7 +39,6 @@
 
 .tabs
 {
-    background-color: black;
     color: white;
     margin: 17px 40px;
     padding: 10px 3px;
@@ -46,11 +47,12 @@
     transition: color 0.25s ease-in-out;
     text-decoration: none;
     font-weight: 500;
+    font-size: 14px;
 }
 
 .tabs:hover
 {
-    color: red;
+    color: #FF2B06;
     text-decoration: none;
 }
 
@@ -105,7 +107,7 @@
 
 .leftTabs:hover
 {
-    color: red;
+    color: #FF2B06;
     text-decoration: none;
 }
 
@@ -128,11 +130,10 @@
     background-color: black;
     display: flex;
     flex-direction: column;
-    top: 10vh;
-    right: 26.5vw;
+    top: 11vh;
+    right: 23vw;
     border-radius: 4px;
     z-index: 1;
-    box-shadow:1px 0.5px 0.5px rgb(49, 49, 49);
 }
 
 #dropDownTabs
@@ -169,12 +170,12 @@
 
 #dropDownTabs:hover
 {
-    color: red;
+    color: #FF2B06;
 }
 
 #leftdropDownTabs:hover
 {
-    color: red;
+    color: #FF2B06;
     cursor: pointer;
 }
 
@@ -185,7 +186,7 @@
 
 .active
 {
-    color: red;
+    color: #FF2B06;
 }
 
 
