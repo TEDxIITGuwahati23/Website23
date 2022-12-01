@@ -5,6 +5,7 @@
     display: flex;
     position: sticky;
     top: 0px;
+    width: -webkit-fill-available;
     height: 110px;
     background-color: rgba(0, 0, 0);
     transition:"padding-top" 0.5s;
@@ -15,7 +16,7 @@
 
 #logo
 {
-    height: 70px;
+    height: 60px;
     margin: auto;
 }
 
@@ -112,6 +113,7 @@
     margin:auto 200px;
     margin-bottom: 50px;
     cursor: pointer;
+    width: 20px;
 }
 
 .dropDownMenu
@@ -124,7 +126,6 @@
     right: 23vw;
     border-radius: 4px;
     z-index: 1;
-    box-shadow:1px 0.5px 0.5px rgb(49, 49, 49);
 }
 
 #dropDownTabs
@@ -192,12 +193,23 @@
         display: block;
     }
 }
+
+@media only screen and (max-width: 480px) {
+    #logo
+    {
+        height: 50px;
+        margin: auto;
+    }
+
+    #toggleMenu
+{
+    margin:auto 20px;
+    width: 30px;
+    cursor: pointer;
+}
+}
+
 /* navbar ends here */
-
-
-
-
-
 
 .background_image{
     background-image: url("./Images/image.jpg");
@@ -214,14 +226,7 @@
     font-family: 'Inter', sans-serif;
     padding:  0px;
 }
-.card-content iframe{
-    max-width: 225px;
-    height: 155px;
-}
-.card-content img{
-    max-width: 225px;
-    height: 125px;
-}
+
 body{
     background-color: black;
     margin: 0px;
@@ -245,13 +250,28 @@ h3{
     padding: 10px;
     
 }
+.card-content iframe{
+    max-width: 275px;
+    height: 195px;
+}
+.card-content img{
+    max-width: 225px;
+    height: 125px;
+}
+
+#card1{
+    display: inline;
+    float: left;
+    align-items: center;
+    padding: 10px;
+}
+
 .card-content:hover{
     box-shadow: 2px 2px 50px rgba(255, 15, 0, 0.75);
 }
 .card-content{
-    width: 225px;
+    width: 265px;
     /* border: 1px solid #FFFFFF; */
-
     border-radius: 8px;
     padding: 20px;
 }
@@ -267,6 +287,13 @@ h3{
     font-weight: 700;
     font-size: 15px;
     line-height: 18px;
+}
+
+.thumbnail{
+    height:165px;
+    width:265px;
+    overflow:hidden;
+    cursor:pointer;
 }
 
 .swipe{
@@ -315,7 +342,7 @@ h3{
 }
 
 .welcome{
-    padding-top: 9%;
+    padding-top: 7%;
     margin: 0px 0px 0px 0px;
     text-align: center;
 }
@@ -339,7 +366,7 @@ h3{
 }
 
 .btn_nominate{
-    padding: 4% 0%;
+    padding: 4% 0% 0% 0%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -374,6 +401,25 @@ h3{
     background-position: left;
 }
 
+.shadow2{
+    height: 20px;
+    bottom: 0px;
+    width: 100%;
+    left: 0;
+    background: linear-gradient(to bottom, #0b0b0b, transparent);
+}
+
+
+.shadow{
+    height: 100px;
+    bottom: 0px;
+    width: 100%;
+    left: 0;
+    background: linear-gradient(to top, #000000, transparent);
+}
+
+
+
 .main_content{
     padding: 0 5%;
 }
@@ -381,6 +427,7 @@ h3{
 
 .about_tedx{
     margin: 5% 0% 5% 0%;
+    z-index: 1000;
 }
 
 .description_about{
@@ -451,6 +498,28 @@ h3{
     }
 }
 
+@media only screen and (max-width: 440px) {
+    .card-content{
+        width: 225px;
+        border-radius: 8px;
+        padding: 20px;
+    }
+
+    .thumbnail{
+        height:165px;
+        width:225px;
+        background: black url('./Images/thumbnail.png') no-repeat center;
+        overflow:hidden;
+        cursor:pointer;
+    }
+
+    .card-content iframe{
+        max-width: 225px;
+        height: 195px;
+    }
+}
+
+
 @media only screen and (max-width: 380px) {
     .block{
         font-weight: 700;
@@ -461,38 +530,28 @@ h3{
         font-size: 80%;
     }
     .nominateBtn{
-        font-size: 8px;
-        max-block-size: 6px;
+        font-size: 9px;
+        max-block-size: 4px;
+    }
+
+    .card-content{
+        width: 215px;
+        border-radius: 8px;
+        padding: 20px;
+    }
+
+    .thumbnail{
+        height:155px;
+        width:215px;
+        background: black url('./Images/thumbnail.png') no-repeat center;
+        overflow:hidden;
+        cursor:pointer;
+    }
+
+    #card1{
+        margin-left: -10px;
     }
 }
-
-
-
-
-
-
-/* Animation Code */
-
-
-.animate {
-    animation: fadeInAnimation ease 5s;
-    animation-iteration-count: 1;
-    animation-fill-mode: forwards;
-  }
-  @keyframes fadeInAnimation {
-    0% {
-        opacity: 0;
-    }
-    100% {
-        opacity: 1;
-    }
-  }
-
-
-
-
-
-
 
 
 
