@@ -51,3 +51,19 @@ function play(id){
     document.getElementById(id).innerHTML = `<iframe width="560" height="315" src="https://www.youtube.com/embed/`+id+`?autoplay=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>`;
 }
         
+
+function changeMenu()
+{
+  const leftMenu = document.getElementById('leftContainer');
+  leftMenu.classList.toggle('close');
+} 
+
+function myFunction() 
+{
+  document.getElementById("myDropdown").classList.toggle("close");
+}
+
+function myFunctionleft()
+{
+  document.getElementById("myDropdownleft").classList.toggle("close");
+}
