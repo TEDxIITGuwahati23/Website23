@@ -22,6 +22,12 @@ section{
     width: auto;
     margin:3rem 0 5rem ;
 }
+.social-icon{
+    transition: fill 0.5s;
+}
+.social-icon:hover{
+    fill:red;
+}
 .cred{
     display: flex;
     flex-direction: row;
