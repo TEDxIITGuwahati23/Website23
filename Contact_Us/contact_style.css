@@ -31,7 +31,7 @@ section{
 .cred{
     display: flex;
     flex-direction: row;
-    margin:0.5rem 0 0.5rem ;
+    margin:0.5rem 0 0.5rem;
 }
 
 .heading{
