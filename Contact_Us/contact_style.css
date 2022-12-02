@@ -25,7 +25,7 @@ section{
 .social-icon{
     transition: fill 0.5s;
 }
-.social-icon:hover{
+.icon-cta:hover .social-icon{
     fill:red;
 }
 .cred{
