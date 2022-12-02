@@ -263,7 +263,7 @@ h3{
 p{
     font-style: normal;
     font-weight: 500;
-    font-size: 22px;
+    font-size: 19px;
     line-height: 30px;
     text-align: justify;
     color: #FFFFFF;
@@ -303,6 +303,7 @@ p{
 }
 .card-content h5{
     font-family: 'Inter', sans-serif;
+    text-align: center;
     font-style: normal;
     font-weight: 700;
     font-size: 20px;
@@ -310,9 +311,12 @@ p{
 .card-content p{
     font-family: 'Inter', sans-serif;
     font-style: normal;
-    font-weight: 700;
+    text-align: center;
+    font-weight: 500;
+    word-spacing: -0.1rem;
+    letter-spacing: 0.05rem;
+    line-height: 20px;
     font-size: 15px;
-    line-height: 18px;
 }
 
 .thumbnail{
