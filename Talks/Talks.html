@@ -6,6 +6,7 @@
     <link rel="stylesheet" href="../common.css">
     <link rel="stylesheet" href="talks_style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 </head>
 <body> 
     <main id="main" style="background-color: black;">
@@ -31,7 +32,7 @@
                 <a href="#" class="leftTabs" onclick="myFunctionleft()" id="myDropdown">TALKS</a>
                     <div class="leftdropDownMenu close" id="myDropdownleft">
                     <a href="#" id="leftdropDownTabs">TEDxIITGuwahati</a>
-                    <a href="../Talks_STalks_Studio.html" id="leftdropDownTabs">TEDxIITGuwahatiStudio</a>
+                    <a href="../Talks_Studio/Talks_Studio.html" id="leftdropDownTabs">TEDxIITGuwahatiStudio</a>
                     </div>
                 <a href="../About_Us/AboutUs.html" class="leftTabs">ABOUT US</a>
                 <a href="../Contact_Us/ContactUs.html" class="leftTabs">CONTACT US</a>
@@ -39,19 +40,23 @@
         
             </div>
 <div class="body_content">
-        <h3 style="padding-top: 30px;">NOMINATE A SPEAKER</h3>
-        <p>
-            Do you know somebody you think would make an incredible TEDx speaker? Do you have your own idea or perspective, you believe, needs to be shared? We invite you to submit a speaker nomination!
-            <br><br>
-    
-    To nominate someone/yourself as a speaker for our TEDx event, fill out the speaker nomination form. Kindly keep in mind that our curators will choose speakers at their discretion, based on the ideal fit to our theme. Once submitted, all nominations will remain in our speaker database for further consideration, as we plan our upcoming flagship event in February 2022.
-    <br>
-    Thank you!
+        <h3 style="padding-top: 30px;" data-aos="fade-up" data-aos-easing="ease-in" data-aos-duration="1200">NOMINATE A SPEAKER</h3>
+        <p data-aos="fade-up" data-aos-easing="ease-in" data-aos-duration="1200">
+            Do you know somebody you think would make an incredible TEDx speaker? Do you have your own idea or perspective, you believe, needs to 
+            be shared? We invite you to submit a speaker nomination!
+            <br>
+            <br>
+            To nominate someone/yourself as a speaker for our TEDx event, fill out the speaker nomination form. Kindly keep in mind that our 
+            curators will choose speakers at their discretion, based on the ideal fit to our theme. Once submitted, all nominations will remain 
+            in our speaker database for further consideration, as we plan our upcoming flagship event in February 2022.
+        <br>
+            Thank you!
         </p>
     
-        <a href="https://forms.gle/Txa4Ue7FbtxP2WWe8" target="_blank" class="nominateBtn">NOMINATE SPEAKER &nbsp<i class="fa-solid fa-arrow-right">&nbsp</i></a>
-        <h3>2022 EVENTS TALK</h3>
-        <div class="carousel" data-aos="fade-right" data-aos-easing="ease-in" data-aos-duration="1200">
+        <a href="https://forms.gle/Txa4Ue7FbtxP2WWe8" target="_blank" class="nominateBtn" data-aos="fade-up" data-aos-easing="ease-in" data-aos-duration="1200">NOMINATE SPEAKER &nbsp<i class="fa-solid fa-arrow-right">&nbsp</i></a>
+        
+        <h3 data-aos="fade-left" data-aos-easing="ease-in" data-aos-duration="1200">2022 EVENTS TALK</h3>
+        <div class="carousel">
             <button class='flt-left' onclick="slideRight(this,0);"><i class="fa fa-circle-chevron-left" aria-hidden="true" style="color:red;font-size:25px"></i></button>
             <div class="row flt-left">
                 <div class="row-container row-container1">
@@ -120,7 +125,7 @@
             </div>
         </div>
     
-            <h3>2021 EVENTS TALK</h3>
+            <h3 >2021 EVENTS TALK</h3>
             <div class="carousel">
                 <button class='flt-left' onclick="slideRight(this,1);"><i class="fa fa-circle-chevron-left" aria-hidden="true" style="color:red;font-size:25px"></i></button>
                 <div class="row flt-left">
@@ -295,6 +300,9 @@
     </main>
 
     <script src="./talks_script.js"></script>
-    
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 </html>

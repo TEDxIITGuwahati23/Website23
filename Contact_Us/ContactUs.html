@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="../common.css">
     <link rel="stylesheet" href="contact_style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <title>Contact US</title>
   </head>
   <body>
@@ -46,16 +46,16 @@
 
 
     <section>
-      <div class="row">
+      <div class="row" >
         <!-- BOX 1 -->
         <div class="col-sm-12 col-lg-6 col-md-6 box" style="background-color:black">
-          <h1>Contact Us</h1>
-          <p>
+          <h1 data-aos="fade-up" data-aos-easing="ease-in" data-aos-duration="1200">Contact Us</h1>
+          <p data-aos="fade-up" data-aos-easing="ease-in" data-aos-duration="1200">
             TEDxIITGuwahati is an extraordinary event that invites pioneers, innovators and thinkers from various background enlighten the common folks with their radical.
           </p> 
           <br>
           <!--icon -->  
-          <div class="icon">
+          <div class="icon" data-aos="fade-up" data-aos-easing="ease-in" data-aos-duration="1200">
             <a href="https://www.facebook.com/TEDxIITGuwahati/" class="icon-cta">
               <svg width="40" height="40" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <rect width="50" height="50" rx="25" fill="white" class="social-icon"/>
@@ -105,25 +105,27 @@
                 
             </a>
           </div> 
-          <!--Phone-->
-          <span class="cred">
-            <a href="tel:+917014724546"><img src="https://res.cloudinary.com/dtkm20qt9/image/upload/v1667643537/phone_nkjtun.svg" alt="" width="40px"></a>
-            <p>Pramiti:+91 7014724546</p>
-          </span>
-          <!--Location-->
-          <span class="cred">
-            <a href="https://goo.gl/maps/NmmNtAe37C4u5ngBA"><img src="https://res.cloudinary.com/dtkm20qt9/image/upload/v1667643535/location_jzvize.svg" alt="" width="40px"></a>
-            <p>IIT Guwahati, North Guwahati, Assam, India Pin No - 781039</p>
-          </span>
-          <!--Email -->
-          <span class="cred">
-            <a href="mailto:tedxiitg@iitg.ac.in"><img src="https://res.cloudinary.com/dtkm20qt9/image/upload/v1667643535/mail_bld1lh.svg" alt="" width="40px"></a>
-            <p> tedxiitg@iitg.ac.in</p>
-          </span>
+          <div data-aos="fade-up" data-aos-easing="ease-in" data-aos-duration="1200">
+            <!--Phone-->
+            <span class="cred">
+              <a href="tel:+917014724546"><img src="https://res.cloudinary.com/dtkm20qt9/image/upload/v1667643537/phone_nkjtun.svg" alt="" width="40px"></a>
+              <p>Pramiti:+91 7014724546</p>
+            </span>
+            <!--Location-->
+            <span class="cred">
+              <a href="https://goo.gl/maps/NmmNtAe37C4u5ngBA"><img src="https://res.cloudinary.com/dtkm20qt9/image/upload/v1667643535/location_jzvize.svg" alt="" width="40px"></a>
+              <p>IIT Guwahati, North Guwahati, Assam, India Pin No - 781039</p>
+            </span>
+            <!--Email -->
+            <span class="cred">
+              <a href="mailto:tedxiitg@iitg.ac.in"><img src="https://res.cloudinary.com/dtkm20qt9/image/upload/v1667643535/mail_bld1lh.svg" alt="" width="40px"></a>
+              <p> tedxiitg@iitg.ac.in</p>
+            </span> 
+          </div>
         </div>
 
         <!-- BOX 2 -->
-        <form name="email_sub" class="col-sm-12 col-lg-6 col-md-6 box" id="myform" style="background-color:black">
+        <form name="email_sub" class="col-sm-12 col-lg-6 col-md-6 box" id="myform" style="background-color:black" data-aos="fade-up" data-aos-easing="ease-in" data-aos-duration="1200">
           <h1>Message us</h1>
           <p>Name</p>
           <input type="text" name="Name" required>
@@ -230,6 +232,11 @@
       }
 
     </script>
+
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script>
+    AOS.init();
+</script>
 
   </body>
 </html>
