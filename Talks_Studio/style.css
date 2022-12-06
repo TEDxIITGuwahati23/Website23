@@ -223,6 +223,12 @@ iframe{
     color:black;
     background-position: left;
 }
+
+.main_body{
+    padding: 0 5%;;
+}
+
+
 h3{
     font-style: normal;
     font-weight: 700;
@@ -284,15 +290,13 @@ p{
     float:left;
     }
     .carousel{
-    max-width:110%;
-    margin-left: -5%;
-    margin-right: -5%;
+    max-width:100%;
     display: flex;
-    margin-top: 0%;
+    margin-left: -1%;
     max-height: 100%;
     }
     .row{
-    width:90%;
+    width:100%;
     padding:0;
     overflow:hidden;
     margin:auto;
@@ -314,3 +318,280 @@ p{
     outline:none;
     background: none;
     }
+
+
+
+    
+/* css for footer starts here */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100&display=swap');
+
+
+body{
+    background-color: black;
+    color: white;
+    font-family: 'Inter', sans-serif;
+    margin:0px;
+}
+
+.footer_mainbox{
+    margin: 2% 3% 2% 3%;
+}
+
+@media screen and (min-width:1125px){
+    .footer_box{
+        display: flex;
+        flex-direction: row;
+        /* justify-content: space-around; */
+        flex-wrap: wrap;
+        margin: 1% 0 2% 0;
+    }
+    
+    hr{
+        background-color: rgba(217, 217, 217, 1);
+        
+    }
+
+    .tedex_logo{
+        margin-left: 0;
+    }
+
+    #ted_image{
+        width: 380px;
+    }
+
+    .headings_top{
+    
+        font-size:25px;
+        margin: 5px 5px 5px 5px;
+        
+    }
+    
+    .headings_bottom{
+        /* font-size: 1.2vw; */
+        font-size: 25px;
+        margin: 15px auto 15px 0;
+    
+    }
+    
+    .links{
+        /* font-size: 1vw; */
+        font-size: 18px;
+        color:  rgba(153, 153, 153, 1);
+        margin:15px 5px 15px 5px;
+        /* padding: 10% 10% 10% 10%; */
+        
+    }
+
+    .links3{
+        margin: 15px 5px 15px 5px;
+        font-size: 18px;
+        color:  rgba(153, 153, 153, 1);
+    }
+
+    
+    
+    .footer_foot{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    
+    .foot_text{
+        color:rgba(153, 153, 153, 1) ;
+        /* font-size: 1vw; */
+        font-size: 18px;
+    }
+    
+    .footer_sub_boxes{
+        padding: 0 0 0 0;
+        margin-right: auto;
+        white-space: nowrap;
+    }
+}
+
+@media (max-width:1125px) and (min-width:801px) {
+    .footer_box{
+        display: flex;
+        flex-direction: row;
+        /* justify-content: space-around; */
+        flex-wrap: wrap;
+        margin: 1% 0 2% 0;
+    }
+    
+    hr{
+        background-color: rgba(217, 217, 217, 1);
+        
+    }
+
+    .tedex_logo{
+        margin-left: 0;
+    }
+
+    #ted_image{
+        width: 290px;
+    }
+
+    .headings_top{
+        /* font-size: 100%; */
+        /* font-size: 1.2vw; */
+        font-size: 25px;
+        margin:5px 5px 5px 5px;
+    }
+    
+    .headings_bottom{
+        /* font-size: 1.2vw; */
+        font-size: 25px;
+        margin: 5px auto 5px 0;
+    
+    }
+    
+    .links{
+        /* font-size: 1vw; */
+        font-size: 18px;
+        color:  rgba(153, 153, 153, 1);
+        margin: 10px 5px 10px 5px;
+        
+    }
+    
+    .links3{
+        margin: 10px 5px 10px 5px;
+        font-size: 18px;
+        color:  rgba(153, 153, 153, 1);
+    }
+
+    .footer_foot{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    
+    .foot_text{
+        color:rgba(153, 153, 153, 1) ;
+        /* font-size: 1vw; */
+        font-size: 18px;
+    }
+    
+    .footer_sub_boxes{
+        padding: 0 100px 0 0;
+        margin-right: auto;
+        white-space: nowrap;
+    }
+
+    #sub_box1{
+        padding-right: 65px;
+    }
+
+    #sub_box2{
+        
+        padding-right: 40px;
+        /* padding-left: 10vw; */
+        /* padding-right: 20vw; */
+    }
+
+    
+
+    #sub_box3{
+        padding-right: 125px;
+
+    }
+    #sub_box4{
+        /* padding-left: 26vw; */
+    }
+
+
+    #sub_box4{
+        /* padding-left: 32%; */
+        /* padding-left: auto; */
+    }
+
+
+
+}
+
+@media screen and (max-width:800px){
+    .footer_box{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;        
+        margin: 1% 0 2% 0;
+    }
+    
+    #ted_image{
+        width: 40vw;
+    }
+    
+    hr{
+        background-color: rgba(217, 217, 217, 1);
+        
+    }
+
+    .headings_top{
+        /* font-size: 100%; */
+        /* font-size: 1.2vw; */
+        font-size: 3.5vw;
+        /* margin: 10% 10% 10% 10%; */
+        padding: 2vw 2vw 2vw 2vw;
+        text-align: center;
+    }
+    
+    .headings_bottom{
+        /* font-size: 1.2vw; */
+        font-size: 3.5vw;
+        margin: 0 auto 0 0;
+        text-align: center;
+        padding: 1vw 1vw 1vw 1vw;
+    
+    }
+    
+
+
+    .links{
+        /* font-size: 1vw; */
+        font-size: 2.5vw;
+        color:  rgba(153, 153, 153, 1);
+        /* margin: 10% 10% 10% 10%; */
+        padding: 1.1vw 1.1vw 1.1vw 1.1vw;
+        text-align: center;
+        
+    }
+    
+    .links3{
+        padding: 1vw 1vw 1.1vw 1vw;
+        font-size: 2.5vw;
+        color:  rgba(153, 153, 153, 1);
+        text-align: center;
+    }
+    /* #sub_box2{
+        padding: 8% 8% 8% 8%;
+    } */
+
+    #follow_us{
+        margin-top: 0.90vw;
+    }
+       
+    
+    .footer_foot{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        
+    }
+    
+    .foot_text{
+        color:rgba(153, 153, 153, 1) ;
+        /* font-size: 1vw; */
+        font-size: 2.5vw;
+        margin: 2vw 1vw 2vw 1vw;
+        text-align: center;
+    }
+    
+    .footer_sub_boxes{
+        padding: 0 0% 0 0%;
+        margin-right: auto;
+        margin-left: auto;
+        white-space: nowrap;
+        overflow: visible;
+    }
+}
+/* css for footer ends here */

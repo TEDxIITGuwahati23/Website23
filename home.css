@@ -202,14 +202,14 @@
     background-size: cover;
     background-attachment: fixed;
     background-position: center;
-    width: 110%;
-    margin:0 -5% 0 -5%;
+    width: 100%;
+    margin:0px;
 }
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@500&display=swap'); 
-body{
+#body{
     color: #FFFFFF;
     font-family: 'Inter', sans-serif;
-    padding:  0 5%;
+    padding:  0px;
 }
 .card-content iframe{
     max-width: 225px;
@@ -276,14 +276,12 @@ h3{
     }
     .carousel{
     max-width:110%;
-    margin-left: -5%;
-    margin-right: -5%;
     display: flex;
     margin-top: 0%;
     max-height: 100%;
     }
     .row{
-    width:90%;
+    width:100%;
     padding:0;
     overflow:hidden;
     margin:auto;
@@ -313,7 +311,7 @@ h3{
 }
 
 .welcome{
-    padding-top: 15%;
+    padding-top: 9%;
     margin: 0px 0px 0px 0px;
     text-align: center;
 }
@@ -367,6 +365,10 @@ h3{
 .nominateBtn:hover{
     color:black;
     background-position: left;
+}
+
+.main_content{
+    padding: 0 5%;
 }
 
 .about_tedx{
@@ -466,6 +468,7 @@ body{
     background-color: black;
     color: white;
     font-family: 'Inter', sans-serif;
+    margin:0px;
 }
 
 .footer_mainbox{
