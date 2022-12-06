@@ -1,246 +1,308 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>My Website</title>
-    <link rel="stylesheet" href="home.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="Stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="common.css">
+    <link rel="stylesheet" href="index.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <script src="script.js"></script>
-</head>
-<body>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <title>Home</title>
+  </head>
+  <body>
 
-    
-<main>
-        <div class="background_image">
-            <div>        
-                <!-- navBar -->
-                <nav id="primary">
-                    <img id="logo" src="./Images/TEDx logo.png" alt="TEDx logo">
-                    <div id="list">
-                        <a href=# class="tabs active">HOME</a>
-                        <a class="tabs" onclick="myFunction()" id="talksTab">TALKS</a>
-                            <div class="dropDownMenu close" id="myDropdown">
-                                <a href="./Talks/Talks.html" id="dropDownTabs">TEDxIITGuwahati</a>
-                                <a href="./Talks_Studio/Talks_Studio.html" id="dropDownTabs">TEDxIITGuwahatiStudio</a>
-                            </div>
-                        <a href="./About_Us/AboutUs.html" class="tabs">ABOUT US</a>
-                        <a href="./Contact_Us/ContactUs.html" class="tabs">CONTACT US</a>
-                        <img src="../TEDxIITGUWAHATI23/Images/toggleMenuIcon-white.jpg" alt="MENU" width="50px" id="toggleMenu" onclick="changeMenu()">
-                    </div>
-                </nav>
-                <div id="leftContainer" class="close">
-                    <nav id="leftNav">
-                    <img src="../TEDxIITGUWAHATI23/Images/b_cross.svg" width="20px" id="closeMenu" onclick="changeMenu()">
-                    <a href="#" class="leftTabs">HOME</a>
-                    <a href="#" class="leftTabs" onclick="myFunctionleft()" id="myDropdown">TALKS</a>
-                        <div class="leftdropDownMenu close" id="myDropdownleft">
-                        <a href="./Talks/Talks.html" id="leftdropDownTabs">TEDxIITGuwahati</a>
-                        <a href="./Talks_Studio/Talks_Studio.html" id="leftdropDownTabs">TEDxIITGuwahatiStudio</a>
-                        </div>
-                    <a href="./About_Us/AboutUs.html" class="leftTabs">ABOUT US</a>
-                    <a href="./Contact_Us/ContactUs.html" class="leftTabs">CONTACT US</a>
-                    </nav>
-                </div>
-            </div>
-            <div id="body1">
 
-                <div class="block">
-                    <p class="welcome"><span style="color:#ffffff">Welcome to</span></p>
-                    <p class="tedxiitg"><span style="color:#FF2B06"> TEDxIITGuwahati </span></p>
-                    <p class="and"><span style="color:#ffffff">&</span></p>
-                    <p class="studio"><span style="color:#FF2B06">TEDxIITGuwahati Studio</span></p>
-                </div>
-                <div class="btn_nominate">  
-                    <a href="https://forms.gle/Txa4Ue7FbtxP2WWe8" target="_blank" class="nominateBtn">NOMINATE SPEAKER &nbsp<i class="fa-solid fa-arrow-right">&nbsp</i></a>
-                </div>
-                
-            </div>
+  <div id="primary">
+    <img id="logo" src="./Images/TEDxlogo2.svg" alt="TEDx logo">
+    <div id="list">
+      <a href="./index.html" class="tabs active">HOME</a>
+      <a class="tabs" onclick="myFunction()">TALKS</a>
+        <div class="dropDownMenu close" id="myDropdown">
+            <a href="./Talks/Talks.html" id="dropDownTabs">TEDxIITGuwahati</a>
+            <a href="./Talks_Studio/Talks_Studio.html" id="dropDownTabs">TEDxIITGuwahatiStudio</a>
         </div>
-</main>
-        <div class="main_content">
-            <div class="about_tedx">
-                <h3>About TEDx</h3>
-                <p class="description_about">TED, when independently organized by a group of organizations, community, or an institution is licensed as TEDx. As much as it promises autonomy, 
-                    such events continue to adhere to the principles of an ideal TED talk. It’s not only diverse but also spreads the reach. The essentialities of 
-                    independent TED is devoted to speaking to a specific community, that are a conglomeration of people representing the same ideas of work, education, 
-                    interests, or belongingness from a region. It is meant to highlight voices within and around the community catering to mutual notions. The event 
-                    revolves around a theme such that it is responsive to the majority of the audience.</p>
-            </div>
-                <h3>RECENT TALKS</h3>
-                <div class="carousel">
-                    <button class='flt-left' onclick="slideRight(this,0);"><i class="fa fa-circle-chevron-left" aria-hidden="true" style="color:red;font-size:25px"></i></button>
-                    <div class="row flt-left">
-                    <div class="row-container row-container1">
-                    <div class="card">
+      <a href="./About_Us/AboutUs.html" class="tabs">ABOUT US</a>
+      <a href="./Contact_Us/ContactUs.html" class="tabs">CONTACT US</a>
+      <img src="./Images/toggleMenuIcon-white.jpg" alt="MENU" width="50px" id="toggleMenu" onclick="changeMenu()">
+    </div>
+</div>
+  <div id="leftContainer" class="close">
+    <nav id="leftNav">
+      <img src="./Images/b_cross.svg" id="closeMenu" onclick="changeMenu()">
+      <a href="./index.html" class="leftTabs">HOME</a>
+      <a href="#" class="leftTabs" onclick="myFunctionleft()" id="myDropdown">TALKS</a>
+        <div class="leftdropDownMenu close" id="myDropdownleft">
+          <a href="./Talks/Talks.html" id="leftdropDownTabs">TEDxIITGuwahati</a>
+          <a href="./Talks_Studio/Talks_Studio.html" id="leftdropDownTabs">TEDxIITGuwahatiStudio</a>
+        </div>
+      <a href="./About_Us/AboutUs.html" class="leftTabs">ABOUT US</a>
+      <a href="./Contact_Us/ContactUs.html" class="leftTabs">CONTACT US</a>
+    </nav>
+  </div>
+
+
+<div class="background_image">
+    <div class="shadow2">
+    </div>
+    <div id="body1">
+
+        <div class="block">
+            <p class="welcome one" data-aos="fade-down" data-aos-easing="ease-in" data-aos-duration="1100"><span style="color:#ffffff">Welcome to</span></p>
+            <p class="tedxiitg" data-aos="fade-down" data-aos-easing="ease-in" data-aos-duration="1100"><span style="color:#FF2B06"> TEDxIITGuwahati </span></p>
+            <p class="and"><span style="color:#ffffff" data-aos="fade-up" data-aos-easing="ease-in" data-aos-duration="1100">&</span></p>
+            <p class="studio" data-aos="fade-up" data-aos-easing="ease-in" data-aos-duration="1100"><span style="color:#FF2B06">TEDxIITGuwahati</span>Studio</p>
+        </div>
+        <div class="btn_nominate" data-aos="fade-up" data-aos-easing="ease-in" data-aos-duration="1200">  
+            <a href="https://forms.gle/Txa4Ue7FbtxP2WWe8" target="_blank" class="nominateBtn">nominate speaker &nbsp<i class="fa-solid fa-arrow-right">&nbsp</i></a>
+        </div>
+        <div class="shadow">
+
+        </div>
+    </div>
+</div>
+
+
+<div class="main_content">
+    <div class="about_tedx" >
+        <h3 data-aos="fade-up" data-aos-easing="ease-in" data-aos-duration="1200">ABOUT TEDx</h3>
+        <p class="description_about" data-aos="fade-up" data-aos-easing="ease-in" data-aos-duration="1200">TED, when independently organized by a group of organizations, community, or an institution is licensed as TEDx. As much as it promises autonomy, 
+            such events continue to adhere to the principles of an ideal TED talk. It’s not only diverse but also spreads the reach. The essentialities of 
+            independent TED is devoted to speaking to a specific community, that are a conglomeration of people representing the same ideas of work, education, 
+            interests, or belongingness from a region. It is meant to highlight voices within and around the community catering to mutual notions. The event 
+            revolves around a theme such that it is responsive to the majority of the audience.</p>
+    </div>
+        <h3 data-aos="fade-left" data-aos-easing="ease-in" data-aos-duration="1200">RECENT TALKS</h3>
+        <div class="carousel" data-aos="fade-right" data-aos-easing="ease-in" data-aos-duration="1200">
+            <button class='flt-left' onclick="slideRight(this,0);"><i class="fa fa-circle-chevron-left" aria-hidden="true" style="color:red;font-size:25px"></i></button>
+            <div class="row flt-left">
+                <div class="row-container row-container1">
+                    <div class="card" id = "card1">
                             <div class="card-content">
-                                <iframe src="https://www.youtube.com/embed/FEHbet4YX78" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                <div onclick="play(id);" id="FEHbet4YX78" class="thumbnail" style="background: black url('./Images/speakers_recent/jalal.jpg') no-repeat center;"></div>
                                 <h5>Dr. Baland Jalal</h5>
-                                <p>Nuclear power is our best hope to ditch fossil fuels...</p>
+                                <p>The vicious cycle of Sleep Paralysis</p>
                             </div>
                     </div>
                     <div class="card">
                         <div class="card-content">
-                            <iframe src="https://www.youtube.com/embed/gtG7dUZK7PM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                            <div onclick="play(id);" id="gtG7dUZK7PM" class="thumbnail" style="background: black url('./Images/speakers_recent/Magician.jpg') no-repeat center;"></div>
                             <h5>Pritam Patra</h5>
-                            <p>Nuclear power is our best hope to ditch fossil fuels...</p>
+                            <p>The Fine line between illusion and reality</p>
                         </div>
-                </div>
-                <div class="card">
-                    <div class="card-content">
-                        <iframe src="https://www.youtube.com/embed/bIbuzgdCYtg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                        <h5>Parvathy Sailesh</h5>
-                        <p>Nuclear power is our best hope to ditch fossil fuels...</p>
-                    </div>
-            </div>
-            <div class="card">
-                <div class="card-content">
-                    <iframe src="https://www.youtube.com/embed/l-TnmjqTlec" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                    <h5>Abhimanyu Singh</h5>
-                    <p>Nuclear power is our best hope to ditch fossil fuels...</p>
-                </div>
-            </div>
-            <div class="card">
-                <div class="card-content">
-                    <iframe src="https://www.youtube.com/embed/4Gc_-_Ngfxk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                    <h5>Rishabh Jain and Mandeep Gill</h5>
-                    <p>Nuclear power is our best hope to ditch fossil fuels...</p>
-                </div>
-            </div>
-            <div class="card">
-                <div class="card-content">
-                    <iframe src="https://www.youtube.com/embed/jruIzjq6q54" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                    <h5>Rohan Agrawal</h5>
-                    <p>Nuclear power is our best hope to ditch fossil fuels...</p>
-                </div>
-            </div>
-            <div class="card">
-                <div class="card-content">
-                    <iframe src="https://www.youtube.com/embed/SebJfNFOSnY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                    <h5>Dr. Sawmya Ray</h5>
-                    <p>Nuclear power is our best hope to ditch fossil fuels...</p>
-                </div>
-            </div>
-            <div class="card">
-                <div class="card-content">
-                    <iframe src="https://www.youtube.com/embed/z0ZiINCpID0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                    <h5>Richard James MacCowan</h5>
-                    <p>Nuclear power is our best hope to ditch fossil fuels...</p>
-                </div>
-            </div>  
-                    <div class="clear"></div>
-                    </div>
-                    
-                    </div>
-                    <button class='flt-left'  onclick="slideLeft(this,0);"><i class="fa fa-circle-chevron-right" aria-hidden="true" style="color:red;font-size:25px"></i></button>
-                    <div class="clear"></div>
-                </div>
-                <h3>LATEST BLOGS</h3>
-                <div class="carousel">
-                    <button class='flt-left' onclick="slideRight(this,1);"><i class="fa fa-circle-chevron-left" aria-hidden="true" style="color:red;font-size:25px"></i></button>
-                    <div class="row flt-left">
-                    <div class="row-container row-container2">
-                    <div class="card">
-                            <div class="card-content">
-                                <img src="https://tedxiitguwahati.in/static/img/bg-img/levelupblog.png">
-                                <h5>Dr. Baland Jalal</h5>
-                                <p>Nuclear power is our best hope to ditch fossil fuels...</p>
-                            </div>
                     </div>
                     <div class="card">
                         <div class="card-content">
-                            <img src="https://tedxiitguwahati.in/static/img/bg-img/levelupblog.png">
-                            <h5>Pritam Patra</h5>
-                            <p>Nuclear power is our best hope to ditch fossil fuels...</p>
+                            <div onclick="play(id);" id="z0ZiINCpID0" class="thumbnail" style="background: black url('./Images/speakers_recent/james.jpg') no-repeat center;"></div>
+                            <h5>Richard James MacCowan</h5>
+                            <p>Mimicking Nature’s Marvel to Build our Future</p>
                         </div>
-                </div>
-                <div class="card">
-                    <div class="card-content">
-                        <img src="https://tedxiitguwahati.in/static/img/bg-img/levelupblog.png">
-                        <h5>Parvathy Sailesh</h5>
-                        <p>Nuclear power is our best hope to ditch fossil fuels...</p>
+                    </div>  
+                    <div class="card">
+                        <div class="card-content">
+                            <div onclick="play(id);" id="jruIzjq6q54" class="thumbnail" style="background: black url('./Images/speakers_recent/Rohan.jpg') no-repeat center;"></div>
+                            <h5>Rohan Agrawal</h5>
+                            <p>Hitchhiking through perspectives of life </p>
+                        </div>
                     </div>
-            </div>
-            <div class="card">
-                <div class="card-content">
-                    <img src="https://tedxiitguwahati.in/static/img/bg-img/levelupblog.png">
-                    <h5>Abhimanyu Singh</h5>
-                    <p>Nuclear power is our best hope to ditch fossil fuels...</p>
-                </div>
-            </div>
-            <div class="card">
-                <div class="card-content">
-                    <img src="https://tedxiitguwahati.in/static/img/bg-img/levelupblog.png">
-                    <h5>Rishabh Jain and Mandeep Gill</h5>
-                    <p>Nuclear power is our best hope to ditch fossil fuels...</p>
-                </div>
-            </div>
-            <div class="card">
-                <div class="card-content">
-                    <img src="https://tedxiitguwahati.in/static/img/bg-img/levelupblog.png">
-                    <h5>Rohan Agrawal</h5>
-                    <p>Nuclear power is our best hope to ditch fossil fuels...</p>
-                </div>
-            </div>
-            <div class="card">
-                <div class="card-content">
-                    <img src="https://tedxiitguwahati.in/static/img/bg-img/levelupblog.png">
-                    <h5>Dr. Sawmya Ray</h5>
-                    <p>Nuclear power is our best hope to ditch fossil fuels...</p>
-                </div>
-            </div>
-            <div class="card">
-                <div class="card-content">
-                    <img src="https://tedxiitguwahati.in/static/img/bg-img/levelupblog.png">
-                    <h5>Richard James MacCowan</h5>
-                    <p>Nuclear power is our best hope to ditch fossil fuels...</p>
-                </div>
-            </div>  
-                        <div class="clear"></div>
+                    <div class="card">
+                        <div class="card-content">
+                            <div onclick="play(id);" id="4Gc_-_Ngfxk" class="thumbnail" style="background: black url('./Images/speakers_recent/rishab_mandeep.jpg') no-repeat center;"></div>
+                            <h5>Rishabh Jain and Mandeep Gill</h5>
+                            <p>Ignorance is bliss, or is it?</p>
                         </div>
-                    
-                        </div>
-                    <button class='flt-left'  onclick="slideLeft(this,1);"><i class="fa fa-circle-chevron-right" aria-hidden="true" style="color:red;font-size:25px"></i></button>
-                        <div class="clear"></div>
                     </div>
+                    <div class="card">
+                        <div class="card-content">
+                            <div onclick="play(id);" id="SebJfNFOSnY" class="thumbnail" style="background: black url('./Images/speakers_recent/saumya.jpg') no-repeat center;"></div>
+                            <h5>Dr. Sawmya Ray</h5>
+                            <p>Sexual violence and the culture of Impunity</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-content">
+                            <div onclick="play(id);" id="bIbuzgdCYtg" class="thumbnail" style="background: black url('./Images/speakers_recent/parvathy.jpg') no-repeat center;"></div>
+                            <h5>Parvathy Sailesh</h5>
+                            <p>Rethink the way you think</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-content">
+                            <div onclick="play(id);" id="l-TnmjqTlec" class="thumbnail" style="background: black url('./Images/speakers_recent/abhimanyu.jpg') no-repeat center;"></div>
+                            <h5>Abhimanyu Singh</h5>
+                            <p>To Learn, We Have To Unlearn</p>
+                        </div>
+                    </div>
+                    <div class="clear">
+                    </div>   
+                </div>          
+            </div>
+            <button class='flt-left'  onclick="slideLeft(this,0);"><i class="fa fa-circle-chevron-right" aria-hidden="true" style="color:red;font-size:25px"></i></button>
+            <div class="clear">
+            </div>
+        </div>
+        <div>
+            <h3>LATEST BLOGS</h3>
+        </div>
+        <div class="carousel blogs-carousel" >
+            <button class='flt-left' onclick="slideRight(this,1);"><i class="fa fa-circle-chevron-left" aria-hidden="true" style="color:red;font-size:25px"></i></button>
+            <div class="row flt-left">
+                <div class="row-container row-container2">
+                    <div class="card" id = "card1">
+                        <a href="https://tedxiitguwahati.medium.com/failure-looking-beyond-the-obvious-e4538f2fb747" class="card-container">
+                        <div class="card-content">
+                            <img src="https://miro.medium.com/max/1400/1*Nv3k6LeISByWQudbfoJ76w.webp">
+                            <h5>Failure — Looking beyond the obvious</h5>
+                            <p>All of us have come across social media posts, and quotes about how failures weave the path toward success. 
+                                We must have heard stories of successful people, who were once a failure, and then they learned from it 
+                                and became the person they are today, right? But what does it take to entwine the strand of failures into 
+                                a knitted tapestry of success? Is learning from failures that straightforward?
+                            </p>
+                        </div>
+                    </a>
+                    </div>
+                    <div class="card">
+                        <a href="https://tedxiitguwahati.medium.com/artists-block-420a201a8079" class="card-container">
+                        <div class="card-content">
+                            <img src="https://miro.medium.com/max/1400/1*-MyHX37k97uybD10kD7IzA.webp">
+                            <h5>Artist's Block — The end of Creativity?</h5>
+                            <p>"All profound distraction opens certain doors. You have to allow yourself to be distracted when you are unable to concentrate."
+                                —Julio Cortázar
+                                We often might have heard the terms like Artist's block, 
+                                creative block, and Art block at some point in our life. We might 
+                                have also seen our favorite artists taking breaks to refresh their 
+                                minds. Most of the time, this happens when they face a lack of 
+                                inspiration in their artwork, which is pretty standard too. So, what 
+                                exactly do these terms mean?
+                            </p>
+                        </div>
+                    </a>
+                    </div>
+                    <div class="card">
+                        <a href="https://tedxiitguwahati.medium.com/music-comedy-disorientation-88f8fda0f46f" class="card-container">
+                        <div class="card-content">
+                            <img src="https://miro.medium.com/max/1400/1*4hOHjnN4rJTbJhlFw3VOig.png">
+                            <h5>Music. Comedy. Disorientation.</h5>
+                            <p>Imagine a man in an Afro, speaking nonsense, then conversing in French followed by an American accent with a lot of music in the mix.
+
+                                That is Reggie Watts, auteur extraordinaire.  
+                            </p>
+                        </div>
+                    </a>
+                    </div>
+
+                    <div class="card">
+                        <a href="https://tedxiitguwahati.medium.com/the-boiling-frog-phenomenon-70acf93cb239" class="card-container">
+                        <div class="card-content">
+                            <img src="https://miro.medium.com/max/1400/1*S-zLtMjHV3Nii5pTZ9vEnA.webp">
+                            <h5>The Boiling Frog Phenomenon</h5>
+                            <p>The existence of life is one of the fascinating aspects of the cosmos. 
+                                But living this life with no difficulties seems meaningless. Life is a 
+                                constant cycle of challenges and the process of adapting to those challenges. 
+                                Yet, often we refuse to leave our comfort zones and sometimes pay the price for it.
+                            </p>
+                        </div>
+                        </a>
+                    </div>
+                    <div class="card">
+                        <a href="https://tedxiitguwahati.medium.com/level-up-720488822d71" class="card-container">
+                        <div class="card-content">
+                            <img src="https://miro.medium.com/max/1400/1*nKMmoG6BTkH6UOngh_osnw.webp">
+                            <h5>Level Up</h5>
+                            <p>I love video games! It was a chilly night in December. I was at my hostel in Delhi. 
+                                I had my History of Architecture exams the next day. While my friends were surfing 
+                                the Internet, browsing through class notes and referring to multiple textbooks, I 
+                                spent my entire evening engrossed in video games. Why am I telling you this? Well, 
+                                because this is where it all began. I passed my exams with decent grades later.
+                            </p>
+                        </div>
+                    </a>
+                    </div>
+                    <div class="card">
+                        <a href="https://tedxiitguwahati.medium.com/is-innate-talent-a-myth-dfbf1ad5e008" class="card-container">
+                        <div class="card-content">
+                            <img src="https://miro.medium.com/max/620/0*a33uS3Za89Z6j6Wc">
+                            <h5>Is innate talent a myth?</h5>
+                            <p>Is innate talent a myth? Or are we stuck inside an illusion bubble of inflated beliefs?
+
+                                Ever wondered why is it that the vast majority of individuals feel they are incapable 
+                                of drawing(or any other skills)? What transpires to us that ultimately drives us to 
+                                believe such a ridiculous claim?. Here comes the answer to this ambiguity. 
+                            </p>
+                        </div>
+                    </a>
+                    </div>
+                    <div class="card">
+                        <a href="https://tedxiitguwahati.medium.com/living-the-ideal-dream-585e7566a5f2" class="card-container">
+                        <div class="card-content">
+                            <img src="https://miro.medium.com/max/1400/1*vewN6FDAyMxfxShOekL3EA.webp">
+                            <h5>Living the Ideal Dream</h5>
+                            <p>For those who aren’t exactly au fait with the concept of Utopia- the term 
+                                was coined by Thomas More, and portrayed in his 1516 satire of the same name, 
+                                and roughly translates into ‘nowhere’ or ‘no place’. The underlying idea is 
+                                that perfectibility, though it doesn’t suggest, is as pre-eminent as failure itself 
+                                is. Simply put, the notion is that of the existence of this dichotomy in our lives. 
+                                Let’s see it through.
+                            </p>
+                        </div>
+                    </a> 
+                    </div>
+                    <div class="card">
+                        <a href="https://tedxiitguwahati.medium.com/a-jpg-sold-for-69mn-4f3316fa1f2" class="card-container">
+                        <div class="card-content">
+                            <img src="https://miro.medium.com/max/1400/1*8bKcQR0sKX9wQJERCzJwww.webp">
+                            <h5>A JPG sold for $69MN !</h5>
+                            <p>
+                                Imagine paying $69 Million for a JPEG file that you can essentially download off the internet, 
+                                and all you get is the right to display it and say you own it but not the copyright.
+                                Seems crazy? What about $500,000 for an internet meme or $2.9 Million for the first tweet?
+
+                                Well, that’s the weird world of NFTs.
+                            </p>
+                        </div>
+                    </a>
+                    </div>
+                    <div class="clear"></div>
+                </div>
+            </div>
+            <button class='flt-left'  onclick="slideLeft(this,1);"><i class="fa fa-circle-chevron-right" aria-hidden="true" style="color:red;font-size:25px"></i></button>
+                <div class="clear"></div>
+            </div>
         </div>
 
 
-<!-- footer code starts here -->
-<div class="footer_mainbox">
+  <!-- footer code starts here -->
+  <div class="footer_mainbox">
     <div><hr></div>
     
     <div class="footer_box">
-        <div  class="tedex_logo footer_sub_boxes" id="sub_box1"><img src="./Images/ted.png" alt="ted_image" id="ted_image" ></div>
-  
+        <div  class="tedex_logo footer_sub_boxes" id="sub_box1"><a href="https://www.iitg.ac.in/sa/tedxiitg"><img src="https://res.cloudinary.com/dtkm20qt9/image/upload/v1667908600/ted_nauf8g.png" alt="ted_image" id="ted_image" ></a></div>  
   
         <div class="footer_sub_boxes" id="sub_box2">
             <div class="headings_top"> <b>TEDxIITGuwahati </b> </div>
-            <div class="links">Home</div>
-            <div class="links">Talks</div>
-            <div class="links">About Us</div>
-            <div class="links">Contact Us</div>
+            <div class="links"><a href="./index.html">Home</a></div>
+            <div class="links"><a href="./Talks/Talks.html">Talks</a></div>
+            <div class="links"><a href="./About_Us/AboutUs.html">About Us</a></div>
+            <div class="links"><a href="./Contact_Us/ContactUs.html">Contact Us</a></div>
         </div>
   
   
   
         <div class="footer_sub_boxes" id="sub_box3">
             <div class="headings_top"> <b> Events</b></div>
-            <div class="links">TEDxIITGuwahati</div>
-            <div class="links"> TEDxIITGuwahati Studio</div>
+            <div class="links"><a href="./Talks/Talks.html">TEDxIITGuwahati</a></div>
+            <div class="links"> <a href="./Talks/Talks.html">TEDxIITGuwahati Studio</a></div>
         </div>
   
   
         <div class="footer_sub_boxes" id="sub_box4">
             <div class="headings_top" id="follow_us"> <b> Follow Us</b></div>
-            <div class=" links3">Facebook</div>
-            <div class=" links3">Instagram</div>
-            <div class=" links3">LinkedIn</div>
-            <div class=" links3">Twitter</div>
-            <div class=" links3">Medium</div>
+            <div class=" links3"><a href="https://www.facebook.com/TEDxIITGuwahati/" target="_blank">Facebook</a></div>
+            <div class=" links3"><a href="https://www.instagram.com/tedxiitguwahati/" target="_blank">Instagram</a></div>
+            <div class=" links3"><a href="https://www.linkedin.com/company/tedx-iit-guwahati" target="_blank">Linkedin</a></div>
+            <div class=" links3"><a href="https://twitter.com/tedxiitg" target="_blank">Twitter</a></div>
+            <div class=" links3"><a href="https://tedxiitguwahati.medium.com/" target="_blank">Medium</a></div>
         </div>
     </div>
     <div><hr ></div>
@@ -257,22 +319,14 @@
   
   </div>
   <!-- footer code ends here -->
-</body>
-  <script>
-    function changeMenu()
-      {
-        const leftMenu = document.getElementById('leftContainer');
-        leftMenu.classList.toggle('close');
-      } 
+  
 
-      function myFunction() 
-      {
-        document.getElementById("myDropdown").classList.toggle("close");
-      }
 
-      function myFunctionleft()
-      {
-        document.getElementById("myDropdownleft").classList.toggle("close");
-      }
-</script>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+
+  </body>
 </html>

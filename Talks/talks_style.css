@@ -4,21 +4,20 @@
 {
     display: flex;
     position: sticky;
-    top:0px;
-    background-color: black; 
-    opacity: 0.85;
-    transition:"padding-top" 0.5s ;
+    top: 0px;
+    width: -webkit-fill-available;
+    height: 110px;
+    background-color: rgba(0, 0, 0);
+    transition:"padding-top" 0.5s;
     padding-top: auto;
     padding-bottom: auto;
     z-index: 1;
-    transition: all 0.5s ease-in-out;
 }
 
 #logo
 {
-    display: inline;
+    height: 70px;
     margin: auto;
-    width: 260px;
 }
 
 
@@ -31,7 +30,6 @@
 
 .tabs
 {
-    background-color: black;
     color: white;
     margin: 17px 40px;
     padding: 10px 3px;
@@ -40,11 +38,12 @@
     transition: color 0.25s ease-in-out;
     text-decoration: none;
     font-weight: 500;
+    font-size: 14px;
 }
 
 .tabs:hover
 {
-    color: red;
+    color: #FF2B06;
     text-decoration: none;
 }
 
@@ -99,7 +98,7 @@
 
 .leftTabs:hover
 {
-    color: red;
+    color: #FF2B06;
     text-decoration: none;
 }
 
@@ -114,6 +113,7 @@
     margin:auto 200px;
     margin-bottom: 50px;
     cursor: pointer;
+    width: 20px;
 }
 
 .dropDownMenu
@@ -123,15 +123,14 @@
     display: flex;
     flex-direction: column;
     top: 10vh;
-    right: 25vw;
+    right: 23vw;
     border-radius: 4px;
     z-index: 1;
-    box-shadow:1px 0.5px 0.5px rgb(49, 49, 49);
 }
 
 #dropDownTabs
 {
-    margin: 13px ;
+    margin: 13px;
     transition: all 0.2s ease-in-out;
     letter-spacing: 0.05rem;
     color: white;
@@ -150,6 +149,11 @@
     flex-direction: column;
 }
 
+.card-container{
+    display:block;
+
+}
+
 #leftdropDownTabs
 {
     text-decoration: none;
@@ -163,12 +167,12 @@
 
 #dropDownTabs:hover
 {
-    color: red;
+    color: #FF2B06;
 }
 
 #leftdropDownTabs:hover
 {
-    color: red;
+    color: #FF2B06;
     cursor: pointer;
 }
 
@@ -179,7 +183,7 @@
 
 .active
 {
-    color: red;
+    color: #FF2B06;
 }
 
 
@@ -194,45 +198,83 @@
         display: block;
     }
 }
-/* Nav bar ends here  */
 
-.background_image{
-    background-image: url("./Images/image.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment: fixed;
-    background-position: center;
-    width: 100%;
-    margin:0px;
+@media only screen and (max-width: 480px) {
+    #logo
+    {
+        height: 50px;
+        margin: auto;
+    }
+
+    #toggleMenu
+{
+    margin:auto 20px;
+    width: 30px;
+    cursor: pointer;
 }
+}
+
+
+/* navbar ends */
+#main{
+    background-color: black;
+}
+
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@500&display=swap'); 
-#body{
+body{
     color: #FFFFFF;
-    font-family: 'Inter', sans-serif;
+    font-family: 'poppins', sans-serif;
     padding:  0px;
+    margin: 0px;
 }
-.card-content iframe{
+
+
+iframe{
     max-width: 225px;
     height: 155px;
 }
-.card-content img{
-    max-width: 225px;
-    height: 125px;
+.nominateBtn{
+    display: inline-block;
+    margin: 2% 0;
+    color: #FFFFFF;
+    text-decoration: none;
+    border-radius: 50px;
+    padding: 15px;
+    font-size: 15px;
+    background: linear-gradient(to left, red 50%, white 50%) right;
+    background-size: 200%;
+    transition: .5s ease-out;
 }
-body{
-    background-color: black;
+
+.nominateBtn:hover{
+    color:black;
+    background-position: left;
 }
+
+.body_content{
+    padding: 0 6%;
+}
+
+
 h3{
     font-style: normal;
     font-weight: 700;
-    font-size: 28px;
+    font-size: 26px;
     color: #F00F25;
     padding-bottom: 10px;
     border-bottom-style: solid;
     border-bottom-width: 3.1px;
     width: fit-content;
 }
-
+p{
+    font-family: unset;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 30px;
+    text-align: justify;
+    color: #FFFFFF;
+}
 
 .card{
     display: inline;
@@ -241,13 +283,28 @@ h3{
     padding: 10px;
     
 }
+.card-content iframe{
+    max-width: 275px;
+    height: 195px;
+}
+.card-content img{
+    max-width: 225px;
+    height: 125px;
+}
+
+#card1{
+    display: inline;
+    float: left;
+    align-items: center;
+    padding: 10px;
+}
+
 .card-content:hover{
     box-shadow: 2px 2px 50px rgba(255, 15, 0, 0.75);
 }
 .card-content{
-    width: 225px;
+    width: 265px;
     /* border: 1px solid #FFFFFF; */
-
     border-radius: 8px;
     padding: 20px;
 }
@@ -260,9 +317,18 @@ h3{
 .card-content p{
     font-family: 'Inter', sans-serif;
     font-style: normal;
-    font-weight: 700;
-    font-size: 15px;
-    line-height: 18px;
+    font-weight: 500;
+    font-size: 17.5px;
+    word-spacing: -0.15rem;
+    letter-spacing: 0.05rem;
+    line-height: 24px;
+}
+
+.thumbnail{
+    height:165px;
+    width:265px;
+    overflow:hidden;
+    cursor:pointer;
 }
 
 .swipe{
@@ -275,10 +341,13 @@ h3{
     float:left;
     }
     .carousel{
-    max-width:110%;
+    max-width:100%;
     display: flex;
     margin-top: 0%;
     max-height: 100%;
+    }
+    .carousel-2016 .row-container{
+        display: flex;
     }
     .row{
     width:100%;
@@ -305,160 +374,53 @@ h3{
     }
 
 
-.block{
-    font-weight: 700;
-    font-size: 380%;
-}
 
-.welcome{
-    padding-top: 9%;
-    margin: 0px 0px 0px 0px;
-    text-align: center;
-}
-
-.tedxiitg{
-    padding-top: 1%;
-    margin: 0px 0px 0px 0px;
-    text-align: center;
-}
-
-.and{
-    padding-top: 1%;
-    margin: 0px 0px 0px 0px;
-    text-align: center;
-}
-
-.studio{
-    padding-top: 1%;
-    margin: 0px 0px 0px 0px;
-    text-align: center;
-}
-
-.btn_nominate{
-    padding: 4% 0%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.nominate{
-    padding: 15px 20px;
-    border-radius: 23px;
-    border: none;
-    background-color: #FF2B06;
-    color: white;
-    letter-spacing: 0.5px;
-    overflow: hidden;
-}
-.nominateBtn{
-    display: inline-block;
-    color: #FFFFFF;
-    text-decoration: none;
-    border-radius: 50px;
-    padding: 15px;
-    font-size: 15px;
-    background: linear-gradient(to left, red 50%, white 50%) right;
-    background-size: 200%;
-    transition: .5s ease-out;
-}
-
-.nominateBtn:hover{
-    color:black;
-    background-position: left;
-}
-
-.main_content{
-    padding: 0 5%;
-}
-
-.about_tedx{
-    margin: 5% 0% 5% 0%;
-}
-
-.description_about{
-    color: white;
-    letter-spacing: 0.75px;
-    font-weight: 550;
-    font-size: 140%;
-}
-
-.heading_about{
-    color: #FF2B06;
-    margin-bottom: 0.75%;
-    margin-top: 0px;
-
-}
-
-.underline_about{
-    color: #FF2B06;
-}
-
-@media only screen and (max-width: 990px) {
-.block{
-    font-weight: 700;
-    font-size: 310%;
-}
-
-.description_about{
-    font-weight: 700;
-    font-size: 120%;
-}
-
-.heading_about{
-    font-size: 180%;
-}
-.nominateBtn{
-    font-size: 13px;
-    max-block-size: 15px;
-}
-}
-
-@media only screen and (max-width: 700px) {
-    .block{
-        font-weight: 700;
-        font-size: 250%;
+    @media only screen and (max-width: 440px) {
+        .card-content{
+            width: 225px;
+            border-radius: 8px;
+            padding: 20px;
+        }
+    
+        .thumbnail{
+            height:165px;
+            width:225px;
+            background: black url('./Images/thumbnail.png') no-repeat center;
+            overflow:hidden;
+            cursor:pointer;
+        }
+    
+        .card-content iframe{
+            max-width: 225px;
+            height: 195px;
+        }
     }
-    .description_about{
-        font-weight: 700;
-        font-size: 110%;
+    
+    
+    @media only screen and (max-width: 380px) {
+    
+        .card-content{
+            width: 215px;
+            border-radius: 8px;
+            padding: 20px;
+        }
+    
+        .thumbnail{
+            height:155px;
+            width:215px;
+            background: black url('./Images/thumbnail.png') no-repeat center;
+            overflow:hidden;
+            cursor:pointer;
+        }
+    
+        #card1{
+            margin-left: -10px;
+        }
     }
-    .nominateBtn{
-        font-size: 12px;
-        max-block-size: 12px;
-    }
-}
+    
+    
 
-@media only screen and (max-width: 500px) {
-    .block{
-        font-weight: 700;
-        font-size: 200%;
-    }
-    .description_about{
-        font-weight: 700;
-        font-size: 100%;
-    }
-    .nominateBtn{
-        font-size: 10px;
-        max-block-size: 9px;
-    }
-}
-
-@media only screen and (max-width: 380px) {
-    .block{
-        font-weight: 700;
-        font-size: 150%;
-    }
-    .description_about{
-        font-weight: 700;
-        font-size: 80%;
-    }
-    .nominateBtn{
-        font-size: 8px;
-        max-block-size: 6px;
-    }
-}
-
-
+    
 /* css for footer starts here */
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@500&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100&display=swap');

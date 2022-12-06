@@ -4,7 +4,6 @@
 * {
   font-family: "Inter", sans-serif;
   scroll-behavior: smooth;
-  background-color: black;
   color: white;
 }
 
@@ -14,17 +13,20 @@
 {
     display: flex;
     position: sticky;
-    top:0px;
-    background-color: black; 
-    opacity: 0.85;
+    top: 0px;
+    width: -webkit-fill-available;
+    height: 110px;
+    background-color: rgba(0, 0, 0);
+    transition:"padding-top" 0.5s;
+    padding-top: auto;
+    padding-bottom: auto;
     z-index: 1;
 }
 
 #logo
 {
-    display: inline;
+    height: 70px;
     margin: auto;
-    width: 260px;
 }
 
 
@@ -37,7 +39,6 @@
 
 .tabs
 {
-    background-color: black;
     color: white;
     margin: 17px 40px;
     padding: 10px 3px;
@@ -46,11 +47,12 @@
     transition: color 0.25s ease-in-out;
     text-decoration: none;
     font-weight: 500;
+    font-size: 14px;
 }
 
 .tabs:hover
 {
-    color: red;
+    color: #FF2B06;
     text-decoration: none;
 }
 
@@ -105,7 +107,7 @@
 
 .leftTabs:hover
 {
-    color: red;
+    color: #FF2B06;
     text-decoration: none;
 }
 
@@ -120,6 +122,7 @@
     margin:auto 200px;
     margin-bottom: 50px;
     cursor: pointer;
+    width: 20px;
 }
 
 .dropDownMenu
@@ -129,10 +132,9 @@
     display: flex;
     flex-direction: column;
     top: 10vh;
-    right: 26.5vw;
+    right: 23vw;
     border-radius: 4px;
     z-index: 1;
-    box-shadow:1px 0.5px 0.5px rgb(49, 49, 49);
 }
 
 #dropDownTabs
@@ -156,6 +158,11 @@
     flex-direction: column;
 }
 
+.card-container{
+    display:block;
+
+}
+
 #leftdropDownTabs
 {
     text-decoration: none;
@@ -169,12 +176,12 @@
 
 #dropDownTabs:hover
 {
-    color: red;
+    color: #FF2B06;
 }
 
 #leftdropDownTabs:hover
 {
-    color: red;
+    color: #FF2B06;
     cursor: pointer;
 }
 
@@ -185,7 +192,7 @@
 
 .active
 {
-    color: red;
+    color: #FF2B06;
 }
 
 
@@ -200,19 +207,31 @@
         display: block;
     }
 }
+
+@media only screen and (max-width: 480px) {
+    #logo
+    {
+        height: 50px;
+        margin-left: 2%;
+    }
+
+    #toggleMenu
+{
+    margin:auto 20px;
+    width: 30px;
+    cursor: pointer;
+}
+}
+
+
 /* navbar ends here */
 
+
+
+
+
+
 /* data box starts here */
-
-
-
-
-
-
-
-
-
-
 
 
 #box2_heading1{
@@ -269,7 +288,7 @@
       }
       
       .data_content{
-        font-size: 125%;
+        font-size: 115%;
         /* margin: 5% 0% 0 0; */
         line-height:35px;
         margin-bottom: 3%;

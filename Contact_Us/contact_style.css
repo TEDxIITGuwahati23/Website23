@@ -22,10 +22,16 @@ section{
     width: auto;
     margin:3rem 0 5rem ;
 }
+.social-icon{
+    transition: fill 0.5s;
+}
+.icon-cta:hover .social-icon{
+    fill:red;
+}
 .cred{
     display: flex;
     flex-direction: row;
-    margin:0.5rem 0 0.5rem ;
+    margin:0.5rem 0 0.5rem;
 }
 
 .heading{
@@ -60,21 +66,23 @@ input{
 }
 .button {
     width: 7rem;
-    background-color: #f4511e;
+    background-color: #FF2B06;
     border: none;
     border-radius: 10px;
-    color: black;
+    color: white;
     padding: .3rem 0 .3rem;
     text-align: center;
     font-size: 25px;
-    opacity: 0.6;
     transition: 0.3s;
     display: inline-block;
     text-decoration: none;
     cursor: pointer;
   }
   
-  .button:hover {opacity: 1}
+  .button:hover {
+    background-color: white;
+    color: #000000;
+}
 
 p{  
     margin: 0px;
@@ -114,11 +122,11 @@ h1{
 {
     display: flex;
     position: sticky;
-    top:0px;
-    background-color: black; 
-    margin: -20px auto;
-    opacity: 0.85;
-    transition:"padding-top" 0.5s ;
+    top: 0px;
+    width: -webkit-fill-available;
+    height: 110px;
+    background-color: rgba(0, 0, 0);
+    transition:"padding-top" 0.5s;
     padding-top: auto;
     padding-bottom: auto;
     z-index: 1;
@@ -126,9 +134,8 @@ h1{
 
 #logo
 {
-    display: inline;
+    height: 70px;
     margin: auto;
-    width: 260px;
 }
 
 
@@ -141,7 +148,6 @@ h1{
 
 .tabs
 {
-    background-color: black;
     color: white;
     margin: 17px 40px;
     padding: 10px 3px;
@@ -150,11 +156,12 @@ h1{
     transition: color 0.25s ease-in-out;
     text-decoration: none;
     font-weight: 500;
+    font-size: 14px;
 }
 
 .tabs:hover
 {
-    color: red;
+    color: #FF2B06;
     text-decoration: none;
 }
 
@@ -209,7 +216,7 @@ h1{
 
 .leftTabs:hover
 {
-    color: red;
+    color: #FF2B06;
     text-decoration: none;
 }
 
@@ -224,6 +231,7 @@ h1{
     margin:auto 200px;
     margin-bottom: 50px;
     cursor: pointer;
+    width: 20px;
 }
 
 .dropDownMenu
@@ -233,10 +241,9 @@ h1{
     display: flex;
     flex-direction: column;
     top: 10vh;
-    right: 26.5vw;
+    right: 23vw;
     border-radius: 4px;
     z-index: 1;
-    box-shadow:1px 0.5px 0.5px rgb(49, 49, 49);
 }
 
 #dropDownTabs
@@ -260,6 +267,11 @@ h1{
     flex-direction: column;
 }
 
+.card-container{
+    display:block;
+
+}
+
 #leftdropDownTabs
 {
     text-decoration: none;
@@ -273,12 +285,12 @@ h1{
 
 #dropDownTabs:hover
 {
-    color: red;
+    color: #FF2B06;
 }
 
 #leftdropDownTabs:hover
 {
-    color: red;
+    color: #FF2B06;
     cursor: pointer;
 }
 
@@ -289,7 +301,7 @@ h1{
 
 .active
 {
-    color: red;
+    color: #FF2B06;
 }
 
 
@@ -304,6 +316,23 @@ h1{
         display: block;
     }
 }
+
+@media only screen and (max-width: 480px) {
+    #logo
+    {
+        height: 50px;
+        margin: auto;
+    }
+
+    #toggleMenu
+{
+    margin:auto 20px;
+    width: 30px;
+    cursor: pointer;
+}
+}
+
+
 /* navbar ends here */
 
 

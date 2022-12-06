@@ -3,14 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="../common.css">
+    <link rel="stylesheet" href="studio_style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 </head>
 <body bgcolor="black"> 
 
     <!-- navBar -->
     <nav id="primary">
-        <img id="logo" src="../Images/TEDx logo.png" alt="TEDx logo">
+        <img id="logo" src="../Images/TEDxlogo2.svg" alt="TEDx logo">
         <div id="list">
             <a href="../index.html" class="tabs">HOME</a>
             <a class="tabs active" onclick="myFunction()" id="talksTab">TALKS</a>
@@ -38,79 +41,54 @@
     </div>
 
 <div class="main_body">
-        <h3 style="padding-top: 20px;">TEDxIITGuwahatiStudio</h3>
-        <p>
+        <h3 style="padding-top: 20px;" data-aos="fade-up" data-aos-easing="ease-in" data-aos-duration="1200">TEDxIITGuwahatiStudio</h3>
+        <p data-aos="fade-up" data-aos-easing="ease-in" data-aos-duration="1200">
             Do you have your own idea or perspective, you believe, needs to be shared?
-    <br><br>
-    Do you wish to be a tedx speaker at our event?
-    <br><br>
-    We invite you to submit a speaker nomination!
-    <br><br>
-    To nominate yourself as a speaker for our tedx event, fill out the speaker nomination form. kindly keep in mind that our curators will choose speakers at their discretion, based on the ideal fit to our theme. once submitted, all nominations will remain in our speaker database for further consideration, as we plan our upcoming flagship event in February 2022.
+            <br><br>
+            Do you wish to be a tedx speaker at our event?
+            <br><br>
+            We invite you to submit a speaker nomination!
+            <br><br>
+            To nominate yourself as a speaker for our tedx event, fill out the speaker nomination form. kindly keep in mind that our curators will choose speakers at their discretion, based on the ideal fit to our theme. once submitted, all nominations will remain in our speaker database for further consideration, as we plan our upcoming flagship event in February 2022.
         </p>
 
-        <a href="https://form.typeform.com/to/FME8FL15" target="_blank" class="nominateBtn">Fill Here &nbsp<i class="fa-solid fa-arrow-right">&nbsp</i></a>
-        <h3>2022 EVENTS TALK</h3>
-        <div class="carousel">
+        <a href="https://form.typeform.com/to/FME8FL15" target="_blank" class="nominateBtn" data-aos="fade-up" data-aos-easing="ease-in" data-aos-duration="1200">Fill Here &nbsp<i class="fa-solid fa-arrow-right">&nbsp</i></a>
+        <h3 data-aos="fade-left" data-aos-easing="ease-in" data-aos-duration="1200">2021 EVENTS TALK</h3>
+        <div class="carousel" data-aos="fade-right" data-aos-easing="ease-in" data-aos-duration="1200">
             <button class='flt-left' onclick="slideRight(this,0);"><i class="fa fa-circle-chevron-left" aria-hidden="true" style="color:red;font-size:25px"></i></button>
             <div class="row flt-left">
             <div class="row-container row-container1">
             <div class="card">
-                    <div class="card-content">
-                        <iframe src="https://www.youtube.com/embed/FEHbet4YX78" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                        <h5>Dr. Baland Jalal</h5>
-                        <p>Nuclear power is our best hope to ditch fossil fuels...</p>
-                    </div>
+                <div class="card-content">
+                    <div onclick="play(id);" id="FmR7NaYtUnY" class="thumbnail" style="background: black url('../Images/studio_speakers/speaker3.jpg') no-repeat center;"></div>
+                    <h5>Helia Singh</h5>
+                    <p>Flip the Coin and ask "Why Not"</p>
+                </div>
+            </div>
+           
+            <div class="card">
+                <div class="card-content">
+                    <div onclick="play(id);" id="m2Oue_AMEEM" class="thumbnail" style="background: black url('../Images/studio_speakers/Akshita.png') no-repeat center;"></div>
+                    <h5>Akshita Jain</h5>
+                    <p>The Jungle always watches you .</p>
+                </div>
             </div>
             <div class="card">
                 <div class="card-content">
-                    <iframe src="https://www.youtube.com/embed/gtG7dUZK7PM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                    <h5>Pritam Patra</h5>
-                    <p>Nuclear power is our best hope to ditch fossil fuels...</p>
+                    <div onclick="play(id);" id="V1DOdQfPsgg" class="thumbnail" style="background: black url('../Images/studio_speakers/speaker2.jpg')  no-repeat center;"></div>
+                    <h5>Binayak Acharya</h5>
+                    <p>Changing how we learn and bridging the digital divide</p>
                 </div>
-        </div>
-        <div class="card">
-            <div class="card-content">
-                <iframe src="https://www.youtube.com/embed/bIbuzgdCYtg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                <h5>Parvathy Sailesh</h5>
-                <p>Nuclear power is our best hope to ditch fossil fuels...</p>
             </div>
-    </div>
-    <div class="card">
-        <div class="card-content">
-            <iframe src="https://www.youtube.com/embed/l-TnmjqTlec" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-            <h5>Abhimanyu Singh</h5>
-            <p>Nuclear power is our best hope to ditch fossil fuels...</p>
-        </div>
-    </div>
-    <div class="card">
-        <div class="card-content">
-            <iframe src="https://www.youtube.com/embed/4Gc_-_Ngfxk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-            <h5>Rishabh Jain and Mandeep Gill</h5>
-            <p>Nuclear power is our best hope to ditch fossil fuels...</p>
-        </div>
-    </div>
-    <div class="card">
-        <div class="card-content">
-            <iframe src="https://www.youtube.com/embed/jruIzjq6q54" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-            <h5>Rohan Agrawal</h5>
-            <p>Nuclear power is our best hope to ditch fossil fuels...</p>
-        </div>
-    </div>
-    <div class="card">
-        <div class="card-content">
-            <iframe src="https://www.youtube.com/embed/SebJfNFOSnY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-            <h5>Dr. Sawmya Ray</h5>
-            <p>Nuclear power is our best hope to ditch fossil fuels...</p>
-        </div>
-    </div>
-    <div class="card">
-        <div class="card-content">
-            <iframe src="https://www.youtube.com/embed/z0ZiINCpID0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-            <h5>Richard James MacCowan</h5>
-            <p>Nuclear power is our best hope to ditch fossil fuels...</p>
-        </div>
-    </div>  
+            <div class="card">
+                <div class="card-content">
+                    <div onclick="play(id);" id="SAq8Ad_KgIc" class="thumbnail" style="background: black url('../Images/studio_speakers/speaker1.jpg')  no-repeat center;"></div>
+                    <h5>VR Raman</h5>
+                    <p>How multilayer discrimination shapes manual scavenging?</p>
+                </div>
+            </div>
+            
+                                 
             <div class="clear"></div>
             </div>
             
@@ -127,33 +105,33 @@
     <div><hr></div>
     
     <div class="footer_box">
-        <div  class="tedex_logo footer_sub_boxes" id="sub_box1"><img src="../Images/ted.png" alt="ted_image" id="ted_image" ></div>
+        <div  class="tedex_logo footer_sub_boxes" id="sub_box1"><a href="https://www.iitg.ac.in/sa/tedxiitg"><img src="https://res.cloudinary.com/dtkm20qt9/image/upload/v1667908600/ted_nauf8g.png" alt="ted_image" id="ted_image" ></a></div>  
   
   
         <div class="footer_sub_boxes" id="sub_box2">
             <div class="headings_top"> <b>TEDxIITGuwahati </b> </div>
-            <div class="links">Home</div>
-            <div class="links">Talks</div>
-            <div class="links">About Us</div>
-            <div class="links">Contact Us</div>
+            <div class="links"><a href="../index.html">Home</a></div>
+            <div class="links"><a href="../Talks/Talks.html">Talks</a></div>
+            <div class="links"><a href="../About_Us/AboutUs.html">About Us</a></div>
+            <div class="links"><a href="../Contact_Us/ContactUs.html">Contact Us</a></div>
         </div>
   
   
   
         <div class="footer_sub_boxes" id="sub_box3">
             <div class="headings_top"> <b> Events</b></div>
-            <div class="links">TEDxIITGuwahati</div>
-            <div class="links"> TEDxIITGuwahati Studio</div>
+            <div class="links"><a href="../Talks/Talks.html">TEDxIITGuwahati</a></div>
+            <div class="links"> <a href="../Talks_Studio/Talks_Studio.html">TEDxIITGuwahati Studio</a></div>
         </div>
   
   
         <div class="footer_sub_boxes" id="sub_box4">
             <div class="headings_top" id="follow_us"> <b> Follow Us</b></div>
-            <div class=" links3">Facebook</div>
-            <div class=" links3">Instagram</div>
-            <div class=" links3">LinkedIn</div>
-            <div class=" links3">Twitter</div>
-            <div class=" links3">Medium</div>
+            <div class=" links3"><a href="https://www.facebook.com/TEDxIITGuwahati/" target="_blank">Facebook</a></div>
+            <div class=" links3"><a href="https://www.instagram.com/tedxiitguwahati/" target="_blank">Instagram</a></div>
+            <div class=" links3"><a href="https://www.linkedin.com/company/tedx-iit-guwahati" target="_blank">Linkedin</a></div>
+            <div class=" links3"><a href="https://twitter.com/tedxiitg" target="_blank">Twitter</a></div>
+            <div class=" links3"><a href="https://tedxiitguwahati.medium.com/" target="_blank">Medium</a></div>
         </div>
     </div>
     <div><hr ></div>
@@ -171,74 +149,12 @@
   </div>
   <!-- footer code ends here -->
 
+    <script src="./studio.js">
 
-
-
-
-                
-    <script>
-
-        var right = [0,0,0,0];
-        var maxMargin=[];
-        var jumpMargin = 150;
-
-        function setWidth(){
-        var boxwidth = document.querySelector(".card").offsetWidth;
-        var displaywidth = document.querySelector(".row").offsetWidth;
-        var displayheight = document.querySelector(".card").offsetHeight;
-        let x=document.querySelectorAll(".row-container");
-        for (let i=0;i<x.length;i++){
-            var children = document.querySelectorAll(".row-container"+(i+1).toString()+" > .card").length;
-            x[i].style.width = children * boxwidth+"px";
-            maxMargin.push((children)*boxwidth - displaywidth);
-        }
-        document.querySelectorAll("button")[0].style.height = displayheight+"px";
-        document.querySelectorAll("button")[1].style.height = displayheight+"px";
-        }
-
-        function slideLeft(event,i){
-        var rowcont = document.querySelectorAll(".row-container")[i];
-        if(right[i] <= -maxMargin[i]){
-            event.preventDefault();
-        }
-        else{
-            right[i] -= jumpMargin;
-        }
-        rowcont.style.marginLeft = right[i]+"px";
-        }
-
-        function slideRight(event,i){
-        var rowcont = document.querySelectorAll(".row-container")[i];
-        if(right[i]==0){
-            event.preventDefault();
-        }
-        else if(right[i] >= maxMargin[i]){
-            event.preventDefault();
-        }
-        else{
-            right[i] += jumpMargin;
-        }
-        rowcont.style.marginLeft = right[i]+"px";
-        }
-
-        window.onload=setWidth;
-
-        function changeMenu()
-      {
-        const leftMenu = document.getElementById('leftContainer');
-        leftMenu.classList.toggle('close');
-      } 
-
-      function myFunction() 
-      {
-        document.getElementById("myDropdown").classList.toggle("close");
-      }
-
-      function myFunctionleft()
-      {
-        document.getElementById("myDropdownleft").classList.toggle("close");
-      }
     </script>
-    
+        <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+        <script>
+            AOS.init();
+        </script>
 </body>
 </html>

@@ -4,10 +4,11 @@
 {
     display: flex;
     position: sticky;
-    top:0px;
-    background-color: black; 
-    opacity: 0.85;
-    transition:"padding-top" 0.5s ;
+    top: 0px;
+    width: -webkit-fill-available;
+    height: 110px;
+    background-color: rgba(0, 0, 0);
+    transition:"padding-top" 0.5s;
     padding-top: auto;
     padding-bottom: auto;
     z-index: 1;
@@ -15,9 +16,8 @@
 
 #logo
 {
-    display: inline;
+    height: 70px;
     margin: auto;
-    width: 260px;
 }
 
 
@@ -30,7 +30,6 @@
 
 .tabs
 {
-    background-color: black;
     color: white;
     margin: 17px 40px;
     padding: 10px 3px;
@@ -39,11 +38,12 @@
     transition: color 0.25s ease-in-out;
     text-decoration: none;
     font-weight: 500;
+    font-size: 14px;
 }
 
 .tabs:hover
 {
-    color: red;
+    color: #FF2B06;
     text-decoration: none;
 }
 
@@ -75,7 +75,7 @@
     width: 260px;
     z-index: 1;
     opacity: 1;
-    transition:all 1s ease-in-out;
+    transition: all 4s ease-in-out;
 }
 
 
@@ -98,7 +98,7 @@
 
 .leftTabs:hover
 {
-    color: red;
+    color: #FF2B06;
     text-decoration: none;
 }
 
@@ -113,6 +113,7 @@
     margin:auto 200px;
     margin-bottom: 50px;
     cursor: pointer;
+    width: 20px;
 }
 
 .dropDownMenu
@@ -122,10 +123,9 @@
     display: flex;
     flex-direction: column;
     top: 10vh;
-    right: 25vw;
+    right: 23vw;
     border-radius: 4px;
     z-index: 1;
-    box-shadow:1px 0.5px 0.5px rgb(49, 49, 49);
 }
 
 #dropDownTabs
@@ -149,6 +149,11 @@
     flex-direction: column;
 }
 
+.card-container{
+    display:block;
+
+}
+
 #leftdropDownTabs
 {
     text-decoration: none;
@@ -162,12 +167,12 @@
 
 #dropDownTabs:hover
 {
-    color: red;
+    color: #FF2B06;
 }
 
 #leftdropDownTabs:hover
 {
-    color: red;
+    color: #FF2B06;
     cursor: pointer;
 }
 
@@ -178,7 +183,7 @@
 
 .active
 {
-    color: red;
+    color: #FF2B06;
 }
 
 
@@ -193,6 +198,22 @@
         display: block;
     }
 }
+
+@media only screen and (max-width: 480px) {
+    #logo
+    {
+        height: 50px;
+        margin: auto;
+    }
+
+    #toggleMenu
+{
+    margin:auto 20px;
+    width: 30px;
+    cursor: pointer;
+}
+}
+
 /* Nav bar ends here  */
 
 
@@ -208,7 +229,7 @@ iframe{
 }
 .nominateBtn{
     display: inline-block;
-    margin: 5% 0;
+    margin: 2% 0;
     color: #FFFFFF;
     text-decoration: none;
     border-radius: 50px;
@@ -240,10 +261,9 @@ h3{
     width: fit-content;
 }
 p{
-    font-family: 'Inter';
     font-style: normal;
     font-weight: 500;
-    font-size: 22px;
+    font-size: 19px;
     line-height: 30px;
     text-align: justify;
     color: #FFFFFF;
@@ -256,18 +276,34 @@ p{
     padding: 10px;
     
 }
+.card-content iframe{
+    max-width: 275px;
+    height: 195px;
+}
+.card-content img{
+    max-width: 225px;
+    height: 125px;
+}
+
+#card1{
+    display: inline;
+    float: left;
+    align-items: center;
+    padding: 10px;
+}
+
 .card-content:hover{
     box-shadow: 2px 2px 50px rgba(255, 15, 0, 0.75);
 }
 .card-content{
-    width: 225px;
+    width: 265px;
     /* border: 1px solid #FFFFFF; */
-
     border-radius: 8px;
     padding: 20px;
 }
 .card-content h5{
     font-family: 'Inter', sans-serif;
+    text-align: center;
     font-style: normal;
     font-weight: 700;
     font-size: 20px;
@@ -275,9 +311,19 @@ p{
 .card-content p{
     font-family: 'Inter', sans-serif;
     font-style: normal;
-    font-weight: 700;
+    text-align: center;
+    font-weight: 500;
+    word-spacing: -0.1rem;
+    letter-spacing: 0.05rem;
+    line-height: 20px;
     font-size: 15px;
-    line-height: 18px;
+}
+
+.thumbnail{
+    height:165px;
+    width:265px;
+    overflow:hidden;
+    cursor:pointer;
 }
 
 .swipe{
@@ -318,6 +364,50 @@ p{
     outline:none;
     background: none;
     }
+
+    
+@media only screen and (max-width: 440px) {
+    .card-content{
+        width: 225px;
+        border-radius: 8px;
+        padding: 20px;
+    }
+
+    .thumbnail{
+        height:165px;
+        width:225px;
+        background: black url('./Images/thumbnail.png') no-repeat center;
+        overflow:hidden;
+        cursor:pointer;
+    }
+
+    .card-content iframe{
+        max-width: 225px;
+        height: 195px;
+    }
+}
+
+
+@media only screen and (max-width: 380px) {
+
+    .card-content{
+        width: 215px;
+        border-radius: 8px;
+        padding: 20px;
+    }
+
+    .thumbnail{
+        height:155px;
+        width:215px;
+        background: black url('./Images/thumbnail.png') no-repeat center;
+        overflow:hidden;
+        cursor:pointer;
+    }
+
+    #card1{
+        margin-left: -10px;
+    }
+}
 
 
 

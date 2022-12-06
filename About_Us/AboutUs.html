@@ -4,17 +4,18 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../common.css">
     <link rel="stylesheet" href="AboutUs_style.css">
   
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.1/font/bootstrap-icons.css">
-
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 
     <title>Document</title>
 </head>
 <body>
 <!-- Navbar -->
 <nav id="primary">
-    <img id="logo" src="../Images/TEDx logo.png" alt="TEDx logo">
+    <img id="logo" src="../Images/TEDxlogo2.svg" alt="TEDx logo">
     <div id="list">
       <a href="../index.html" class="tabs">HOME</a>
       <a class="tabs" onclick="myFunction()">TALKS</a>
@@ -43,8 +44,8 @@
 <!-- navbar ends -->
     <!-- data box starts here  -->
     <div  class="main_data_box">
-        <div class="data_heading" id="box1_heading1">WHAT IS TED?</div>
-        <div class="content_1stcolumn">
+        <div class="data_heading" id="box1_heading1" data-aos="fade-up" data-aos-easing="ease-in" data-aos-duration="1200">WHAT IS TED?</div>
+        <div class="content_1stcolumn" data-aos="fade-up" data-aos-easing="ease-in" data-aos-duration="1200">
             <div  class="data_content class_width" id="box1_column1"> TED, as it reads Technology, Entertainment, and Design - is a nonprofit organization performing live talks dedicated to the spread of ideas empowered by knowledge at its absolute core. It caters to varied talking points in terms of the fields it deals with, which can be extendable to any possible abstraction from experiences worth sharing. However, at the same time, each experience shared is highly specific to the motive and concrete about the content of the subject. Talks intended with purpose and information are what inspired TED to bring it to the ground and the people.</div>
 
             <div  class="data_content class_width" id="box1_column2" >All of this may sound too heavy and intense for a first-time listener but here comes the fun part - it's NOT! One may end up binging TED talks when they just want some food for thought for the field of their choice. And the best part is, that, one can always explore.
@@ -52,7 +53,7 @@
                 It’s fun because TED talks come with a character - of its speaker and the speaker’s story, place, and incidents involved. Hence, one ends up knowing a lot more than they would expect. It’s a perception of all aspects of an anecdote and one genuinely gets driven by the direction of the story, and what was intended as a big or small tangible change is served.</div>
         </div>
 
-        <div class="content_2ndcolumn">
+        <div class="content_2ndcolumn" data-aos="fade-up" data-aos-easing="ease-in" data-aos-duration="1200">
             <div  id="secondcolumn_box1" class="class_width">
                 <div class="data_heading" id="box2_heading1">WHAT IS TEDx?</div>
                 <div class="data_content" id="box2_column1">TED, when independently organized by a group of organizations, community, or an institution is licensed as TEDx. As much as it promises autonomy, such events continue to adhere to the principles of an ideal TED talk. It’s not only diverse but also spreads the reach. <br><br>
@@ -69,103 +70,136 @@
         </div>
 
     </div>
-    <div id="the_team_text">  The Team</div>
-    <div class="team_heads_box">
+    <div id="the_team_text" data-aos="fade-up" data-aos-easing="ease-in" data-aos-duration="1200">  The Team</div>
+    <div class="team_heads_box" data-aos="fade-up" data-aos-easing="ease-in" data-aos-duration="1200">
         <div class="head_card" id="head_card1" onmouseenter="myfunction1()" onmouseleave="myfunction2()">
             <img src="../Images/pramiti2.jpg" alt="image" class="image_class" >
             <div class="intro">
                 <div class="head_name  " id="head_name1">Pramiti Gupta</div>
                 <div class="head_desg" id="head_desg1" ><h3>Overall Coordinator</h3></div>
-                <div class="head_desc" id="head_desc1">A keen observant and a physics enthusiast, she is determined toward her goals. As a big picture person and a good listener, she likes collecting viewpoints on anything under the sun. She can be found spending her leisure time reading books and watching k-dramas. Thoroughly enjoys theatres, dance performances, concerts and exhibitions. <br> <br> <a href="https://www.instagram.com/pramiti_04/"><i class="bi bi-instagram color_icon"></i></a> 
-                    <a href="https://www.linkedin.com/in/pramiti-gupta07/"><i class="bi bi-linkedin color_icon"></i></a>  </div>
+                <div class="head_desc" id="head_desc1">A keen observant and a physics enthusiast, she is determined toward her goals. 
+                  She likes collecting viewpoints on anything under the sun. She can be found 
+                  spending her leisure time reading books and watching k-dramas. Thoroughly enjoys theatres, concerts and exhibitions. 
+                  <br> <br> 
+                  <a href="https://www.instagram.com/pramiti_04/"><i class="bi bi-instagram color_icon"></i></a> 
+                  <a href="https://www.linkedin.com/in/pramiti-gupta07/"><i class="bi bi-linkedin color_icon"></i></a>  </div>
             </div>
         </div>
 
 <!-- ///////// -->
-<div class="head_card" id="head_card1" onmouseenter="myfunction1()" onmouseleave="myfunction2()">
+<div class="head_card" id="head_card1" onmouseenter="myfunction1()" onmouseleave="myfunction2()" data-aos="fade-up" data-aos-easing="ease-in" data-aos-duration="1200">
     <img src="../Images/kavin.jpg" alt="image" class="image_class">
     <div class="intro" id="intro_kavin">
         <div class="head_name  " id="head_name1">Kavin Manimudichozhan</div>
         <div class="head_desg" id="head_desg1" ><h3>Speakers Head</h3></div>
-        <div class="head_desc" id="head_desc1">A thinker and a philosopher lost in the labyrinth of science and technology. Always ready to ponder over ideas in depth, sometimes farther than advised. He is the jack of all trades hoping to master a few. An ardent music, movie and cricket lover. Calm and cool at most times, quirkiness sinks in with the right company.  <br> <br> <a href="https://www.facebook.com/kavin.manimudichozhan/"><i class="bi bi-facebook color_icon"></i></a> 
-            <a href="https://www.instagram.com/starknight_002/"><i class="bi bi-instagram color_icon"></i></a> </div>
+        <div class="head_desc" id="head_desc1">A thinker and a philosopher lost in the labyrinth of science and technology. 
+          He is the jack of all trades hoping to master a few. 
+          An ardent music, movie and cricket lover. Calm and cool at most times, quirkiness sinks in with the right company.  
+          <br><br>
+          <a href="https://www.facebook.com/kavin.manimudichozhan/"><i class="bi bi-facebook color_icon"></i></a> 
+          <a href="https://www.instagram.com/starknight_002/"><i class="bi bi-instagram color_icon"></i></a> </div>
     </div>
 </div>
       <!-- /////////// -->
-      <div class="head_card" id="head_card1" onmouseenter="myfunction1()" onmouseleave="myfunction2()">
+      <div class="head_card" id="head_card1" onmouseenter="myfunction1()" onmouseleave="myfunction2()" data-aos="fade-up" data-aos-easing="ease-in" data-aos-duration="1200">
         <img src="../Images/parth.jpg" alt="image" class="image_class">
         <div class="intro">
             <div class="head_name  " id="head_name1">Parth Rathod</div>
             <div class="head_desg" id="head_desg1" ><h3>Marketing Head</h3></div>
-            <div class="head_desc" id="head_desc1">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tempora repellendus vero qui voluptates aperiam. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Recusandae odit amet placeat! Id sed minima modi aliquam impedit quam, dignissimos cupiditate labore consectetur placeat facere, deserunt reprehenderit voluptate, rerum ratione laborum accusantium omnis?</div>
+            <div class="head_desc" id="head_desc1">
+            <a href="https://www.linkedin.com/in/parth-rathod-50a23a206/"><i class="bi bi-linkedin color_icon"></i></a> 
+            <a href="https://www.instagram.com/pxrth____358/"><i class="bi bi-instagram color_icon"></i></a> 
+            </div>
         </div>
     </div>
       <!-- /////////////////// -->
-      <div class="head_card" id="head_card1" onmouseenter="myfunction1()" onmouseleave="myfunction2()">
+      <div class="head_card" id="head_card1" onmouseenter="myfunction1()" onmouseleave="myfunction2()" data-aos="fade-up" data-aos-easing="ease-in" data-aos-duration="1200">
         <img src="../Images/shashank.jpg" alt="image" class="image_class">
         <div class="intro">
             <div class="head_name  " id="head_name1">Shashank Mishra</div>
             <div class="head_desg" id="head_desg1" ><h3>Design Head</h3></div>
-            <div class="head_desc" id="head_desc1">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tempora repellendus vero qui voluptates aperiam. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Recusandae odit amet placeat! Id sed minima modi aliquam impedit quam, dignissimos cupiditate labore consectetur placeat facere, deserunt reprehenderit voluptate, rerum ratione laborum accusantium omnis?  </div>
+            <div class="head_desc" id="head_desc1">
+            <a href="https://www.linkedin.com/in/shashank-mishra-546328205/"><i class="bi bi-linkedin color_icon"></i></a> 
+            <a href="https://www.instagram.com/_____ishashank__/"><i class="bi bi-instagram color_icon"></i></a>
+            </div>
         </div>
     </div>
       <!--  -->
-      <div class="head_card" id="head_card1" onmouseenter="myfunction1()" onmouseleave="myfunction2()">
+      <div class="head_card" id="head_card1" onmouseenter="myfunction1()" onmouseleave="myfunction2()" data-aos="fade-up" data-aos-easing="ease-in" data-aos-duration="1200">
         <img src="../Images/Abhiram2.jpg" alt="image" class="image_class">
         <div class="intro">
             <div class="head_name  " id="head_name1">Abhiram Goud Bingi</div>
             <div class="head_desg" id="head_desg1" ><h3>Web Ops Head</h3></div>
-            <div class="head_desc" id="head_desc1">His enthusiasm and love for technology are the qualities that set him apart. Whenever He sees a website, he can't help but think of ways to hack it. A passionate Web developer and a Cyber security enthusiastic who loves to build Websites and avidly take part in bug bounty programs. Code and caffeine are his addictions. <br> <br> <a href="https://www.facebook.com/bingi.abhiram/"><i class="bi bi-facebook color_icon"></i></a> 
-                <a href="https://www.instagram.com/bingi_abhiram_goud/"><i class="bi bi-instagram color_icon"></i></a> <a href="https://twitter.com/AbhiramBingi"><i class="bi bi-twitter color_icon"></i></a> <a href="https://www.linkedin.com/in/abhiram-bag003/"><i class="bi bi-linkedin color_icon"></i></a> </div>
+            <div class="head_desc" id="head_desc1">His enthusiasm and love for technology are the qualities that set him apart. 
+              A passionate Web developer and a Cyber security enthusiastic who loves to build Websites and avidly take part in bug bounty programs. Code and caffeine are his addictions. 
+              <br> <br> 
+              <a href="https://www.facebook.com/bingi.abhiram/"><i class="bi bi-facebook color_icon"></i></a> 
+              <a href="https://www.instagram.com/bingi_abhiram_goud/"><i class="bi bi-instagram color_icon"></i></a> 
+              <a href="https://twitter.com/AbhiramBingi"><i class="bi bi-twitter color_icon"></i></a>
+              <a href="https://www.linkedin.com/in/abhiram-bag003/"><i class="bi bi-linkedin color_icon"></i></a> 
+            </div>
         </div>
     </div>
       <!--  -->
-      <div class="head_card" id="head_card1" onmouseenter="myfunction1()" onmouseleave="myfunction2()">
+      <div class="head_card" id="head_card1" onmouseenter="myfunction1()" onmouseleave="myfunction2()" data-aos="fade-up" data-aos-easing="ease-in" data-aos-duration="1200">
         <img src="../Images/Nandini.jpg" alt="image" class="image_class">
         <div class="intro">
             <div class="head_name  " id="head_name1">Nandini Sharma</div>
             <div class="head_desg" id="head_desg1" ><h3>Content Head</h3></div>
-            <div class="head_desc" id="head_desc1">Happiness comes in small packages, and she is most definitely the smallest package one would find out there. Always found as giggling and chatting. Loves to talk and make friends. Always ready to discuss anime, BlackPink and new ideas. <br> <br> <a href="https://www.linkedin.com/in/snandini050/"><i class="bi bi-linkedin color_icon"></i></a> 
-                <a href="https://www.instagram.com/__bc__efgh__jklm__opqrstuvwxyz/?utm_source=qr"><i class="bi bi-instagram color_icon"></i></a> </div>
+            <div class="head_desc" id="head_desc1">Happiness comes in small packages, and she is most definitely the smallest package one would 
+              find out there. Always found as giggling and chatting. Loves to talk and make friends. Always ready to discuss anime, BlackPink and 
+              new ideas. 
+              <br> <br> <a href="https://www.linkedin.com/in/snandini050/"><i class="bi bi-linkedin color_icon"></i></a> 
+                <a href="https://www.instagram.com/__bc__efgh__jklm__opqrstuvwxyz/?utm_source=qr"><i class="bi bi-instagram color_icon"></i></a> 
+              </div>
         </div>
     </div>
       <!--  -->
-      <div class="head_card" id="head_card1" onmouseenter="myfunction1()" onmouseleave="myfunction2()">
+      <div class="head_card" id="head_card1" onmouseenter="myfunction1()" onmouseleave="myfunction2()" data-aos="fade-up" data-aos-easing="ease-in" data-aos-duration="1200">
         <img src="../Images/sreelakshmi.jpg" alt="image" class="image_class">
         <div class="intro">
             <div class="head_name  " id="head_name1">Sreelakshmi Aneesh</div>
             <div class="head_desg" id="head_desg1" ><h3>Curation Head</h3></div>
-            <div class="head_desc" id="head_desc1">She is optimistic; no matter the situation, she always expects things to turn out all right. An aesthete who loves visiting museums and shores. Her altruistic nature and listening skills make her the go-to person. Meeting new people and involving in healthy discussions always excites her.  <br> <br> <a href="https://www.linkedin.com/in/sreelakshmianeesh"><i class="bi bi-linkedin color_icon"></i></a> 
+            <div class="head_desc" id="head_desc1">She is optimistic; no matter the situation, she always expects things to turn out all right. 
+              An aesthete who loves visiting museums. Her altruistic nature make her the go-to person. 
+              Meeting new people always excites her.  <br> <br> <a href="https://www.linkedin.com/in/sreelakshmianeesh"><i class="bi bi-linkedin color_icon"></i></a> 
                 <a href="https://www.instagram.com/sreelakshmi___aneesh/"><i class="bi bi-instagram color_icon"></i></a> </div>
         </div>
     </div>
       <!--  -->
-      <div class="head_card" id="head_card1" onmouseenter="myfunction1()" onmouseleave="myfunction2()">
+      <div class="head_card" id="head_card1" onmouseenter="myfunction1()" onmouseleave="myfunction2()" data-aos="fade-up" data-aos-easing="ease-in" data-aos-duration="1200">
         <img src="../Images/abhinav2.jpg" alt="image" class="image_class">
         <div class="intro">
             <div class="head_name  " id="head_name1">Abhinav Choudhary</div>
             <div class="head_desg" id="head_desg1" ><h3>PR and Branding Head</h3></div>
-            <div class="head_desc" id="head_desc1">Late nights bring out the best in him. He loves reading books, singing and running. He has a passion for technology and loves building cool stuff. He is a real foodie at heart and overall a fun guy to be around. The qualities that truly set him apart are empathy and self-awareness.  <br> <br> <a href="https://www.linkedin.com/in/abhinav-choudhary-a57698202/"><i class="bi bi-linkedin color_icon"></i></a> 
+            <div class="head_desc" id="head_desc1">Late nights bring out the best in him. He loves reading books and running. 
+              He has a passion for technology and loves building cool stuff.
+              The qualities that truly set him apart are empathy and self-awareness.  
+              <br> <br> <a href="https://www.linkedin.com/in/abhinav-choudhary-a57698202/"><i class="bi bi-linkedin color_icon"></i></a> 
                 <a href="https://www.instagram.com/abhichoudhary78/"><i class="bi bi-instagram color_icon"></i></a> </div>
         </div>
     </div>
       <!--  -->
-      <div class="head_card" id="head_card1" onmouseenter="myfunction1()" onmouseleave="myfunction2()">
+      <div class="head_card" id="head_card1" onmouseenter="myfunction1()" onmouseleave="myfunction2()" data-aos="fade-up" data-aos-easing="ease-in" data-aos-duration="1200">
         <img src="../Images/vamsi.jpg" alt="image" class="image_class">
         <div class="intro">
             <div class="head_name  " id="head_name1">P.N.V.Sai Vamsi</div>
             <div class="head_desg" id="head_desg1" ><h3>Speaker Core</h3></div>
-            <div class="head_desc" id="head_desc1">He Loves mingling with people and dancing without limits. Enthusiastic about new ideas. Likes playing cricket and solving puzzles. His determination and hardworking nature are assets worthy for any team. <br> <br> <a href="https://www.linkedin.com/in/pynda-naga-venkata-sai-vamsi-b73765205"><i class="bi bi-linkedin color_icon"></i></a> 
+            <div class="head_desc" id="head_desc1">He Loves mingling with people and dancing without limits. Enthusiastic about new ideas. 
+              Likes playing cricket and solving puzzles. His determination and hardworking nature are assets worthy for any team. <br> <br> <a href="https://www.linkedin.com/in/pynda-naga-venkata-sai-vamsi-b73765205"><i class="bi bi-linkedin color_icon"></i></a> 
                 <a href="https://www.instagram.com/saivamsipynda/"><i class="bi bi-instagram color_icon"></i></a>  </div>
         </div>
     </div>
       <!--  -->
-      <div class="head_card" id="head_card1" onmouseenter="myfunction1()" onmouseleave="myfunction2()">
+      <div class="head_card" id="head_card1" onmouseenter="myfunction1()" onmouseleave="myfunction2()" data-aos="fade-up" data-aos-easing="ease-in" data-aos-duration="1200">
         <img src="../Images/pavan.jpg" alt="image" class="image_class">
         <div class="intro">
             <div class="head_name  " id="head_name1">Pavan Dev</div>
             <div class="head_desg" id="head_desg1" ><h3>Curation Core</h3></div>
-            <div class="head_desc" id="head_desc1"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae dolores illum perferendis impedit facilis, quo aperiam, non ab autem quasi tenetur ut neque error debitis deserunt numquam delectus vel sit provident asperiores maxime ad magnam dolore laudantium. Praesentium eaque maiores totam cupiditate ad aliquid? Aperiam exercitationem provident quis adipisci nihil! </div>
+            <div class="head_desc" id="head_desc1"> 
+            <a href="https://www.linkedin.com/in/pavan-dev-g/"><i class="bi bi-linkedin color_icon"></i></a> 
+            <a href="https://www.instagram.com/pavan_dev_g/"><i class="bi bi-instagram color_icon"></i></a>
+            </div>
         </div>
     </div>
       <!--  -->
@@ -176,31 +210,34 @@
     <div><hr></div>
     
     <div class="footer_box">
-        <div  class="tedex_logo footer_sub_boxes" id="sub_box1"><img src="https://res.cloudinary.com/dtkm20qt9/image/upload/v1667908600/ted_nauf8g.png" alt="ted_image" id="ted_image" ></div>
-  
+        <div  class="tedex_logo footer_sub_boxes" id="sub_box1"><a href="https://www.iitg.ac.in/sa/tedxiitg"><img src="https://res.cloudinary.com/dtkm20qt9/image/upload/v1667908600/ted_nauf8g.png" alt="ted_image" id="ted_image" ></a></div>  
+
   
         <div class="footer_sub_boxes" id="sub_box2">
-            <div class="headings_top"> <b>TEDxIITGuwahati </b> </div>
-            <div class="links">Home</div>
-            <div class="links">Talks</div>
-            <div class="links">About Us</div>
-            <div class="links">Contact Us</div>
-        </div>
+          <div class="headings_top"> <b>TEDxIITGuwahati </b> </div>
+          <div class="links"><a href="../index.html">Home</a></div>
+          <div class="links"><a href="../Talks/Talks.html">Talks</a></div>
+          <div class="links"><a href="../About_Us/AboutUs.html">About Us</a></div>
+          <div class="links"><a href="../Contact_Us/ContactUs.html">Contact Us</a></div>
+      </div>
 
-        <div class="footer_sub_boxes" id="sub_box3">
+
+
+      <div class="footer_sub_boxes" id="sub_box3">
           <div class="headings_top"> <b> Events</b></div>
-          <div class="links">TEDxIITGuwahati</div>
-          <div class="links"> TEDxIITGuwahati Studio</div>
-        </div>
+          <div class="links"><a href="../Talks/Talks.html">TEDxIITGuwahati</a></div>
+          <div class="links"> <a href="../Talks_Studio/Talks_Studio.html">TEDxIITGuwahati Studio</a></div>
+      </div>
 
-        <div class="footer_sub_boxes" id="sub_box4">
+
+      <div class="footer_sub_boxes" id="sub_box4">
           <div class="headings_top" id="follow_us"> <b> Follow Us</b></div>
-          <div class=" links3">Facebook</div>
-          <div class=" links3">Instagram</div>
-          <div class=" links3">LinkedIn</div>
-          <div class=" links3">Twitter</div>
-          <div class=" links3">Medium</div>
-        </div>
+          <div class=" links3"><a href="https://www.facebook.com/TEDxIITGuwahati/" target="_blank">Facebook</a></div>
+          <div class=" links3"><a href="https://www.instagram.com/tedxiitguwahati/" target="_blank">Instagram</a></div>
+          <div class=" links3"><a href="https://www.linkedin.com/company/tedx-iit-guwahati" target="_blank">Linkedin</a></div>
+          <div class=" links3"><a href="https://twitter.com/tedxiitg" target="_blank">Twitter</a></div>
+          <div class=" links3"><a href="https://tedxiitguwahati.medium.com/" target="_blank">Medium</a></div>
+      </div>
       </div>
       <div><hr ></div>
 
@@ -267,6 +304,11 @@
       }
 
     </script>
+
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script>
+    AOS.init();
+</script>
 
   </body>
 </html>
