@@ -1,4 +1,4 @@
-/* Navbar */
+/* Navbar starts*/
 
 #primary
 {
@@ -14,12 +14,21 @@
     z-index: 1;
 }
 
+#logoId
+{
+    margin:auto;
+}
+
+#logo:hover
+{
+    cursor:pointer;
+}
+
 #logo
 {
     height: 70px;
     margin: auto;
 }
-
 
 #list
 {
@@ -122,8 +131,8 @@
     background-color: black;
     display: flex;
     flex-direction: column;
-    top: 10vh;
-    right: 23vw;
+    top: 11vh;
+    right: 31.5vw;
     border-radius: 4px;
     z-index: 1;
 }
@@ -214,7 +223,7 @@
 }
 }
 
-/* navbar ends here */
+/* Navbar ends*/
 
 .background_image{
     background-image: url("./Images/image.jpg");

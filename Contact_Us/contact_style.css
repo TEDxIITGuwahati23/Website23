@@ -116,7 +116,7 @@ h1{
 
 
 
-/* Navbar */
+/* Navbar starts*/
 
 #primary
 {
@@ -130,6 +130,16 @@ h1{
     padding-top: auto;
     padding-bottom: auto;
     z-index: 1;
+}
+
+#logoId
+{
+    margin:auto;
+}
+
+#logo:hover
+{
+    cursor:pointer;
 }
 
 #logo
@@ -240,8 +250,8 @@ h1{
     background-color: black;
     display: flex;
     flex-direction: column;
-    top: 10vh;
-    right: 23vw;
+    top: 11vh;
+    right: 31.5vw;
     border-radius: 4px;
     z-index: 1;
 }
@@ -333,7 +343,7 @@ h1{
 }
 
 
-/* navbar ends here */
+/* Navbar ends*/
 
 
 

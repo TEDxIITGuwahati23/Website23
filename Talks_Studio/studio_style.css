@@ -1,4 +1,4 @@
-/* Navbar */
+/* Navbar starts*/
 
 #primary
 {
@@ -12,6 +12,16 @@
     padding-top: auto;
     padding-bottom: auto;
     z-index: 1;
+}
+
+#logoId
+{
+    margin:auto;
+}
+
+#logo:hover
+{
+    cursor:pointer;
 }
 
 #logo
@@ -122,8 +132,8 @@
     background-color: black;
     display: flex;
     flex-direction: column;
-    top: 10vh;
-    right: 23vw;
+    top: 11vh;
+    right: 31.5vw;
     border-radius: 4px;
     z-index: 1;
 }
@@ -214,7 +224,7 @@
 }
 }
 
-/* Nav bar ends here  */
+/* Navbar ends */
 
 
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@500&display=swap'); 
