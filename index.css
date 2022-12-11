@@ -362,6 +362,18 @@ h3{
     width:100%;
     transition:0.5s;
     }
+    .carousel-items{
+        overflow-x:scroll;
+        overflow-y:hidden;
+        display:flex;
+    }
+    .carousel-items::-webkit-scrollbar {
+        display: none;
+      }
+      
+    .active-drag{
+        cursor: all-scroll;
+    }
     .clear{
     clear:both;
     }
@@ -380,6 +392,10 @@ h3{
 .block{
     font-weight: 700;
     font-size: 380%;
+}
+
+.icon-btn{
+    cursor: pointer;
 }
 
 .welcome{
