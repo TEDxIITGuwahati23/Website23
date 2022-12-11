@@ -79,9 +79,9 @@
     </div>
         <h3 data-aos="fade-left" data-aos-easing="ease-in" data-aos-duration="1200">RECENT TALKS</h3>
         <div class="carousel" data-aos="fade-right" data-aos-easing="ease-in" data-aos-duration="1200">
-            <button class='flt-left' onclick="slideRight(this,0);"><i class="fa fa-circle-chevron-left" aria-hidden="true" style="color:red;font-size:25px"></i></button>
+            <button class='flt-left' onclick="moveSlidesLeft('items-talks')()"><i class="fa fa-circle-chevron-left" aria-hidden="true" style="color:red;font-size:25px"></i></button>
             <div class="row flt-left">
-                <div class="row-container row-container1">
+                <div id="items-talks" class="carousel-items">
                     <div class="card" id = "card1">
                             <div class="card-content">
                                 <div onclick="play(id);" id="FEHbet4YX78" class="thumbnail" style="background: black url('./Images/speakers_recent/jalal.jpg') no-repeat center;"></div>
@@ -142,7 +142,7 @@
                     </div>   
                 </div>          
             </div>
-            <button class='flt-left'  onclick="slideLeft(this,0);"><i class="fa fa-circle-chevron-right" aria-hidden="true" style="color:red;font-size:25px"></i></button>
+            <button class='flt-left' onclick="moveSlidesRight('items-talks')()"><i class="fa fa-circle-chevron-right" aria-hidden="true" style="color:red;font-size:25px"></i></button>
             <div class="clear">
             </div>
         </div>
@@ -150,13 +150,13 @@
             <h3>LATEST BLOGS</h3>
         </div>
         <div class="carousel blogs-carousel" >
-            <button class='flt-left' onclick="slideRight(this,1);"><i class="fa fa-circle-chevron-left" aria-hidden="true" style="color:red;font-size:25px"></i></button>
+            <button class='flt-left icon-btn' onclick="moveSlidesLeft('items-blogs')()"><i class="fa fa-circle-chevron-left" aria-hidden="true" style="color:red;font-size:25px"></i></button>
             <div class="row flt-left">
-                <div class="row-container row-container2">
+                <div id="items-blogs" class="carousel-items">
                     <div class="card" id = "card1">
                         <a href="https://tedxiitguwahati.medium.com/failure-looking-beyond-the-obvious-e4538f2fb747" class="card-container">
                         <div class="card-content">
-                            <img src="https://miro.medium.com/max/1400/1*0PeHZ5p78IUDUIzB29N14Q.webp">
+                            <img src="https://miro.medium.com/max/1400/1*0PeHZ5p78IUDUIzB29N14Q.webp" class="thumbnail">
                             <h5>Einstellung Effect — A Mechanized State of Mind</h5>
                             <p>Did it ever happen to you that you were stuck with a math problem or say a bug in your code and you were 
                                 compulsively revisiting certain parts of it, hysterically looking for the correct solution but to no avail? 
@@ -170,7 +170,7 @@
                     <div class="card" id = "card1">
                         <a href="https://tedxiitguwahati.medium.com/failure-looking-beyond-the-obvious-e4538f2fb747" class="card-container">
                         <div class="card-content">
-                            <img src="https://miro.medium.com/max/1400/1*Nv3k6LeISByWQudbfoJ76w.webp">
+                            <img src="https://miro.medium.com/max/1400/1*Nv3k6LeISByWQudbfoJ76w.webp" class="thumbnail">
                             <h5>Failure — Looking beyond the obvious</h5>
                             <p>All of us have come across social media posts, and quotes about how failures weave the path toward success. 
                                 We must have heard stories of successful people, who were once a failure, and then they learned from it 
@@ -183,7 +183,7 @@
                     <div class="card">
                         <a href="https://tedxiitguwahati.medium.com/artists-block-420a201a8079" class="card-container">
                         <div class="card-content">
-                            <img src="https://miro.medium.com/max/1400/1*-MyHX37k97uybD10kD7IzA.webp">
+                            <img src="https://miro.medium.com/max/1400/1*-MyHX37k97uybD10kD7IzA.webp"  class="thumbnail" >
                             <h5>Artist's Block — The end of Creativity?</h5>
                             <p>"All profound distraction opens certain doors. You have to allow yourself to be distracted when you are unable to concentrate."
                                 —Julio Cortázar
@@ -200,7 +200,7 @@
                     <div class="card">
                         <a href="https://tedxiitguwahati.medium.com/music-comedy-disorientation-88f8fda0f46f" class="card-container">
                         <div class="card-content">
-                            <img src="https://miro.medium.com/max/1400/1*4hOHjnN4rJTbJhlFw3VOig.png">
+                            <img src="https://miro.medium.com/max/1400/1*4hOHjnN4rJTbJhlFw3VOig.png" class="thumbnail" >
                             <h5>Music. Comedy. Disorientation.</h5>
                             <p>Imagine a man in an Afro, speaking nonsense, then conversing in French followed by an American accent with a lot of music in the mix.
 
@@ -213,7 +213,7 @@
                     <div class="card">
                         <a href="https://tedxiitguwahati.medium.com/the-boiling-frog-phenomenon-70acf93cb239" class="card-container">
                         <div class="card-content">
-                            <img src="https://miro.medium.com/max/1400/1*S-zLtMjHV3Nii5pTZ9vEnA.webp">
+                            <img src="https://miro.medium.com/max/1400/1*S-zLtMjHV3Nii5pTZ9vEnA.webp"  class="thumbnail" >
                             <h5>The Boiling Frog Phenomenon</h5>
                             <p>The existence of life is one of the fascinating aspects of the cosmos. 
                                 But living this life with no difficulties seems meaningless. Life is a 
@@ -226,7 +226,7 @@
                     <div class="card">
                         <a href="https://tedxiitguwahati.medium.com/level-up-720488822d71" class="card-container">
                         <div class="card-content">
-                            <img src="https://miro.medium.com/max/1400/1*nKMmoG6BTkH6UOngh_osnw.webp">
+                            <img src="https://miro.medium.com/max/1400/1*nKMmoG6BTkH6UOngh_osnw.webp"  class="thumbnail" >
                             <h5>Level Up</h5>
                             <p>I love video games! It was a chilly night in December. I was at my hostel in Delhi. 
                                 I had my History of Architecture exams the next day. While my friends were surfing 
@@ -240,7 +240,7 @@
                     <div class="card">
                         <a href="https://tedxiitguwahati.medium.com/is-innate-talent-a-myth-dfbf1ad5e008" class="card-container">
                         <div class="card-content">
-                            <img src="https://miro.medium.com/max/620/0*a33uS3Za89Z6j6Wc">
+                            <img src="https://miro.medium.com/max/620/0*a33uS3Za89Z6j6Wc"  class="thumbnail" >
                             <h5>Is innate talent a myth?</h5>
                             <p>Is innate talent a myth? Or are we stuck inside an illusion bubble of inflated beliefs?
 
@@ -254,7 +254,7 @@
                     <div class="card">
                         <a href="https://tedxiitguwahati.medium.com/living-the-ideal-dream-585e7566a5f2" class="card-container">
                         <div class="card-content">
-                            <img src="https://miro.medium.com/max/1400/1*vewN6FDAyMxfxShOekL3EA.webp">
+                            <img src="https://miro.medium.com/max/1400/1*vewN6FDAyMxfxShOekL3EA.webp"  class="thumbnail" >
                             <h5>Living the Ideal Dream</h5>
                             <p>For those who aren’t exactly au fait with the concept of Utopia- the term 
                                 was coined by Thomas More, and portrayed in his 1516 satire of the same name, 
@@ -269,7 +269,7 @@
                     <div class="card">
                         <a href="https://tedxiitguwahati.medium.com/a-jpg-sold-for-69mn-4f3316fa1f2" class="card-container">
                         <div class="card-content">
-                            <img src="https://miro.medium.com/max/1400/1*8bKcQR0sKX9wQJERCzJwww.webp">
+                            <img src="https://miro.medium.com/max/1400/1*8bKcQR0sKX9wQJERCzJwww.webp"  class="thumbnail" >
                             <h5>A JPG sold for $69MN !</h5>
                             <p>
                                 Imagine paying $69 Million for a JPEG file that you can essentially download off the internet, 
@@ -284,7 +284,7 @@
                     <div class="clear"></div>
                 </div>
             </div>
-            <button class='flt-left'  onclick="slideLeft(this,1);"><i class="fa fa-circle-chevron-right" aria-hidden="true" style="color:red;font-size:25px"></i></button>
+            <button class='flt-left'  onclick="moveSlidesRight('items-blogs')()"><i class="fa fa-circle-chevron-right" aria-hidden="true" style="color:red;font-size:25px"></i></button>
                 <div class="clear"></div>
             </div>
         </div>
@@ -340,10 +340,16 @@
   
 
 
-
+  <script src="https://cdn.jsdelivr.net/npm/simple-parallax-js@5.5.1/dist/simpleParallax.min.js"></script>
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
         AOS.init();
+    </script>
+    <script>
+        
+        sliderInit("items-talks");
+        sliderInit("items-blogs");
+        parallaxImage('thumbnail')
     </script>
 
   </body>

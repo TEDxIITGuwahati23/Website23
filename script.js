@@ -17,6 +17,7 @@ var right = [0,0,0,0];
         }
 
         function slideLeft(event,i){
+            console.dir(event)
         var rowcont = document.querySelectorAll(".row-container")[i];
         if(right[i] <= -maxMargin[i]){
             event.preventDefault();
@@ -28,6 +29,8 @@ var right = [0,0,0,0];
         }
 
         function slideRight(event,i){
+            console.dir(event)
+
         var rowcont = document.querySelectorAll(".row-container")[i];
         if(right[i]==0){
             event.preventDefault();
@@ -66,4 +69,90 @@ function myFunction()
 function myFunctionleft()
 {
   document.getElementById("myDropdownleft").classList.toggle("close");
+}
+
+function sliderInit(id){
+    const slider = document.getElementById(id);
+    let isDown = false;
+    let startX;
+    let scrollLeft;
+    slider.addEventListener('mousedown', (e) => {
+        isDown = true;
+        slider.classList.add('active-drag');
+        startX = e.pageX - slider.offsetLeft;
+        scrollLeft = slider.scrollLeft;
+    });
+    slider.addEventListener('mouseleave', () => {
+        isDown = false;
+        slider.classList.remove('active-drag');
+    });
+    slider.addEventListener('mouseup', () => {
+        isDown = false;
+        slider.classList.remove('active-drag');
+    });
+
+    slider.addEventListener('mousemove', (e) => {
+        if(!isDown) return;
+        e.preventDefault();
+        const x = e.pageX - slider.offsetLeft;
+        const walk = (x - startX) * 3; //scroll-fast
+        slider.scrollLeft = scrollLeft - walk;
+        console.log(walk);
+    });
+
+}
+
+function slideRight(event){
+
+    var rowcont = document.querySelectorAll(".row-container")[i];
+    if(right[i]==0){
+        event.preventDefault();
+    }
+    else if(right[i] >= maxMargin[i]){
+        event.preventDefault();
+    }
+    else{
+        right[i] += jumpMargin;
+    }
+    rowcont.style.marginLeft = right[i]+"px";
+}
+
+
+function moveSlidesRight(id) {
+    
+    let scrollingDiv = document.getElementById(id);
+    let carouselWidth = scrollingDiv.offsetWidth;
+    return function() {
+        scrollingDiv.scroll({
+            left: scrollingDiv.scrollLeft + carouselWidth,
+            behavior: 'smooth'
+        })
+    }
+}
+
+
+function moveSlidesLeft(id) {
+    let scrollingDiv = document.getElementById(id);
+    let carouselWidth = scrollingDiv.offsetWidth;
+
+    return function() {
+        scrollingDiv.scroll({
+            left: scrollingDiv.scrollLeft - carouselWidth,
+            behavior: 'smooth'
+        })
+    }
+}
+
+  
+
+function parallaxImage(className){
+    // assuming a string
+    let images = document.getElementsByClassName(className);
+    Array.from(images).forEach((image)=>{
+
+        new simpleParallax(image, {
+            scale: 1.4,
+            delay: 0.2
+        });
+    })
 }
