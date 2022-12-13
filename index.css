@@ -523,13 +523,13 @@ h3{
     font-size: 14px;
     text-transform: uppercase;
     padding: 15px;
-    background: linear-gradient(to left, red 51%, white 50%) right;
+    background: linear-gradient(to left, #FF2B06 50%, white 50%) right;
     background-size: 200%;
     transition: .5s ease-out;
 }
 
 .nominateBtn:hover{
-    color:black;
+    color:#FF2B06;
     background-position: left;
 }
 

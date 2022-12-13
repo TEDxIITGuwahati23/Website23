@@ -84,10 +84,11 @@ input{
     color: #FF2B06;
 }
 
-p{  
+p{
     margin: 0px;
     /* padding: 5px; */
     color: white;
+    word-spacing: 3px;
     text-align:justify;
     font-size:130%;
     font-family: 'Inter', sans-serif;

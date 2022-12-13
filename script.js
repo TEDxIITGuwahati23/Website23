@@ -145,14 +145,14 @@ function moveSlidesLeft(id) {
 
   
 
-function parallaxImage(className){
-    // assuming a string
-    let images = document.getElementsByClassName(className);
-    Array.from(images).forEach((image)=>{
+// function parallaxImage(className){
+//     // assuming a string
+//     let images = document.getElementsByClassName(className);
+//     Array.from(images).forEach((image)=>{
 
-        new simpleParallax(image, {
-            scale: 1.4,
-            delay: 0.2
-        });
-    })
-}
+//         new simpleParallax(image, {
+//             scale: 1.4,
+//             delay: 0.2
+//         });
+//     })
+// }
