@@ -275,7 +275,7 @@ h3{
 
 .blogs-carousel .card-content img{
     max-width: 225px;
-    height: 125px;
+    height: 155px;
     width: 100%;
     display:block;
     margin: auto;
@@ -291,14 +291,70 @@ h3{
     -webkit-box-orient: vertical;
     white-space: normal;
 }
-
-
+#card-one p{
+    text-overflow: ellipsis;
+    overflow: hidden;
+    /* height: 200px;   */
+    display: -webkit-box !important;
+    -webkit-line-clamp: 4;
+    -webkit-box-orient: vertical;
+    white-space: normal;
+}
+#card-six p{
+    text-overflow: ellipsis;
+    overflow: hidden;
+    /* height: 200px;   */
+    display: -webkit-box !important;
+    -webkit-line-clamp: 6;
+    -webkit-box-orient: vertical;
+    white-space: normal;
+}
+#card-seven p{
+    text-overflow: ellipsis;
+    overflow: hidden;
+    /* height: 200px;   */
+    display: -webkit-box !important;
+    -webkit-line-clamp: 6;
+    -webkit-box-orient: vertical;
+    white-space: normal;
+}
+#card-eight p{
+    text-overflow: ellipsis;
+    overflow: hidden;
+    /* height: 200px;   */
+    display: -webkit-box !important;
+    -webkit-line-clamp: 6;
+    -webkit-box-orient: vertical;
+    white-space: normal;
+}
+#card-nine p{
+    text-overflow: ellipsis;
+    overflow: hidden;
+    /* height: 200px;   */
+    display: -webkit-box !important;
+    -webkit-line-clamp: 6;
+    -webkit-box-orient: vertical;
+    white-space: normal;
+}
 .blogs-carousel .card-content h5, .blogs-carousel .card-content p{
     text-align: center;
 }
+.blog-btn a{
+    height: 3vw;
+    width: 3vw;
+    background-color: #FF2B06;
+    text-align: center;
+    border-radius: 50%;
+    line-height: 3.5vw;
+    color: white;
+    font-size: 1.4vw;
+    display: inline-block;
+    position: relative;
+    left: 7.1vw;
+    top: -1.5vw;
+}
 
-
-#card1{
+.card1{
     display: inline;
     float: left;
     align-items: center;
@@ -314,6 +370,25 @@ h3{
     border-radius: 8px;
     padding: 20px;
 }
+.blog-card-content{
+    padding-left: 0px;
+    padding-right: 0px;
+}
+.blog-card-content h5{
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 10px;
+    transition: all 0.5s ease-in-out;
+}
+.blog-card-content h5:hover{
+    color: #FF2B06;
+}
+.blog-card-content p{
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-top: -30px;
+}
+
 .card-content h5{
     font-family: 'Inter', sans-serif;
     font-style: normal;
