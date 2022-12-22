@@ -1,7 +1,6 @@
 /* Navbar starts*/
 
-#primary
-{
+#primary{
     display: flex;
     position: sticky;
     top: 0px;
@@ -14,18 +13,15 @@
     z-index: 1;
 }
 
-#logoId
-{
+#logoId{
     margin:auto;
 }
 
-#logo:hover
-{
+#logo:hover{
     cursor:pointer;
 }
 
-#logo
-{
+#logo{
     height: 70px;
     margin: auto;
 }
@@ -37,8 +33,7 @@
     margin:auto;
 }
 
-.tabs
-{
+.tabs{
     color: white;
     margin: 17px 40px;
     padding: 10px 3px;
@@ -50,8 +45,7 @@
     font-size: 14px;
 }
 
-.tabs:hover
-{
+.tabs:hover{
     color: #FF2B06;
     text-decoration: none;
 }
@@ -64,8 +58,7 @@
     display: block;
 }
 
-#toggleMenu
-{
+#toggleMenu{
     margin:auto 20px;
     width: 40px;
     display: none;
@@ -73,8 +66,7 @@
 }
 
 
-#leftContainer
-{
+#leftContainer{
     position: fixed;
     float: left;
     top:0px;
@@ -87,16 +79,13 @@
     transition:all 1s ease-in-out;
 }
 
-
-#leftNav
-{
+#leftNav{
     display: flex;
     flex-direction: column;
     margin-top: 40px;
 }
 
-.leftTabs
-{
+.leftTabs{
     text-decoration: none;
     padding: 20px 20px;
     color: white;
@@ -105,28 +94,23 @@
     transition: color 0.25s ease-in-out;
 }
 
-.leftTabs:hover
-{
+.leftTabs:hover{
     color: #FF2B06;
     text-decoration: none;
 }
 
-.close
-{
+.close{
     display: none;
 }
 
-
-#closeMenu
-{
+#closeMenu{
     margin:auto 200px;
     margin-bottom: 50px;
     cursor: pointer;
     width: 20px;
 }
 
-.dropDownMenu
-{
+.dropDownMenu{
     position: absolute;
     background-color: black;
     display: flex;
@@ -137,8 +121,7 @@
     z-index: 1;
 }
 
-#dropDownTabs
-{
+#dropDownTabs{
     margin: 13px ;
     transition: all 0.2s ease-in-out;
     letter-spacing: 0.05rem;
@@ -146,25 +129,16 @@
     text-decoration: none;
 }
 
-#dropDownTabs:hover
-{
+#dropDownTabs:hover{
     text-decoration: none;
 }
 
-
-.leftdropDownMenu
-{
+.leftdropDownMenu{
     display: flex;
     flex-direction: column;
 }
 
-.card-container{
-    display:block;
-
-}
-
-#leftdropDownTabs
-{
+#leftdropDownTabs{
     text-decoration: none;
     padding: 20px 40px;
     color: white;
@@ -174,53 +148,47 @@
     letter-spacing: 0.08rem;
 }
 
-#dropDownTabs:hover
-{
+#dropDownTabs:hover{
     color: #FF2B06;
 }
 
-#leftdropDownTabs:hover
-{
+#leftdropDownTabs:hover{
     color: #FF2B06;
     cursor: pointer;
 }
 
-.close
-{
+.close{
     display: none;
 }
 
-.active
-{
+.active{
     color: #FF2B06;
 }
-
+.card-container{
+    display:block;
+}
 
 @media only screen and (max-width:1020px) {
-    .tabs
-    {
+    .tabs{
         display: none;
     }
 
-    #toggleMenu
-    {
+    #toggleMenu{
         display: block;
     }
 }
 
 @media only screen and (max-width: 480px) {
-    #logo
-    {
+    #logo{
         height: 50px;
         margin: auto;
     }
 
-    #toggleMenu
-{
-    margin:auto 20px;
-    width: 30px;
-    cursor: pointer;
-}
+    #toggleMenu{
+        margin:auto 20px;
+        width: 30px;
+        cursor: pointer;
+    }
 }
 
 /* Navbar ends*/
@@ -231,8 +199,33 @@
     background-size: cover;
     background-attachment: fixed;
     background-position: center;
-    width: 100%;
     margin:0px;
+    animation: change 15s infinite ease-in-out;
+    box-shadow: inset -20px 10px 50px black, inset 20px 10px 50px black;
+
+}
+@keyframes change {
+    20%{
+        background-image: url("./Images/tedx3.jpg");
+        opacity: 0.8;
+    }
+    40%{
+        background-image: url("./Images/tedx4.jpg");
+        opacity: 0.8;
+    }
+    60%{
+        background-image: url("./Images/tedx7.jpg");
+        opacity: 0.8;
+    }
+    80%{
+        background-image: url("./Images/tedx9.png");
+        opacity: 0.8;
+    }
+}
+@media only screen and (max-width: 480px) {
+    .background_image{
+        background-attachment: scroll;
+    }
 }
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@500&display=swap'); 
 #body{
@@ -256,7 +249,6 @@ h3{
     width: fit-content;
 }
 
-
 .card{
     display: inline;
     float: left;
@@ -272,14 +264,20 @@ h3{
     max-width: 275px;
     height: 133px;
 }
-
+.image-div{
+    height: 170px;
+    width: 275px;
+    overflow: hidden;
+    margin-left: -5px;
+    margin-top: -15px;
+}
 .blogs-carousel .card-content img{
-    max-width: 225px;
-    height: 155px;
-    width: 100%;
+    height: 170px;
+    width: 275px;
     display:block;
-    margin: auto;
     object-fit: cover;
+    border-radius: 5px;
+    transition: all 0.5s ease-in-out;
 }
 
 .blogs-carousel .card-content p{
@@ -340,18 +338,18 @@ h3{
     text-align: center;
 }
 .blog-btn a{
-    height: 3vw;
-    width: 3vw;
+    height: 48px;
+    width: 48px;
     background-color: #FF2B06;
     text-align: center;
     border-radius: 50%;
-    line-height: 3.5vw;
+    line-height: 53px;
     color: white;
-    font-size: 1.4vw;
+    font-size: 20px;
     display: inline-block;
     position: relative;
-    left: 7.1vw;
-    top: -1.5vw;
+    left: 121px;
+    top: -25px;
 }
 
 .card1{
@@ -360,19 +358,23 @@ h3{
     align-items: center;
     padding: 10px;
 }
-
 .card-content:hover{
     box-shadow: 2px 2px 50px rgba(255, 15, 0, 0.75);
 }
 .card-content{
     width: 265px;
-    /* border: 1px solid #FFFFFF; */
     border-radius: 8px;
     padding: 20px;
 }
 .blog-card-content{
-    padding-left: 0px;
-    padding-right: 0px;
+    width: 265px;
+    border-radius: 8px;
+    /* padding: 20px; */
+}
+.blog-card-content{
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 20px;
 }
 .blog-card-content h5{
     padding-left: 20px;
@@ -388,7 +390,6 @@ h3{
     padding-right: 20px;
     margin-top: -30px;
 }
-
 .card-content h5{
     font-family: 'Inter', sans-serif;
     font-style: normal;
@@ -411,7 +412,6 @@ h3{
     overflow:hidden;
     cursor:pointer;
 }
-
 .swipe{
     display: flex;
     justify-content: center;
@@ -420,50 +420,47 @@ h3{
 
 .flt-left{
     float:left;
-    }
-    .carousel{
+}
+.carousel{
     max-width:110%;
     display: flex;
     margin-top: 0%;
     max-height: 100%;
-    }
-    .row{
+}
+.row{
     width:100%;
     padding:0;
     overflow:hidden;
     margin:auto;
-    }
-    .row-container{
+}
+.row-container{
     width:100%;
     transition:0.5s;
-    }
-    .carousel-items{
-        overflow-x:scroll;
-        overflow-y:hidden;
-        display:flex;
-    }
-    .carousel-items::-webkit-scrollbar {
-        display: none;
-      }
-      
-    .active-drag{
-        cursor: all-scroll;
-    }
-    .clear{
+}
+.carousel-items{
+    overflow-x:scroll;
+    overflow-y:hidden;
+    display:flex;
+}
+.carousel-items::-webkit-scrollbar {
+    display: none;
+}    
+.active-drag{
+    cursor: all-scroll;
+}
+.clear{
     clear:both;
-    }
-    .controls{
+}
+.controls{
     width:100%;
     margin:auto;
-    }
-    button{
+}
+button{
     border:none;
     font-weight:bold;
     outline:none;
     background: none;
-    }
-
-
+}
 .block{
     font-weight: 700;
     font-size: 380%;
@@ -541,7 +538,6 @@ h3{
     background: linear-gradient(to bottom, #0b0b0b, transparent);
 }
 
-
 .shadow{
     height: 100px;
     bottom: 0px;
@@ -550,12 +546,9 @@ h3{
     background: linear-gradient(to top, #000000, transparent);
 }
 
-
-
 .main_content{
     padding: 0 5%;
 }
-
 
 .about_tedx{
     margin: 5% 0% 5% 0%;
@@ -582,23 +575,23 @@ h3{
 }
 
 @media only screen and (max-width: 990px) {
-.block{
-    font-weight: 700;
-    font-size: 310%;
-}
+    .block{
+        font-weight: 700;
+        font-size: 310%;
+    }
 
-.description_about{
-    font-weight: 500;
-    font-size: 120%;
-}
+    .description_about{
+        font-weight: 500;
+        font-size: 120%;
+    }
 
-.heading_about{
-    font-size: 180%;
-}
-.nominateBtn{
-    font-size: 13px;
-    max-block-size: 15px;
-}
+    .heading_about{
+        font-size: 180%;
+    }
+    .nominateBtn{
+        font-size: 13px;
+        max-block-size: 15px;
+    }
 }
 
 @media only screen and (max-width: 700px) {
@@ -650,6 +643,27 @@ h3{
         max-width: 225px;
         height: 195px;
     }
+    .image-div{
+        margin-left: -17.5px;
+        height: 170px;
+        width: 260px;
+        border-radius: 3px;
+    }
+    .blog-btn a{
+        position: relative;
+        left: 105px;
+    }
+    .blog-card-content h5{
+        padding-left: 0px;
+        padding-right: 0px;
+        padding-bottom: 10px;
+        transition: all 0.5s ease-in-out;
+    }
+    .blog-card-content p{
+        padding-left: 0px;
+        padding-right: 0px;
+        margin-top: -30px;
+    }
 }
 
 
@@ -666,13 +680,11 @@ h3{
         font-size: 9px;
         max-block-size: 4px;
     }
-
     .card-content{
         width: 215px;
         border-radius: 8px;
         padding: 20px;
     }
-
     .thumbnail{
         height:155px;
         width:215px;
@@ -680,7 +692,6 @@ h3{
         overflow:hidden;
         cursor:pointer;
     }
-
     #card1{
         margin-left: -10px;
     }
@@ -725,7 +736,6 @@ body{
     }
 
     .headings_top{
-    
         font-size:25px;
         margin: 5px 5px 5px 5px;
         
@@ -735,7 +745,6 @@ body{
         /* font-size: 1.2vw; */
         font-size: 25px;
         margin: 5px auto 5px 0;
-    
     }
     
     .links{
@@ -753,8 +762,6 @@ body{
         color:  rgba(153, 153, 153, 1);
     }
 
-    
-    
     .footer_foot{
         display: flex;
         flex-direction: row;

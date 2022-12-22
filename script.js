@@ -156,3 +156,10 @@ function moveSlidesLeft(id) {
 //         });
 //     })
 // }
+var image = document.getElementsByClassName("blogimg");
+function mouseoverhandler(id){
+    image[id].style.transform = "scale(1.2)"
+}
+function mouseouthandler(id){
+    image[id].style.transform = "scale(1)"
+}
