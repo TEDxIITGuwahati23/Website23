@@ -200,11 +200,15 @@
     background-attachment: fixed;
     background-position: center;
     margin:0px;
-    animation: change 15s infinite ease-in-out;
+    animation: change 24s infinite ease-in;
+    animation-delay: 4s;
     box-shadow: inset -20px 10px 50px black, inset 20px 10px 50px black;
 
 }
 @keyframes change {
+    0%{
+        background-image: url("./Images/image.jpg");
+    }
     20%{
         background-image: url("./Images/tedx3.jpg");
         opacity: 0.8;
@@ -220,6 +224,9 @@
     80%{
         background-image: url("./Images/tedx9.png");
         opacity: 0.8;
+    }
+    100%{
+        background-image: url("./Images/image.jpg");
     }
 }
 @media only screen and (max-width: 480px) {
