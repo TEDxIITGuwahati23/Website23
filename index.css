@@ -200,12 +200,12 @@
     background-attachment: fixed;
     background-position: center;
     margin:0px;
-    animation: change 24s infinite ease-in;
-    animation-delay: 4s;
+    /* animation: change 24s infinite ease-in;
+    animation-delay: 4s; */
     box-shadow: inset -20px 10px 50px black, inset 20px 10px 50px black;
 
 }
-@keyframes change {
+/* @keyframes change {
     0%{
         background-image: url("./Images/image.jpg");
     }
@@ -228,7 +228,7 @@
     100%{
         background-image: url("./Images/image.jpg");
     }
-}
+} */
 @media only screen and (max-width: 480px) {
     .background_image{
         background-attachment: scroll;
