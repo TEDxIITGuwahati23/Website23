@@ -265,7 +265,7 @@ h3{
 }
 .card-content iframe{
     max-width: 275px;
-    height: 195px;
+    height: 165px;
 }
 .card-content img{
     max-width: 275px;
@@ -427,6 +427,26 @@ h3{
 
 .flt-left{
     float:left;
+}
+#left_scroll_button1:hover{
+    cursor: pointer;
+}
+#left_scroll_button2:hover{
+    cursor: pointer;
+}
+#right_scroll_button1:hover{
+    cursor: pointer;
+}
+#right_scroll_button2:hover{
+    cursor: pointer;
+}
+.highlighted_text a:hover{
+    /* color: #F00F25 ; */
+    color: transparent;
+    text-shadow:1px 1px 0px #FF2B06;
+    /* color: #F00F25; */
+    transition: 0.5s;
+    filter: brightness(120%);
 }
 .carousel{
     max-width:110%;
@@ -633,7 +653,7 @@ button{
 
 @media only screen and (max-width: 440px) {
     .card-content{
-        width: 225px;
+        max-width: 230px;
         border-radius: 8px;
         padding: 20px;
     }
@@ -647,8 +667,8 @@ button{
     }
 
     .card-content iframe{
-        max-width: 225px;
-        height: 195px;
+        max-width: 230px;
+        max-height: 180px;
     }
     .image-div{
         margin-left: -17.5px;

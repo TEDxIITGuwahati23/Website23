@@ -227,7 +227,7 @@
 
 /* Navbar ends */
 #main{
-    background-color: black;
+    background-color: black
 }
 
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@500&display=swap'); 
@@ -329,7 +329,7 @@ p{
     font-style: normal;
     font-weight: 500;
     font-size: 17.5px;
-    word-spacing: -0.15rem;
+    word-spacing: -0.05rem;
     letter-spacing: 0.05rem;
     line-height: 24px;
 }
@@ -437,7 +437,7 @@ p{
 
 
 body{
-    background-color: black;
+    background-color: #000000;
     color: white;
     font-family: 'Inter', sans-serif;
     margin:0px;
