@@ -1,0 +1,139 @@
+*{
+    margin: 0;
+    padding: 0;
+    /* box-sizing: border-box; */
+}
+body{
+    background: black;
+    width: 100%;
+}
+.themeLOGO{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 85%;
+    height: auto;
+}
+#theme{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    height: auto;
+}
+.descript{
+    color: white;
+    text-align: center;
+    font-size: 1rem;
+    /* padding-bottom: 10px; */
+    padding-top: 30px;
+    font-family: 'Inter', sans-serif;
+}
+@font-face {
+    font-family: 'Inter', sans-serif;
+    src: url('https://fonts.googleapis.com/css2?family=Inter:wght@500&display=swap');
+} 
+.container{
+    width: 100%;
+}
+.row{
+    text-align: center;
+}
+.box{
+    padding-top: 30px;
+}
+.imga{
+    border-radius: 60%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+h2{
+    /* text-decoration-line: underline;  */
+    color: red;
+    /* text-align: center; */
+    /* padding-top: 50px; */
+    /* padding-left: 3rem; */
+}
+#h11{
+    color: red;
+    /* text-decoration-line: underline;  */
+    /* text-align: center; */
+    font-size: 200%;
+    margin: 0;
+    padding: 0;
+}
+a:hover{
+    text-decoration: none;
+    color: aliceblue;
+}
+.linehr{
+    margin: 0;
+    padding: 0;
+    margin-bottom: 20px;
+    height:3.5px;
+    width: 28rem;
+    background-color: red;
+}
+@media screen and (max-width: 535px) {
+    .linehr{
+        width: 23rem;
+    }
+  }
+@media screen and (max-width: 440px) {
+    .linehr{
+        width: 16rem;
+    }
+  }
+.speheadin{
+    margin-top: 40px;
+    padding-left: 2rem;
+}
+#spe{
+    margin: 0;
+    padding: 0;
+    height:3.5px;
+    width: 13.5rem;
+    background-color: red;
+}
+.teamheadin{
+    margin-top: 40px;
+    padding-left: 2rem;
+}
+#tem{
+    margin: 0;
+    padding: 0;
+    height:3.5px;
+    width: 10rem;
+    background-color: red;
+}
+h5{
+    padding-top: 5px;
+    color: red;
+    margin: 0;
+    font-weight: bold;
+}
+h6{
+    color: whitesmoke;
+    margin: 0;
+    font-weight: bold;
+}
+a{
+    color: #9999;
+    transition: none;
+}
+@media only screen and (max-width: 500px) {
+    .imga{
+        width: 100px;
+    }
+    h5{
+        font-size: 89%;
+    }
+    h6{
+        font-size: 70%;
+    }
+    h1{
+        font-size:1rem;
+    }
+  }
