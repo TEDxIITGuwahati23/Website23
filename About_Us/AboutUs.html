@@ -1,32 +1,57 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../common.css">
-    <link rel="stylesheet" href="AboutUs_style.css">
-  
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.1/font/bootstrap-icons.css">
-    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 
-    <title>About Us</title>
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../common.css">
+  <link rel="stylesheet" href="AboutUs_style.css">
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.1/font/bootstrap-icons.css">
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+  <title>About Us</title>
 </head>
+
 <body>
 
-<!-- Navbar starts -->
-<nav id="primary">
-  <a id="logoId" href="../index.html">
-    <img id="logo" src="../Images/TEDxlogo2.svg" alt="TEDx logo">
-  </a>
+  <!-- Navbar starts -->
+  <nav id="primary">
+    <a id="logoId" href="../index.html">
+      <img id="logo" src="../Images/TEDxlogo2.svg" alt="TEDx logo">
+    </a>
     <div id="list">
       <a href="../index.html" class="tabs">HOME</a>
       <a class="tabs" onclick="myFunction()">TALKS</a>
-        <div class="dropDownMenu close" id="myDropdown">
-            <a href="../Talks/talks.html" id="dropDownTabs">TEDxIITGuwahati</a>
-            <a href="../Talks_Studio/Talks_Studio.html" id="dropDownTabs">TEDxIITGuwahatiStudio</a>
-        </div>
-      <a href="https://tedxiitguwahati.in/" class="tabs">EVENTS</a>
+      <div class="dropDownMenu close" id="myDropdown">
+        <a href="../Talks/talks.html" id="dropDownTabs">TEDxIITGuwahati</a>
+        <a href="../Talks_Studio/Talks_Studio.html" id="dropDownTabs">TEDxIITGuwahatiStudio</a>
+      </div>
+      <a class="tabs" onclick="myFunctionEvents()">EVENTS</a>
+      <div class="dropDownMenu close" id="myDropdownEvents">
+          <div class="eventDropTabs">
+              <img src="../Images/2023_logo.png" width="50px" class="eventsLogo">
+              <a href="https://tedxiitguwahati.in/" id="dropDownTabs" class="upcomingTab">2023</a>
+          </div>
+          <div class="eventDropTabs">
+              <img src="../Images/2022_logo.png" alt="" width="50px" class="eventsLogo">
+              <a href="../Events/2022/Event_2022.html" id="dropDownTabs">&nbsp; 2022</a>
+
+          </div>
+          <div class="eventDropTabs">
+              <img src="../Images/2021_logo.png" alt="" width="50px" class="eventsLogo">
+              <a href="../Events/2021/Event_2021.html" id="dropDownTabs">&nbsp; 2021</a>
+          </div>
+          <div class="eventDropTabs">
+              <img src="../Images/2019_logo.png" alt="" width="50px" class="eventsLogo">
+              <a href="../Events/2019/Event_2019.html" id="dropDownTabs">&nbsp; 2019</a>
+          </div>
+          <div class="eventDropTabs">
+              <img src="../Images/2019_logo.png" alt="" width="50px" class="eventsLogo">
+              <a href="../Events/2016/Event_2016.html" id="dropDownTabs">&nbsp; 2016</a>
+          </div>
+      </div>
       <a href=# class="tabs active">ABOUT US</a>
       <a href="../Contact_Us/ContactUs.html" class="tabs">CONTACT US</a>
       <img src="../Images/toggleMenuIcon-white.jpg" alt="MENU" width="50px" id="toggleMenu" onclick="changeMenu()">
@@ -37,283 +62,410 @@
       <img src="../Images/b_cross.svg" width="20px" id="closeMenu" onclick="changeMenu()">
       <a href="../index.html" class="leftTabs">HOME</a>
       <a href=# class="leftTabs" onclick="myFunctionleft()" id="myDropdown">TALKS</a>
-        <div class="leftdropDownMenu close" id="myDropdownleft">
-          <a href="../Talks/talks.html" id="leftdropDownTabs">TEDxIITGuwahati</a>
-          <a href="../Talks_Studio/Talks_Studio.html" id="leftdropDownTabs">TEDxIITGuwahatiStudio</a>
-        </div>
-      <a class="leftTabs" href="https://tedxiitguwahati.in/">EVENTS</a>
+      <div class="leftdropDownMenu close" id="myDropdownleft">
+        <a href="../Talks/talks.html" id="leftdropDownTabs">TEDxIITGuwahati</a>
+        <a href="../Talks_Studio/Talks_Studio.html" id="leftdropDownTabs">TEDxIITGuwahatiStudio</a>
+      </div>
+      <a class="leftTabs" onclick="myFunctionEventsleft()">EVENTS</a>
+      <div class="leftdropDownMenu close" id="myDropdownEventsleft">
+          <div class="eventDropTabsleft">
+              <img src="../Images/2023_logo.png" width="50px" class="eventsLogo">
+              <a href="https://tedxiitguwahati.in/" id="dropDownTabsleft" class="upcomingTableft">2023</a>
+          </div>
+          <div class="eventDropTabsleft">
+              <img src="../Images/2022_logo.png" alt="" width="50px" class="eventsLogo">
+              <a href="../Events/2022/Event_2022.html" id="dropDownTabsleft">&nbsp; 2022</a>
+
+          </div>
+          <div class="eventDropTabsleft">
+              <img src="../Images/2021_logo.png" alt="" width="50px" class="eventsLogo">
+              <a href="../Events/2021/Event_2021.html" id="dropDownTabsleft">&nbsp; 2021</a>
+          </div>
+          <div class="eventDropTabsleft">
+              <img src="../Images/2019_logo.png" alt="" width="50px" class="eventsLogo">
+              <a href="../Events/2019/Event_2019.html" id="dropDownTabsleft">&nbsp; 2019</a>
+          </div>
+          <div class="eventDropTabsleft">
+              <img src="../Images/2019_logo.png" alt="" width="50px" class="eventsLogo">
+              <a href="../Events/2016/Event_2016.html" id="dropDownTabsleft">&nbsp; 2016</a>
+          </div>
+      </div>
       <a href="#" class="leftTabs">ABOUT US</a>
       <a href="../Contact_Us/ContactUs.html" class="leftTabs">CONTACT US</a>
     </nav>
   </div>
-<!-- Navbar ends -->
+  <!-- Navbar ends -->
 
-    <!-- data box starts here  -->
-    <div  class="main_data_box">
-        <div class="data_heading" id="box1_heading1" data-aos="fade-up" data-aos-easing="ease-in" data-aos-duration="1200">WHAT IS TED?</div>
-        <div class="content_1stcolumn" data-aos="fade-up" data-aos-easing="ease-in" data-aos-duration="1200">
-            <div  class="data_content class_width" id="box1_column1"> TED, as it reads Technology, Entertainment, and Design - is a nonprofit organization performing live talks dedicated to the spread of ideas empowered by knowledge at its absolute core. It caters to varied talking points in terms of the fields it deals with, which can be extendable to any possible abstraction from experiences worth sharing. However, at the same time, each experience shared is highly specific to the motive and concrete about the content of the subject. Talks intended with purpose and information are what inspired TED to bring it to the ground and the people.</div>
+  <!-- data box starts here  -->
+  <div class="main_data_box">
+    <div class="data_heading" id="box1_heading1" data-aos="fade-up" data-aos-easing="ease-in" data-aos-duration="1200">
+      WHAT IS TED?</div>
+    <div class="content_1stcolumn" data-aos="fade-up" data-aos-easing="ease-in" data-aos-duration="1200">
+      <div class="data_content class_width" id="box1_column1"> TED, as it reads Technology, Entertainment, and Design -
+        is a nonprofit organization performing live talks dedicated to the spread of ideas empowered by knowledge at its
+        absolute core. It caters to varied talking points in terms of the fields it deals with, which can be extendable
+        to any possible abstraction from experiences worth sharing. However, at the same time, each experience shared is
+        highly specific to the motive and concrete about the content of the subject. Talks intended with purpose and
+        information are what inspired TED to bring it to the ground and the people.</div>
 
-            <div  class="data_content class_width" id="box1_column2" >All of this may sound too heavy and intense for a first-time listener but here comes the fun part - it's NOT! One may end up binging TED talks when they just want some food for thought for the field of their choice. And the best part is, that, one can always explore.
-                So, why is it fun? <br>
-                It’s fun because TED talks come with a character - of its speaker and the speaker’s story, place, and incidents involved. Hence, one ends up knowing a lot more than they would expect. It’s a perception of all aspects of an anecdote and one genuinely gets driven by the direction of the story, and what was intended as a big or small tangible change is served.</div>
-        </div>
-
-        <div class="content_2ndcolumn" data-aos="fade-up" data-aos-easing="ease-in" data-aos-duration="1200">
-            <div  id="secondcolumn_box1" class="class_width">
-                <div class="data_heading" id="box2_heading1">WHAT IS TEDx?</div>
-                <div class="data_content" id="box2_column1">TED, when independently organized by a group of organizations, community, or an institution is licensed as TEDx. As much as it promises autonomy, such events continue to adhere to the principles of an ideal TED talk. It’s not only diverse but also spreads the reach. <br><br>
-
-                    The essentialities of independent TED is devoted to speaking to a specific community, that are a conglomeration of people representing the same ideas of work, education, interests, or belongingness from a region. It is meant to highlight voices within and around the community catering to mutual notions. The event revolves around a theme such that it is responsive to the majority of the audience.</div>
-            </div>
-
-            <div  id="secondcolumn_box2" class="class_width">
-                <div class="data_heading" id="box2_heading2">WHAT IS TEDxIITGuwahati?</div>
-                <div class="data_content" id="box2_column2">   We are pleased to announce that the IIT Guwahati version of TEDx i.e TEDxIITGuwahati is expected to roll out in February of 2023. The event will be held offline, in the IIT Guwahati campus and all the measures will be taken considering the safety of the audience as well as the organizing committee. <br><br>
-
-                    We will abide by the maximum cap of 100 audience at our event, put by TED.</div>
-            </div>
-        </div>
-
+      <div class="data_content class_width" id="box1_column2">All of this may sound too heavy and intense for a
+        first-time listener but here comes the fun part - it's NOT! One may end up binging TED talks when they just want
+        some food for thought for the field of their choice. And the best part is, that, one can always explore.
+        So, why is it fun? <br>
+        It’s fun because TED talks come with a character - of its speaker and the speaker’s story, place, and incidents
+        involved. Hence, one ends up knowing a lot more than they would expect. It’s a perception of all aspects of an
+        anecdote and one genuinely gets driven by the direction of the story, and what was intended as a big or small
+        tangible change is served.</div>
     </div>
-    <div id="the_team_text" data-aos="fade-up" data-aos-easing="ease-in" data-aos-duration="1200">  The Team</div>
-    <div class="team_heads_box" data-aos="fade-up" data-aos-easing="ease-in" data-aos-duration="1200">
-        <div class="head_card" id="head_card1" onmouseenter="myfunction1()" onmouseleave="myfunction2()">
-            <img src="../Images/pramiti2.jpg" alt="image" class="image_class" >
-            <div class="intro">
-                <div class="head_name  " id="head_name1">Pramiti Gupta</div>
-                <div class="head_desg" id="head_desg1" ><h3>Overall Coordinator</h3></div>
-                <div class="head_desc" id="head_desc1">A keen observant and a physics enthusiast, she is determined toward her goals. 
-                  She likes collecting viewpoints on anything under the sun. She can be found 
-                  spending her leisure time reading books and watching k-dramas. Thoroughly enjoys theatres, concerts and exhibitions. 
-                  <br> <br> 
-                  <a href="https://www.instagram.com/pramiti_04/" target="_blank" rel="noopener noreferrer"><i class="bi bi-instagram color_icon"></i></a> 
-                  <a href="https://www.linkedin.com/in/pramiti-gupta07/" target="_blank" rel="noopener noreferrer"><i class="bi bi-linkedin color_icon"></i></a>  </div>
-            </div>
-        </div>
 
-<!-- ///////// -->
-<div class="head_card" id="head_card1" onmouseenter="myfunction1()" onmouseleave="myfunction2()" data-aos="fade-up" data-aos-easing="ease-in" data-aos-duration="1200">
-    <img src="../Images/kavin.jpg" alt="image" class="image_class">
-    <div class="intro">
+    <div class="content_2ndcolumn" data-aos="fade-up" data-aos-easing="ease-in" data-aos-duration="1200">
+      <div id="secondcolumn_box1" class="class_width">
+        <div class="data_heading" id="box2_heading1">WHAT IS TEDx?</div>
+        <div class="data_content" id="box2_column1">TED, when independently organized by a group of organizations,
+          community, or an institution is licensed as TEDx. As much as it promises autonomy, such events continue to
+          adhere to the principles of an ideal TED talk. It’s not only diverse but also spreads the reach. <br><br>
+
+          The essentialities of independent TED is devoted to speaking to a specific community, that are a
+          conglomeration of people representing the same ideas of work, education, interests, or belongingness from a
+          region. It is meant to highlight voices within and around the community catering to mutual notions. The event
+          revolves around a theme such that it is responsive to the majority of the audience.</div>
+      </div>
+
+      <div id="secondcolumn_box2" class="class_width">
+        <div class="data_heading" id="box2_heading2">WHAT IS TEDxIITGuwahati?</div>
+        <div class="data_content" id="box2_column2"> We are pleased to announce that the IIT Guwahati version of TEDx
+          i.e TEDxIITGuwahati is expected to roll out in February of 2023. The event will be held offline, in the IIT
+          Guwahati campus and all the measures will be taken considering the safety of the audience as well as the
+          organizing committee. <br><br>
+
+          We will abide by the maximum cap of 100 audience at our event, put by TED.</div>
+      </div>
+    </div>
+
+  </div>
+  <div id="the_team_text" data-aos="fade-up" data-aos-easing="ease-in" data-aos-duration="1200"> The Team</div>
+  <div class="team_heads_box" data-aos="fade-up" data-aos-easing="ease-in" data-aos-duration="1200">
+    <div class="head_card" id="head_card1" onmouseenter="myfunction1()" onmouseleave="myfunction2()">
+      <img src="../Images/pramiti2.jpg" alt="image" class="image_class">
+      <div class="intro">
+        <div class="head_name  " id="head_name1">Pramiti Gupta</div>
+        <div class="head_desg" id="head_desg1">
+          <h3>Overall Coordinator</h3>
+        </div>
+        <div class="head_desc" id="head_desc1">A keen observant and a physics enthusiast, she is determined toward her
+          goals.
+          She likes collecting viewpoints on anything under the sun. She can be found
+          spending her leisure time reading books and watching k-dramas. Thoroughly enjoys theatres, concerts and
+          exhibitions.
+          <br> <br>
+          <a href="https://www.instagram.com/pramiti_04/" target="_blank" rel="noopener noreferrer"><i
+              class="bi bi-instagram color_icon"></i></a>
+          <a href="https://www.linkedin.com/in/pramiti-gupta07/" target="_blank" rel="noopener noreferrer"><i
+              class="bi bi-linkedin color_icon"></i></a>
+        </div>
+      </div>
+    </div>
+
+    <!-- ///////// -->
+    <div class="head_card" id="head_card1" onmouseenter="myfunction1()" onmouseleave="myfunction2()" data-aos="fade-up"
+      data-aos-easing="ease-in" data-aos-duration="1200">
+      <img src="../Images/kavin.jpg" alt="image" class="image_class">
+      <div class="intro">
         <div class="head_name  " id="head_name1">Kavin M</div>
-        <div class="head_desg" id="head_desg1" ><h3>Speakers Head</h3></div>
-        <div class="head_desc" id="head_desc1">A thinker and a philosopher lost in the labyrinth of science and technology.
-          An ardent music, movie and cricket lover. Calm and cool at most times, quirkiness sinks in with the right company.  
+        <div class="head_desg" id="head_desg1">
+          <h3>Speakers Head</h3>
+        </div>
+        <div class="head_desc" id="head_desc1">A thinker and a philosopher lost in the labyrinth of science and
+          technology.
+          An ardent music, movie and cricket lover. Calm and cool at most times, quirkiness sinks in with the right
+          company.
           <br><br>
-          <a href="https://www.facebook.com/kavin.manimudichozhan/" target="_blank" rel="noopener noreferrer"><i class="bi bi-facebook color_icon"></i></a> 
-          <a href="https://www.instagram.com/starknight_002/" target="_blank" rel="noopener noreferrer"><i class="bi bi-instagram color_icon"></i></a> </div>
-    </div>
-</div>
-      <!-- /////////// -->
-      <div class="head_card" id="head_card1" onmouseenter="myfunction1()" onmouseleave="myfunction2()" data-aos="fade-up" data-aos-easing="ease-in" data-aos-duration="1200">
-        <img src="../Images/parth.jpg" alt="image" class="image_class">
-        <div class="intro">
-            <div class="head_name  " id="head_name1">Parth Rathod</div>
-            <div class="head_desg" id="head_desg1" ><h3>Marketing Head</h3></div>
-            <div class="head_desc" id="head_desc1">
-            <a href="https://www.linkedin.com/in/parth-rathod-50a23a206/" target="_blank" rel="noopener noreferrer"><i class="bi bi-linkedin color_icon"></i></a> 
-            <a href="https://www.instagram.com/pxrth____358/" target="_blank" rel="noopener noreferrer"><i class="bi bi-instagram color_icon"></i></a> 
-            </div>
+          <a href="https://www.facebook.com/kavin.manimudichozhan/" target="_blank" rel="noopener noreferrer"><i
+              class="bi bi-facebook color_icon"></i></a>
+          <a href="https://www.instagram.com/starknight_002/" target="_blank" rel="noopener noreferrer"><i
+              class="bi bi-instagram color_icon"></i></a>
         </div>
+      </div>
     </div>
-      <!-- /////////////////// -->
-      <div class="head_card" id="head_card1" onmouseenter="myfunction1()" onmouseleave="myfunction2()" data-aos="fade-up" data-aos-easing="ease-in" data-aos-duration="1200">
-        <img src="../Images/shashank.jpg" alt="image" class="image_class">
-        <div class="intro">
-            <div class="head_name  " id="head_name1">Shashank Mishra</div>
-            <div class="head_desg" id="head_desg1" ><h3>Design Head</h3></div>
-            <div class="head_desc" id="head_desc1">
-            <a href="https://www.linkedin.com/in/shashank-mishra-546328205/" target="_blank" rel="noopener noreferrer"><i class="bi bi-linkedin color_icon"></i></a> 
-            <a href="https://www.instagram.com/_____ishashank__/" target="_blank" rel="noopener noreferrer"><i class="bi bi-instagram color_icon"></i></a>
-            </div>
+    <!-- /////////// -->
+    <div class="head_card" id="head_card1" onmouseenter="myfunction1()" onmouseleave="myfunction2()" data-aos="fade-up"
+      data-aos-easing="ease-in" data-aos-duration="1200">
+      <img src="../Images/parth.jpg" alt="image" class="image_class">
+      <div class="intro">
+        <div class="head_name  " id="head_name1">Parth Rathod</div>
+        <div class="head_desg" id="head_desg1">
+          <h3>Marketing Head</h3>
         </div>
-    </div>
-      <!--  -->
-      <div class="head_card" id="head_card1" onmouseenter="myfunction1()" onmouseleave="myfunction2()" data-aos="fade-up" data-aos-easing="ease-in" data-aos-duration="1200">
-        <img src="../Images/Abhiram2.jpg" alt="image" class="image_class">
-        <div class="intro">
-            <div class="head_name  " id="head_name1">Abhiram Goud Bingi</div>
-            <div class="head_desg" id="head_desg1" ><h3>WebOps Head</h3></div>
-            <div class="head_desc" id="head_desc1">His enthusiasm and love for technology are the qualities that set him apart. 
-              A passionate Web developer and a Cyber security enthusiast who loves to build Websites and avidly take part in bug bounty programs. Code and caffeine are his addictions. 
-              <br> <br> 
-              <a href="https://www.facebook.com/bingi.abhiram/" target="_blank" rel="noopener noreferrer"><i class="bi bi-facebook color_icon"></i></a> 
-              <a href="https://www.instagram.com/bingi_abhiram_goud/" target="_blank" rel="noopener noreferrer"><i class="bi bi-instagram color_icon"></i></a> 
-              <a href="https://twitter.com/AbhiramBingi" target="_blank" rel="noopener noreferrer"><i class="bi bi-twitter color_icon"></i></a>
-              <a href="https://www.linkedin.com/in/abhiram-bag003/" target="_blank" rel="noopener noreferrer"><i class="bi bi-linkedin color_icon"></i></a> 
-            </div>
+        <div class="head_desc" id="head_desc1">
+          <a href="https://www.linkedin.com/in/parth-rathod-50a23a206/" target="_blank" rel="noopener noreferrer"><i
+              class="bi bi-linkedin color_icon"></i></a>
+          <a href="https://www.instagram.com/pxrth____358/" target="_blank" rel="noopener noreferrer"><i
+              class="bi bi-instagram color_icon"></i></a>
         </div>
+      </div>
     </div>
-      <!--  -->
-      <div class="head_card" id="head_card1" onmouseenter="myfunction1()" onmouseleave="myfunction2()" data-aos="fade-up" data-aos-easing="ease-in" data-aos-duration="1200">
-        <img src="../Images/Nandini.jpg" alt="image" class="image_class">
-        <div class="intro">
-            <div class="head_name  " id="head_name1">Nandini Sharma</div>
-            <div class="head_desg" id="head_desg1" ><h3>Content Head</h3></div>
-            <div class="head_desc" id="head_desc1">Happiness comes in small packages, and she is definitely the smallest package one would 
-              find out there. Always found giggling and chatting. Loves to talk and make friends. Always ready to discuss anime, BlackPink and 
-              new ideas. 
-              <br> <br> <a href="https://www.linkedin.com/in/snandini050/" target="_blank" rel="noopener noreferrer"><i class="bi bi-linkedin color_icon"></i></a> 
-                <a href="https://www.instagram.com/__bc__efgh__jklm__opqrstuvwxyz/?utm_source=qr" target="_blank" rel="noopener noreferrer"><i class="bi bi-instagram color_icon"></i></a> 
-              </div>
+    <!-- /////////////////// -->
+    <div class="head_card" id="head_card1" onmouseenter="myfunction1()" onmouseleave="myfunction2()" data-aos="fade-up"
+      data-aos-easing="ease-in" data-aos-duration="1200">
+      <img src="../Images/shashank.jpg" alt="image" class="image_class">
+      <div class="intro">
+        <div class="head_name  " id="head_name1">Shashank Mishra</div>
+        <div class="head_desg" id="head_desg1">
+          <h3>Design Head</h3>
         </div>
-    </div>
-      <!--  -->
-      <div class="head_card" id="head_card1" onmouseenter="myfunction1()" onmouseleave="myfunction2()" data-aos="fade-up" data-aos-easing="ease-in" data-aos-duration="1200">
-        <img src="../Images/sreelakshmi.jpg" alt="image" class="image_class">
-        <div class="intro">
-            <div class="head_name  " id="head_name1">Sreelakshmi Aneesh</div>
-            <div class="head_desg" id="head_desg1" ><h3>Curation Head</h3></div>
-            <div class="head_desc" id="head_desc1">She is optimistic. No matter the situation, she always expects things to turn out all right. 
-              An aesthete who loves visiting museums. Her altruistic nature make her the go-to person. 
-              Meeting new people always excites her.  <br> <br> <a href="https://www.linkedin.com/in/sreelakshmianeesh" target="_blank" rel="noopener noreferrer"><i class="bi bi-linkedin color_icon"></i></a> 
-                <a href="https://www.instagram.com/sreelakshmi___aneesh/" target="_blank" rel="noopener noreferrer"><i class="bi bi-instagram color_icon"></i></a> </div>
+        <div class="head_desc" id="head_desc1">
+          <a href="https://www.linkedin.com/in/shashank-mishra-546328205/" target="_blank" rel="noopener noreferrer"><i
+              class="bi bi-linkedin color_icon"></i></a>
+          <a href="https://www.instagram.com/_____ishashank__/" target="_blank" rel="noopener noreferrer"><i
+              class="bi bi-instagram color_icon"></i></a>
         </div>
+      </div>
     </div>
-      <!--  -->
-      <div class="head_card" id="head_card1" onmouseenter="myfunction1()" onmouseleave="myfunction2()" data-aos="fade-up" data-aos-easing="ease-in" data-aos-duration="1200">
-        <img src="../Images/abhinav2.jpg" alt="image" class="image_class">
-        <div class="intro">
-            <div class="head_name  " id="head_name1">Abhinav Choudhary</div>
-            <div class="head_desg" id="head_desg1" ><h3>Media and Branding Head</h3></div>
-            <div class="head_desc" id="head_desc1">Late nights bring out the best in him. He loves reading books and running. 
-              He has a passion for technology and loves building cool stuff.
-              The qualities that truly set him apart are empathy and self-awareness.  
-              <br> <br> <a href="https://www.linkedin.com/in/abhinav-choudhary-a57698202/" target="_blank" rel="noopener noreferrer"><i class="bi bi-linkedin color_icon"></i></a> 
-                <a href="https://www.instagram.com/abhichoudhary78/" target="_blank" rel="noopener noreferrer"><i class="bi bi-instagram color_icon"></i></a> </div>
+    <!--  -->
+    <div class="head_card" id="head_card1" onmouseenter="myfunction1()" onmouseleave="myfunction2()" data-aos="fade-up"
+      data-aos-easing="ease-in" data-aos-duration="1200">
+      <img src="../Images/Abhiram2.jpg" alt="image" class="image_class">
+      <div class="intro">
+        <div class="head_name  " id="head_name1">Abhiram Goud Bingi</div>
+        <div class="head_desg" id="head_desg1">
+          <h3>WebOps Head</h3>
         </div>
-    </div>
-      <!--  -->
-      <div class="head_card" id="head_card1" onmouseenter="myfunction1()" onmouseleave="myfunction2()" data-aos="fade-up" data-aos-easing="ease-in" data-aos-duration="1200">
-        <img src="../Images/vamsi.jpg" alt="image" class="image_class">
-        <div class="intro">
-            <div class="head_name  " id="head_name1">P.N.V.Sai Vamsi</div>
-            <div class="head_desg" id="head_desg1" ><h3>Speakers Core</h3></div>
-            <div class="head_desc" id="head_desc1">He Loves mingling with people and dancing without limits. Enthusiastic about new ideas. 
-              Likes playing cricket and solving puzzles. His determination and hardworking nature are assets worthy for any team. <br> <br> <a href="https://www.linkedin.com/in/pynda-naga-venkata-sai-vamsi-b73765205"><i class="bi bi-linkedin color_icon"></i></a> 
-                <a href="https://www.instagram.com/saivamsipynda/" target="_blank" rel="noopener noreferrer"><i class="bi bi-instagram color_icon"></i></a>  </div>
+        <div class="head_desc" id="head_desc1">His enthusiasm and love for technology are the qualities that set him
+          apart.
+          A passionate Web developer and a Cyber security enthusiast who loves to build Websites and avidly take part in
+          bug bounty programs. Code and caffeine are his addictions.
+          <br> <br>
+          <a href="https://www.facebook.com/bingi.abhiram/" target="_blank" rel="noopener noreferrer"><i
+              class="bi bi-facebook color_icon"></i></a>
+          <a href="https://www.instagram.com/bingi_abhiram_goud/" target="_blank" rel="noopener noreferrer"><i
+              class="bi bi-instagram color_icon"></i></a>
+          <a href="https://twitter.com/AbhiramBingi" target="_blank" rel="noopener noreferrer"><i
+              class="bi bi-twitter color_icon"></i></a>
+          <a href="https://www.linkedin.com/in/abhiram-bag003/" target="_blank" rel="noopener noreferrer"><i
+              class="bi bi-linkedin color_icon"></i></a>
         </div>
+      </div>
     </div>
-      <!--  -->
-      <div class="head_card" id="head_card1" onmouseenter="myfunction1()" onmouseleave="myfunction2()" data-aos="fade-up" data-aos-easing="ease-in" data-aos-duration="1200">
-        <img src="../Images/pavan.jpg" alt="image" class="image_class">
-        <div class="intro">
-            <div class="head_name  " id="head_name1">Pavan Dev</div>
-            <div class="head_desg" id="head_desg1" ><h3>Curation Core</h3></div>
-            <div class="head_desc" id="head_desc1"> 
-            <a href="https://www.linkedin.com/in/pavan-dev-g/" target="_blank" rel="noopener noreferrer"><i class="bi bi-linkedin color_icon"></i></a> 
-            <a href="https://www.instagram.com/pavan_dev_g/" target="_blank" rel="noopener noreferrer"><i class="bi bi-instagram color_icon"></i></a>
-            </div>
+    <!--  -->
+    <div class="head_card" id="head_card1" onmouseenter="myfunction1()" onmouseleave="myfunction2()" data-aos="fade-up"
+      data-aos-easing="ease-in" data-aos-duration="1200">
+      <img src="../Images/Nandini.jpg" alt="image" class="image_class">
+      <div class="intro">
+        <div class="head_name  " id="head_name1">Nandini Sharma</div>
+        <div class="head_desg" id="head_desg1">
+          <h3>Content Head</h3>
         </div>
+        <div class="head_desc" id="head_desc1">Happiness comes in small packages, and she is definitely the smallest
+          package one would
+          find out there. Always found giggling and chatting. Loves to talk and make friends. Always ready to discuss
+          anime, BlackPink and
+          new ideas.
+          <br> <br> <a href="https://www.linkedin.com/in/snandini050/" target="_blank" rel="noopener noreferrer"><i
+              class="bi bi-linkedin color_icon"></i></a>
+          <a href="https://www.instagram.com/__bc__efgh__jklm__opqrstuvwxyz/?utm_source=qr" target="_blank"
+            rel="noopener noreferrer"><i class="bi bi-instagram color_icon"></i></a>
+        </div>
+      </div>
     </div>
-      <!--  -->
+    <!--  -->
+    <div class="head_card" id="head_card1" onmouseenter="myfunction1()" onmouseleave="myfunction2()" data-aos="fade-up"
+      data-aos-easing="ease-in" data-aos-duration="1200">
+      <img src="../Images/sreelakshmi.jpg" alt="image" class="image_class">
+      <div class="intro">
+        <div class="head_name  " id="head_name1">Sreelakshmi Aneesh</div>
+        <div class="head_desg" id="head_desg1">
+          <h3>Curation Head</h3>
+        </div>
+        <div class="head_desc" id="head_desc1">She is optimistic. No matter the situation, she always expects things to
+          turn out all right.
+          An aesthete who loves visiting museums. Her altruistic nature make her the go-to person.
+          Meeting new people always excites her. <br> <br> <a href="https://www.linkedin.com/in/sreelakshmianeesh"
+            target="_blank" rel="noopener noreferrer"><i class="bi bi-linkedin color_icon"></i></a>
+          <a href="https://www.instagram.com/sreelakshmi___aneesh/" target="_blank" rel="noopener noreferrer"><i
+              class="bi bi-instagram color_icon"></i></a>
+        </div>
+      </div>
     </div>
+    <!--  -->
+    <div class="head_card" id="head_card1" onmouseenter="myfunction1()" onmouseleave="myfunction2()" data-aos="fade-up"
+      data-aos-easing="ease-in" data-aos-duration="1200">
+      <img src="../Images/abhinav2.jpg" alt="image" class="image_class">
+      <div class="intro">
+        <div class="head_name  " id="head_name1">Abhinav Choudhary</div>
+        <div class="head_desg" id="head_desg1">
+          <h3>Media and Branding Head</h3>
+        </div>
+        <div class="head_desc" id="head_desc1">Late nights bring out the best in him. He loves reading books and
+          running.
+          He has a passion for technology and loves building cool stuff.
+          The qualities that truly set him apart are empathy and self-awareness.
+          <br> <br> <a href="https://www.linkedin.com/in/abhinav-choudhary-a57698202/" target="_blank"
+            rel="noopener noreferrer"><i class="bi bi-linkedin color_icon"></i></a>
+          <a href="https://www.instagram.com/abhichoudhary78/" target="_blank" rel="noopener noreferrer"><i
+              class="bi bi-instagram color_icon"></i></a>
+        </div>
+      </div>
+    </div>
+    <!--  -->
+    <div class="head_card" id="head_card1" onmouseenter="myfunction1()" onmouseleave="myfunction2()" data-aos="fade-up"
+      data-aos-easing="ease-in" data-aos-duration="1200">
+      <img src="../Images/vamsi.jpg" alt="image" class="image_class">
+      <div class="intro">
+        <div class="head_name  " id="head_name1">P.N.V.Sai Vamsi</div>
+        <div class="head_desg" id="head_desg1">
+          <h3>Speakers Core</h3>
+        </div>
+        <div class="head_desc" id="head_desc1">He Loves mingling with people and dancing without limits. Enthusiastic
+          about new ideas.
+          Likes playing cricket and solving puzzles. His determination and hardworking nature are assets worthy for any
+          team. <br> <br> <a href="https://www.linkedin.com/in/pynda-naga-venkata-sai-vamsi-b73765205"><i
+              class="bi bi-linkedin color_icon"></i></a>
+          <a href="https://www.instagram.com/saivamsipynda/" target="_blank" rel="noopener noreferrer"><i
+              class="bi bi-instagram color_icon"></i></a>
+        </div>
+      </div>
+    </div>
+    <!--  -->
+    <div class="head_card" id="head_card1" onmouseenter="myfunction1()" onmouseleave="myfunction2()" data-aos="fade-up"
+      data-aos-easing="ease-in" data-aos-duration="1200">
+      <img src="../Images/pavan.jpg" alt="image" class="image_class">
+      <div class="intro">
+        <div class="head_name  " id="head_name1">Pavan Dev</div>
+        <div class="head_desg" id="head_desg1">
+          <h3>Curation Core</h3>
+        </div>
+        <div class="head_desc" id="head_desc1">
+          <a href="https://www.linkedin.com/in/pavan-dev-g/" target="_blank" rel="noopener noreferrer"><i
+              class="bi bi-linkedin color_icon"></i></a>
+          <a href="https://www.instagram.com/pavan_dev_g/" target="_blank" rel="noopener noreferrer"><i
+              class="bi bi-instagram color_icon"></i></a>
+        </div>
+      </div>
+    </div>
+    <!--  -->
+  </div>
 
-    <!-- footer code starts here -->
+  <!-- footer code starts here -->
   <div class="footer_mainbox">
-    <div><hr></div>
-    
-    <div class="footer_box">
-        <div  class="tedex_logo footer_sub_boxes" id="sub_box1"><a href="https://www.iitg.ac.in/sa/tedxiitg"><img src="https://res.cloudinary.com/dtkm20qt9/image/upload/v1667908600/ted_nauf8g.png" alt="ted_image" id="ted_image" ></a></div>  
+    <div>
+      <hr>
+    </div>
 
-  
-        <div class="footer_sub_boxes" id="sub_box2">
-          <div class="headings_top"> <b>TEDxIITGuwahati </b> </div>
-          <div class="links"><a href="../index.html">Home</a></div>
-          <div class="links"><a href="../Talks/talks.html">Talks</a></div>
-          <div class="links"><a href="../About_Us/AboutUs.html">About Us</a></div>
-          <div class="links"><a href="../Contact_Us/ContactUs.html">Contact Us</a></div>
+    <div class="footer_box">
+      <div class="tedex_logo footer_sub_boxes" id="sub_box1">
+        <a href="https://www.iitg.ac.in/sa/tedxiitg">
+          <img
+            src="https://res.cloudinary.com/dtkm20qt9/image/upload/v1667908600/ted_nauf8g.png" alt="ted_image"
+            id="ted_image">
+        </a>
+      </div>
+
+
+      <div class="footer_sub_boxes" id="sub_box2">
+        <div class="headings_top"> <b>TEDxIITGuwahati </b> </div>
+        <div class="links"><a href="../index.html">Home</a></div>
+        <div class="links"><a href="../Talks/talks.html">Talks</a></div>
+        <div class="links"><a href="../About_Us/AboutUs.html">About Us</a></div>
+        <div class="links"><a href="../Contact_Us/ContactUs.html">Contact Us</a></div>
       </div>
 
 
 
       <div class="footer_sub_boxes" id="sub_box3">
-          <div class="headings_top"> <b> EVENTS</b></div>
-          <div class="links"><a href="../Talks/talks.html">TEDxIITGuwahati</a></div>
-          <div class="links"> <a href="../Talks_Studio/Talks_Studio.html">TEDxIITGuwahati Studio</a></div>
+        <div class="headings_top"> <b> EVENTS</b></div>
+        <div class="links"><a href="../Talks/talks.html">TEDxIITGuwahati</a></div>
+        <div class="links"> <a href="../Talks_Studio/Talks_Studio.html">TEDxIITGuwahati Studio</a></div>
       </div>
 
 
       <div class="footer_sub_boxes" id="sub_box4">
-          <div class="headings_top" id="follow_us"> <b> Follow Us</b></div>
-          <div class=" links3"><a href="https://www.facebook.com/TEDxIITGuwahati/" target="_blank">Facebook</a></div>
-          <div class=" links3"><a href="https://www.instagram.com/tedxiitguwahati/" target="_blank">Instagram</a></div>
-          <div class=" links3"><a href="https://www.linkedin.com/company/tedx-iit-guwahati" target="_blank">Linkedin</a></div>
-          <div class=" links3"><a href="https://twitter.com/tedxiitg" target="_blank">Twitter</a></div>
-          <div class=" links3"><a href="https://tedxiitguwahati.medium.com/" target="_blank">Medium</a></div>
+        <div class="headings_top" id="follow_us"> <b> Follow Us</b></div>
+        <div class=" links3"><a href="https://www.facebook.com/TEDxIITGuwahati/" target="_blank">Facebook</a></div>
+        <div class=" links3"><a href="https://www.instagram.com/tedxiitguwahati/" target="_blank">Instagram</a></div>
+        <div class=" links3"><a href="https://www.linkedin.com/company/tedx-iit-guwahati" target="_blank">Linkedin</a>
+        </div>
+        <div class=" links3"><a href="https://twitter.com/tedxiitg" target="_blank">Twitter</a></div>
+        <div class=" links3"><a href="https://tedxiitguwahati.medium.com/" target="_blank">Medium</a></div>
       </div>
-      </div>
-      <div><hr ></div>
+    </div>
+    <div>
+      <hr>
+    </div>
 
-      <div>
-        <div class="headings_bottom"> <b> Ideas Worth Spreading  </b></div>
-        <div class="footer_foot">
+    <div>
+      <div class="headings_bottom"> <b> Ideas Worth Spreading </b></div>
+      <div class="footer_foot">
         <div class="foot_text" id="license_text">This independent TEDx is operated under license from TED.</div>
         <div class="foot_text" id="copyright_text">© 2019-2022 TEDxIITGuwahati. All rights reserved</div>
       </div>
     </div>
-  
-  
+
+
   </div>
   <!-- footer code ends here -->
 
 
-    <script>
-      function toggleMenu(){
+  <script>
+    function toggleMenu() {
 
-          const navbar = document.getElementById('navbar-wrapper');
-          navbar.classList.toggle("visible");
+      const navbar = document.getElementById('navbar-wrapper');
+      navbar.classList.toggle("visible");
+    }
+
+
+    // Debounce wrapper would be more optimized
+    // but since this a POC of the navbar, this
+    // should suffice
+    function createOnScroll() {
+      let isAtTop = true;
+
+      return function (e) {
+        const positionFromTop = document.documentElement.scrollTop
+        const navbar = document.getElementsByClassName('tedx-navbar')[0]
+        if (positionFromTop > 0 && isAtTop) {
+          isAtTop = !isAtTop;
+          navbar.classList.add('shrink-navbar')
+        } else if (positionFromTop == 0 && !isAtTop) {
+          isAtTop = !isAtTop;
+          navbar.classList.remove('shrink-navbar');
+        }
+
       }
+    }
 
-      
-      // Debounce wrapper would be more optimized
-      // but since this a POC of the navbar, this
-      // should suffice
-      function createOnScroll(){
-          let isAtTop = true;
+    window.onscroll = createOnScroll()
 
-          return function(e){
-              const positionFromTop = document.documentElement.scrollTop
-              const navbar = document.getElementsByClassName('tedx-navbar')[0]
-              if(positionFromTop > 0 && isAtTop){
-                  isAtTop = !isAtTop;
-                  navbar.classList.add('shrink-navbar')
-              }else if(positionFromTop == 0 && !isAtTop){
-                  isAtTop = !isAtTop;
-                  navbar.classList.remove('shrink-navbar');
-              }
+  </script>
+  <script>
 
-          }
-      }
+    function changeMenu() {
+      const leftMenu = document.getElementById('leftContainer');
+      leftMenu.classList.toggle('close');
+    }
 
-      window.onscroll = createOnScroll()
+    function myFunction() {
+      document.getElementById("myDropdown").classList.toggle("close");
+    }
 
-    </script>
-    <script>
-     
-      function changeMenu()
-      {
-        const leftMenu = document.getElementById('leftContainer');
-        leftMenu.classList.toggle('close');
-      } 
+    function myFunctionleft() {
+      document.getElementById("myDropdownleft").classList.toggle("close");
+    }
 
-      function myFunction() 
-      {
-        document.getElementById("myDropdown").classList.toggle("close");
-      }
+    function myFunctionEvents() {
+      document.getElementById("myDropdownEvents").classList.toggle("close");
+    }
 
-      function myFunctionleft()
-      {
-        document.getElementById("myDropdownleft").classList.toggle("close");
-      }
+    function myFunctionEventsleft() {
+      document.getElementById("myDropdownEventsleft").classList.toggle("close");
+    }
 
-    </script>
+  </script>
 
-<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-<script>
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
     AOS.init();
-</script>
+  </script>
 
-  </body>
+</body>
+
 </html>

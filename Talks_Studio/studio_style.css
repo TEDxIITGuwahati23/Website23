@@ -224,6 +224,81 @@
 }
 }
 
+#myDropdownEvents
+{
+    width: 220px;
+    position: absolute;
+    top: 70%;
+    right: 25%;
+    z-index: 1;
+}
+
+.eventDropTabs
+{
+    margin: 12px auto;
+    display: flex;
+}
+
+.upcomingTab
+{
+    padding:7px;
+    border-radius: 5px;
+    animation: 0.75s linear 1s infinite alternate glow;
+    
+}
+
+
+.eventsLogo
+{
+    margin:auto 12px;
+    border-radius: 3px;
+}
+
+
+.eventDropTabsleft
+{
+    display: flex;
+    padding: 10px 0 20px 10px;
+    /* margin: 20px 0; */
+    border-bottom:0.5px solid white;
+}
+
+.upcomingTableft
+{
+    animation: 0.75s linear 1s infinite alternate glow2;
+}
+
+#dropDownTabsleft
+{
+    margin: 10px 20px;
+    padding: 9px 5px;
+    border-radius: 5px;
+}
+
+@keyframes glow
+{
+    0%
+    {
+        box-shadow: 0px 0px 25px red;
+    }  
+    100%
+    {
+        box-shadow: 0px 0px 5px red; 
+    }
+}
+
+@keyframes glow2
+    {
+        0%
+        {
+            box-shadow: 0px 0px 25px black;
+        }  
+        100%
+        {
+            box-shadow: 0px 0px 5px black; 
+        }
+    }
+
 /* Navbar ends */
 
 

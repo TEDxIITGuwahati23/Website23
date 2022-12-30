@@ -1,171 +1,283 @@
 <!doctype html>
 <html lang="en">
-  <head>
+
+<head>
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="stylesheet" href="common.css">
     <link rel="stylesheet" href="index.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+        integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <script src="script.js"></script>
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <title>TEDxIITGuwahati</title>
     <link rel="icon" href='./Images/favicon.png'>
-  </head>
-  <body>
+</head>
 
-<!-- Navbar starts -->
-  <div id="primary">
-    <a id="logoId" href="">
-        <img id="logo" src="./Images/TEDxlogo2.svg" alt="TEDx logo">
-    </a>
-    <div id="list">
-      <a href="./index.html" class="tabs active">HOME</a>
-      <a class="tabs" onclick="myFunction()">TALKS</a>
-        <div class="dropDownMenu close" id="myDropdown">
-            <a href="./Talks/talks.html" id="dropDownTabs">TEDxIITGuwahati</a>
-            <a href="./Talks_Studio/Talks_Studio.html" id="dropDownTabs">TEDxIITGuwahatiStudio</a>
-        </div>
-        <a href="https://tedxiitguwahati.in/" class="tabs">EVENTS</a>
-      <a href="./About_Us/AboutUs.html" class="tabs">ABOUT US</a>
-      <a href="./Contact_Us/ContactUs.html" class="tabs">CONTACT US</a>
-      <img src="./Images/toggleMenuIcon-white.jpg" alt="MENU" width="50px" id="toggleMenu" onclick="changeMenu()">
-    </div>
-</div>
-  <div id="leftContainer" class="close">
-    <nav id="leftNav">
-      <img src="./Images/b_cross.svg" id="closeMenu" onclick="changeMenu()">
-      <a href="./index.html" class="leftTabs">HOME</a>
-      <a href="#" class="leftTabs" onclick="myFunctionleft()" id="myDropdown">TALKS</a>
-        <div class="leftdropDownMenu close" id="myDropdownleft">
-          <a href="./Talks/talks.html" id="leftdropDownTabs">TEDxIITGuwahati</a>
-          <a href="./Talks_Studio/Talks_Studio.html" id="leftdropDownTabs">TEDxIITGuwahatiStudio</a>
-        </div>
-        <a class="leftTabs" href="https://tedxiitguwahati.in/">EVENTS</a>
-      <a href="./About_Us/AboutUs.html" class="leftTabs">ABOUT US</a>
-      <a href="./Contact_Us/ContactUs.html" class="leftTabs">CONTACT US</a>
-    </nav>
-  </div>
-<!-- Navbar ends -->
+<body>
 
-<div class="background_image">
-    <div class="shadow2">
-    </div>
-    <div id="body1">
+    <!-- Navbar starts -->
+    <div id="primary">
+        <a id="logoId" href="">
+            <img id="logo" src="./Images/TEDxlogo2.svg" alt="TEDx logo">
+        </a>
+        <div id="list">
+            <a href="./index.html" class="tabs active">HOME</a>
+            <a class="tabs" onclick="myFunction()">TALKS</a>
+            <div class="dropDownMenu close" id="myDropdown">
+                <a href="./Talks/talks.html" id="dropDownTabs">TEDxIITGuwahati</a>
+                <a href="./Talks_Studio/Talks_Studio.html" id="dropDownTabs">TEDxIITGuwahatiStudio</a>
+            </div>
+            <a class="tabs" onclick="myFunctionEvents()">EVENTS</a>
+            <div class="dropDownMenu close" id="myDropdownEvents">
+                <div class="eventDropTabs">
+                    <img src="Images/2023_logo.png" width="50px" class="eventsLogo">
+                    <a href="https://tedxiitguwahati.in/" id="dropDownTabs" class="upcomingTab">2023</a>
+                </div>
+                <div class="eventDropTabs">
+                    <img src="Images/2022_logo.png" alt="" width="50px" class="eventsLogo">
+                    <a href="Events/2022/Event_2022.html" id="dropDownTabs">&nbsp; 2022</a>
 
-        <div class="block">
-            <p class="welcome one" data-aos="fade-down" data-aos-easing="ease-in" data-aos-duration="1100"><span style="color:#ffffff">Welcome to</span></p>
-            <p class="tedxiitg" data-aos="fade-down" data-aos-easing="ease-in" data-aos-duration="1100"><span style="color:#FF2B06"> TEDxIITGuwahati </span></p>
-            <p class="and"><span style="color:#ffffff" data-aos="fade-up" data-aos-easing="ease-in" data-aos-duration="1100">&</span></p>
-            <p class="studio" data-aos="fade-up" data-aos-easing="ease-in" data-aos-duration="1100"><span style="color:#FF2B06">TEDxIITGuwahati</span>Studio</p>
-        </div>
-        <div class="btn_nominate" data-aos="fade-up" data-aos-easing="ease-in" data-aos-duration="1200">  
-            <a href="https://forms.gle/Txa4Ue7FbtxP2WWe8" target="_blank" class="nominateBtn">nominate speaker &nbsp<i class="fa-solid fa-arrow-right">&nbsp</i></a>
-        </div>
-        <div class="shadow">
-
+                </div>
+                <div class="eventDropTabs">
+                    <img src="Images/2021_logo.png" alt="" width="50px" class="eventsLogo">
+                    <a href="Events/2021/Event_2021.html" id="dropDownTabs">&nbsp; 2021</a>
+                </div>
+                <div class="eventDropTabs">
+                    <img src="Images/2019_logo.png" alt="" width="50px" class="eventsLogo">
+                    <a href="Events/2019/Event_2019.html" id="dropDownTabs">&nbsp; 2019</a>
+                </div>
+                <div class="eventDropTabs">
+                    <img src="Images/2019_logo.png" alt="" width="50px" class="eventsLogo">
+                    <a href="Events/2016/Event_2016.html" id="dropDownTabs">&nbsp; 2016</a>
+                </div>
+            </div>
+            <a href="./About_Us/AboutUs.html" class="tabs">ABOUT US</a>
+            <a href="./Contact_Us/ContactUs.html" class="tabs">CONTACT US</a>
+            <img src="./Images/toggleMenuIcon-white.jpg" alt="MENU" width="50px" id="toggleMenu" onclick="changeMenu()">
         </div>
     </div>
-</div>
+    <div id="leftContainer" class="close">
+        <nav id="leftNav">
+            <img src="./Images/b_cross.svg" id="closeMenu" onclick="changeMenu()">
+            <a href="./index.html" class="leftTabs">HOME</a>
+            <a href="#" class="leftTabs" onclick="myFunctionleft()" id="myDropdown">TALKS</a>
+            <div class="leftdropDownMenu close" id="myDropdownleft">
+                <a href="./Talks/talks.html" id="leftdropDownTabs">TEDxIITGuwahati</a>
+                <a href="./Talks_Studio/Talks_Studio.html" id="leftdropDownTabs">TEDxIITGuwahatiStudio</a>
+            </div>
+            <a class="leftTabs" onclick="myFunctionEventsleft()">EVENTS</a>
+            <div class="leftdropDownMenu close" id="myDropdownEventsleft">
+                <div class="eventDropTabsleft">
+                    <img src="Images/2023_logo.png" width="50px" class="eventsLogo">
+                    <a href="https://tedxiitguwahati.in/" id="dropDownTabsleft" class="upcomingTableft">2023</a>
+                </div>
+                <div class="eventDropTabsleft">
+                    <img src="Images/2022_logo.png" alt="" width="50px" class="eventsLogo">
+                    <a href="Events/2022/Event_2022.html" id="dropDownTabsleft">&nbsp; 2022</a>
 
-
-<div class="main_content">
-    <div class="about_tedx" >
-        <h3 data-aos="fade-up" data-aos-easing="ease-in" data-aos-duration="1200">ABOUT TEDx</h3>
-        <p class="description_about" data-aos="fade-up" data-aos-easing="ease-in" data-aos-duration="1200">TED, when independently organized by a group of organizations, community, or an institution is licensed as TEDx. As much as it promises autonomy, 
-            such events continue to adhere to the principles of an ideal TED talk. It’s not only diverse but also spreads the reach. The essentialities of 
-            independent TED is devoted to speaking to a specific community, that are a conglomeration of people representing the same ideas of work, education, 
-            interests, or belongingness from a region. It is meant to highlight voices within and around the community catering to mutual notions. The event 
-            revolves around a theme such that it is responsive to the majority of the audience.</p>
+                </div>
+                <div class="eventDropTabsleft">
+                    <img src="Images/2021_logo.png" alt="" width="50px" class="eventsLogo">
+                    <a href="Events/2021/Event_2021.html" id="dropDownTabsleft">&nbsp; 2021</a>
+                </div>
+                <div class="eventDropTabsleft">
+                    <img src="Images/2019_logo.png" alt="" width="50px" class="eventsLogo">
+                    <a href="Events/2019/Event_2019.html" id="dropDownTabsleft">&nbsp; 2019</a>
+                </div>
+                <div class="eventDropTabsleft">
+                    <img src="Images/2019_logo.png" alt="" width="50px" class="eventsLogo">
+                    <a href="Events/2016/Event_2016.html" id="dropDownTabsleft">&nbsp; 2016</a>
+                </div>
+            </div>
+            <a href="./About_Us/AboutUs.html" class="leftTabs">ABOUT US</a>
+            <a href="./Contact_Us/ContactUs.html" class="leftTabs">CONTACT US</a>
+        </nav>
     </div>
+    <!-- Navbar ends -->
+
+    <div class="background_image">
+        <div class="shadow2">
+        </div>
+        <div id="body1">
+
+            <div class="block">
+                <p class="welcome one" data-aos="fade-down" data-aos-easing="ease-in" data-aos-duration="1100"><span
+                        style="color:#ffffff">Welcome to</span></p>
+                <p class="tedxiitg" data-aos="fade-down" data-aos-easing="ease-in" data-aos-duration="1100"><span
+                        style="color:#FF2B06"> TEDxIITGuwahati </span></p>
+                <p class="and"><span style="color:#ffffff" data-aos="fade-up" data-aos-easing="ease-in"
+                        data-aos-duration="1100">&</span></p>
+                <p class="studio" data-aos="fade-up" data-aos-easing="ease-in" data-aos-duration="1100"><span
+                        style="color:#FF2B06">TEDxIITGuwahati</span>Studio</p>
+            </div>
+            <div class="btn_nominate" data-aos="fade-up" data-aos-easing="ease-in" data-aos-duration="1200">
+                <a href="https://forms.gle/Txa4Ue7FbtxP2WWe8" target="_blank" class="nominateBtn">nominate speaker
+                    &nbsp<i class="fa-solid fa-arrow-right">&nbsp</i></a>
+            </div>
+            <div class="shadow">
+
+            </div>
+        </div>
+    </div>
+
+
+    <div class="main_content">
+        <div class="about_tedx">
+            <h3 data-aos="fade-up" data-aos-easing="ease-in" data-aos-duration="1200">ABOUT TEDx</h3>
+            <p class="description_about" data-aos="fade-up" data-aos-easing="ease-in" data-aos-duration="1200">TED, when
+                independently organized by a group of organizations, community, or an institution is licensed as TEDx.
+                As much as it promises autonomy,
+                such events continue to adhere to the principles of an ideal TED talk. It’s not only diverse but also
+                spreads the reach. The essentialities of
+                independent TED is devoted to speaking to a specific community, that are a conglomeration of people
+                representing the same ideas of work, education,
+                interests, or belongingness from a region. It is meant to highlight voices within and around the
+                community catering to mutual notions. The event
+                revolves around a theme such that it is responsive to the majority of the audience.</p>
+        </div>
         <h3 data-aos="fade-left" data-aos-easing="ease-in" data-aos-duration="1200">RECENT TALKS</h3>
         <div class="carousel" data-aos="fade-right" data-aos-easing="ease-in" data-aos-duration="1200">
-            <button class='flt-left' id="left_scroll_button1" onclick="moveSlidesLeft('items-talks')()"><i class="fa fa-circle-chevron-left" aria-hidden="true" style="color:red;font-size:25px"></i></button>
+            <button class='flt-left' id="left_scroll_button1" onclick="moveSlidesLeft('items-talks')()"><i
+                    class="fa fa-circle-chevron-left" aria-hidden="true" style="color:red;font-size:25px"></i></button>
             <div class="row flt-left">
                 <div id="items-talks" class="carousel-items">
-                    <div class="card" id = "card1">
-                            <div class="card-content">
-                                <div onclick="play(id);" id="FEHbet4YX78" class="thumbnail  " style="background: black url('./Images/speakers_recent/jalal.jpg') no-repeat center;"></div>
-                                <div class="highlighted_text"> <h5> <a href="https://www.youtube.com/watch?v=FEHbet4YX78" target="blank" > Dr. Baland Jalal</a></h5></div>
-                                <p>The vicious cycle of Sleep Paralysis</p>
+                    <div class="card" id="card1">
+                        <div class="card-content">
+                            <div onclick="play(id);" id="FEHbet4YX78" class="thumbnail  "
+                                style="background: black url('./Images/speakers_recent/jalal.jpg') no-repeat center;">
                             </div>
+                            <div class="highlighted_text">
+                                <h5> <a href="https://www.youtube.com/watch?v=FEHbet4YX78" target="blank"> Dr. Baland
+                                        Jalal</a></h5>
+                            </div>
+                            <p>The vicious cycle of Sleep Paralysis</p>
+                        </div>
                     </div>
                     <div class="card">
                         <div class="card-content">
-                            <div onclick="play(id);" id="gtG7dUZK7PM" class="thumbnail" style="background: black url('./Images/speakers_recent/Magician.jpg') no-repeat center;"></div>
-                            <div class="highlighted_text" > <h5> <a href="https://www.youtube.com/watch?v=gtG7dUZK7PM" target="blank">Pritam Patra</a> </h5> </div>
+                            <div onclick="play(id);" id="gtG7dUZK7PM" class="thumbnail"
+                                style="background: black url('./Images/speakers_recent/Magician.jpg') no-repeat center;">
+                            </div>
+                            <div class="highlighted_text">
+                                <h5> <a href="https://www.youtube.com/watch?v=gtG7dUZK7PM" target="blank">Pritam
+                                        Patra</a> </h5>
+                            </div>
                             <p>The Fine line between illusion and reality</p>
                         </div>
                     </div>
                     <div class="card">
                         <div class="card-content">
-                            <div onclick="play(id);" id="z0ZiINCpID0" class="thumbnail" style="background: black url('./Images/speakers_recent/james.jpg') no-repeat center;"></div>
-                            <div class="highlighted_text"> <h5> <a href="https://www.youtube.com/watch?v=z0ZiINCpID0" target="blank"> Richard James MacCowan</a></h5></div>
+                            <div onclick="play(id);" id="z0ZiINCpID0" class="thumbnail"
+                                style="background: black url('./Images/speakers_recent/james.jpg') no-repeat center;">
+                            </div>
+                            <div class="highlighted_text">
+                                <h5> <a href="https://www.youtube.com/watch?v=z0ZiINCpID0" target="blank"> Richard James
+                                        MacCowan</a></h5>
+                            </div>
                             <p>Mimicking Nature’s Marvel to Build our Future</p>
                         </div>
-                    </div>  
+                    </div>
                     <div class="card">
                         <div class="card-content">
-                            <div onclick="play(id);" id="jruIzjq6q54" class="thumbnail" style="background: black url('./Images/speakers_recent/Rohan.jpg') no-repeat center;"></div>
-                            <div class="highlighted_text"><h5> <a href="https://www.youtube.com/watch?v=jruIzjq6q54" target="blank"> Rohan Agrawal</a></h5></div>
+                            <div onclick="play(id);" id="jruIzjq6q54" class="thumbnail"
+                                style="background: black url('./Images/speakers_recent/Rohan.jpg') no-repeat center;">
+                            </div>
+                            <div class="highlighted_text">
+                                <h5> <a href="https://www.youtube.com/watch?v=jruIzjq6q54" target="blank"> Rohan
+                                        Agrawal</a></h5>
+                            </div>
                             <p>Hitchhiking through perspectives of life </p>
                         </div>
                     </div>
                     <div class="card">
                         <div class="card-content">
-                            <div onclick="play(id);" id="4Gc_-_Ngfxk" class="thumbnail" style="background: black url('./Images/speakers_recent/rishab_mandeep.jpg') no-repeat center;"></div>
-                            <div class="highlighted_text"><h5> <a href="https://www.youtube.com/watch?v=4Gc_-_Ngfxk" target="blank"> Rishabh Jain and Mandeep Gill</a></h5></div>
+                            <div onclick="play(id);" id="4Gc_-_Ngfxk" class="thumbnail"
+                                style="background: black url('./Images/speakers_recent/rishab_mandeep.jpg') no-repeat center;">
+                            </div>
+                            <div class="highlighted_text">
+                                <h5> <a href="https://www.youtube.com/watch?v=4Gc_-_Ngfxk" target="blank"> Rishabh Jain
+                                        and Mandeep Gill</a></h5>
+                            </div>
                             <p>Ignorance is bliss, or is it?</p>
                         </div>
                     </div>
                     <div class="card">
                         <div class="card-content">
-                            <div onclick="play(id);" id="SebJfNFOSnY" class="thumbnail" style="background: black url('./Images/speakers_recent/saumya.jpg') no-repeat center;"></div>
-                            <div class="highlighted_text"><h5> <a href="https://www.youtube.com/watch?v=SebJfNFOSnY" target="blank"> Dr. Sawmya Ray</a></h5></div>
+                            <div onclick="play(id);" id="SebJfNFOSnY" class="thumbnail"
+                                style="background: black url('./Images/speakers_recent/saumya.jpg') no-repeat center;">
+                            </div>
+                            <div class="highlighted_text">
+                                <h5> <a href="https://www.youtube.com/watch?v=SebJfNFOSnY" target="blank"> Dr. Sawmya
+                                        Ray</a></h5>
+                            </div>
                             <p>Sexual violence and the culture of Impunity</p>
                         </div>
                     </div>
                     <div class="card">
                         <div class="card-content">
-                            <div onclick="play(id);" id="bIbuzgdCYtg" class="thumbnail" style="background: black url('./Images/speakers_recent/parvathy.jpg') no-repeat center;"></div>
-                            <div class="highlighted_text"> <h5> <a href="https://www.youtube.com/watch?v=bIbuzgdCYtg" target="blank"> Parvathy Sailesh</a></h5></div>
+                            <div onclick="play(id);" id="bIbuzgdCYtg" class="thumbnail"
+                                style="background: black url('./Images/speakers_recent/parvathy.jpg') no-repeat center;">
+                            </div>
+                            <div class="highlighted_text">
+                                <h5> <a href="https://www.youtube.com/watch?v=bIbuzgdCYtg" target="blank"> Parvathy
+                                        Sailesh</a></h5>
+                            </div>
                             <p>Rethink the way you think</p>
                         </div>
                     </div>
                     <div class="card">
                         <div class="card-content">
-                            <div onclick="play(id);" id="l-TnmjqTlec" class="thumbnail" style="background: black url('./Images/speakers_recent/abhimanyu.jpg') no-repeat center;"></div>
-                            <div class="highlighted_text"><h5> <a href="https://www.youtube.com/watch?v=l-TnmjqTlec" target="blank"> Abhimanyu Singh</a></h5></div>
+                            <div onclick="play(id);" id="l-TnmjqTlec" class="thumbnail"
+                                style="background: black url('./Images/speakers_recent/abhimanyu.jpg') no-repeat center;">
+                            </div>
+                            <div class="highlighted_text">
+                                <h5> <a href="https://www.youtube.com/watch?v=l-TnmjqTlec" target="blank"> Abhimanyu
+                                        Singh</a></h5>
+                            </div>
                             <p>To Learn, We Have To Unlearn</p>
                         </div>
                     </div>
                     <div class="clear">
-                    </div>   
-                </div>          
+                    </div>
+                </div>
             </div>
-            <button class='flt-left' id="right_scroll_button1" onclick="moveSlidesRight('items-talks')()"><i class="fa fa-circle-chevron-right" aria-hidden="true" style="color:red;font-size:25px"></i></button>
+            <button class='flt-left' id="right_scroll_button1" onclick="moveSlidesRight('items-talks')()"><i
+                    class="fa fa-circle-chevron-right" aria-hidden="true" style="color:red;font-size:25px"></i></button>
             <div class="clear">
             </div>
         </div>
         <div>
             <h3>LATEST BLOGS</h3>
         </div>
-        <div class="carousel blogs-carousel" >
-            <button class='flt-left icon-btn' id="left_scroll_button2" onclick="moveSlidesLeft('items-blogs')()"><i class="fa fa-circle-chevron-left" aria-hidden="true" style="color:red;font-size:25px"></i></button>
+        <div class="carousel blogs-carousel">
+            <button class='flt-left icon-btn' id="left_scroll_button2" onclick="moveSlidesLeft('items-blogs')()"><i
+                    class="fa fa-circle-chevron-left" aria-hidden="true" style="color:red;font-size:25px"></i></button>
             <div class="row flt-left">
                 <div id="items-blogs" class="carousel-items">
-                    <div class="card blogCard card1" id = "card-two" >
-                        <a href="https://tedxiitguwahati.medium.com/the-silent-letter-every-voice-matters-49f3b5c56145" target="_blank" rel="noopener noreferrer" class="card-container">
-                            <div class="card-content blog-card-content" onmouseover="mouseoverhandler(0)" onmouseout="mouseouthandler(0)">
-                                <div class="image-div"><img src="Images/blogs/SilentLetter.png" class="thumbnail blogimg"></div>
+                    <div class="card blogCard card1" id="card-two">
+                        <a href="https://tedxiitguwahati.medium.com/the-silent-letter-every-voice-matters-49f3b5c56145"
+                            target="_blank" rel="noopener noreferrer" class="card-container">
+                            <div class="card-content blog-card-content" onmouseover="mouseoverhandler(0)"
+                                onmouseout="mouseouthandler(0)">
+                                <div class="image-div"><img src="Images/blogs/SilentLetter.png"
+                                        class="thumbnail blogimg"></div>
                                 <h5>The Silent Letter — Every voice matters</h5>
                                 <p>
-                                    Everything has value, whether good or bad, large or small. Nothing in this world is useless, 
-                                    although we often mistake that for the case. Only when something is missing, do we realize how 
-                                    valuable it is. Even the minutest thing has value. Although a microbe that breaks down the dead 
-                                    is too small for human eyes to notice, its absence could disrupt life over the entire planet. 
-                                    We frequently overlook and fail to appreciate more minor things in favor of bigger things. However, 
-                                    the minor components that go into those more important things are ones we never notice.
+                                    Everything has value, whether good or bad, large or small. Nothing in this world is
+                                    useless,
+                                    although we often mistake that for the case. Only when something is missing, do we
+                                    realize how
+                                    valuable it is. Even the minutest thing has value. Although a microbe that breaks
+                                    down the dead
+                                    is too small for human eyes to notice, its absence could disrupt life over the
+                                    entire planet.
+                                    We frequently overlook and fail to appreciate more minor things in favor of bigger
+                                    things. However,
+                                    the minor components that go into those more important things are ones we never
+                                    notice.
                                 </p>
                             </div>
                         </a>
@@ -175,13 +287,17 @@
                             </a>
                         </div>
                     </div>
-                    <div class="card blogCard card1" id = "card-ten">
-                        <a href="https://tedxiitguwahati.medium.com/toxic-masculinity-what-really-defines-a-man-ba5f01a0d65e" target="_blank" rel="noopener noreferrer" class="card-container">
-                            <div class="card-content blog-card-content" onmouseover="mouseoverhandler(1)" onmouseout="mouseouthandler(1)">
-                                <div class="image-div"><img src="Images/blogs/masculine.png" class="thumbnail blogimg"></div>
+                    <div class="card blogCard card1" id="card-ten">
+                        <a href="https://tedxiitguwahati.medium.com/toxic-masculinity-what-really-defines-a-man-ba5f01a0d65e"
+                            target="_blank" rel="noopener noreferrer" class="card-container">
+                            <div class="card-content blog-card-content" onmouseover="mouseoverhandler(1)"
+                                onmouseout="mouseouthandler(1)">
+                                <div class="image-div"><img src="Images/blogs/masculine.png" class="thumbnail blogimg">
+                                </div>
                                 <h5>Toxic Masculinity — What really defines a man?</h5>
                                 <p>
-                                    “Be a man,” “man up,” “take it like a man”. These are only a handful of the many remarks...
+                                    “Be a man,” “man up,” “take it like a man”. These are only a handful of the many
+                                    remarks...
                                 </p>
                             </div>
                         </a>
@@ -191,18 +307,27 @@
                             </a>
                         </div>
                     </div>
-                    <div class="card blogCard card1" id = "card-seven">
-                        <a href="https://tedxiitguwahati.medium.com/lessons-of-a-lifetime-a63650ebe9f9" target="_blank" rel="noopener noreferrer" class="card-container">
-                            <div class="card-content blog-card-content" onmouseover="mouseoverhandler(2)" onmouseout="mouseouthandler(2)">
-                                <div class="image-div"><img src="Images/blogs/Lessons.png" class="thumbnail blogimg"></div>
+                    <div class="card blogCard card1" id="card-seven">
+                        <a href="https://tedxiitguwahati.medium.com/lessons-of-a-lifetime-a63650ebe9f9" target="_blank"
+                            rel="noopener noreferrer" class="card-container">
+                            <div class="card-content blog-card-content" onmouseover="mouseoverhandler(2)"
+                                onmouseout="mouseouthandler(2)">
+                                <div class="image-div"><img src="Images/blogs/Lessons.png" class="thumbnail blogimg">
+                                </div>
                                 <h5>Lessons of a lifetime</h5>
                                 <p>
-                                    Teachers come in all shapes and sizes. While our professors teach us things essential to do well
-                                    professionally, our grandparents teach us about our culture, and even our alarms can teach us to keep
-                                    trying again and again even though people are not responding to our efforts. Art, music, literature,
-                                    movies and sports are a boundless source of inspiration and can teach us a lot about patience, 
-                                    empathy, teamwork and finding our own individual identity. Life has its own way of teaching us, 
-                                    but we must be open and mindful of the lessons we learn and not overlook them because after all, 
+                                    Teachers come in all shapes and sizes. While our professors teach us things
+                                    essential to do well
+                                    professionally, our grandparents teach us about our culture, and even our alarms can
+                                    teach us to keep
+                                    trying again and again even though people are not responding to our efforts. Art,
+                                    music, literature,
+                                    movies and sports are a boundless source of inspiration and can teach us a lot about
+                                    patience,
+                                    empathy, teamwork and finding our own individual identity. Life has its own way of
+                                    teaching us,
+                                    but we must be open and mindful of the lessons we learn and not overlook them
+                                    because after all,
                                     these lessons are the true wealth that we earn in our lifetime.
                                 </p>
                             </div>
@@ -213,16 +338,23 @@
                             </a>
                         </div>
                     </div>
-                    <div class="card blogCard card1" id = "card-one" >
-                        <a href="https://tedxiitguwahati.medium.com/einstellung-effect-a-mechanized-state-of-mind-8afe993677bb" target="_blank" rel="noopener noreferrer" class="card-container">
-                            
-                            <div class="card-content blog-card-content" onmouseover="mouseoverhandler(3)" onmouseout="mouseouthandler(3)">
-                                <div class="image-div"><img src="Images/blogs/einsEffect.png" class="thumbnail blogimg"></div>
+                    <div class="card blogCard card1" id="card-one">
+                        <a href="https://tedxiitguwahati.medium.com/einstellung-effect-a-mechanized-state-of-mind-8afe993677bb"
+                            target="_blank" rel="noopener noreferrer" class="card-container">
+
+                            <div class="card-content blog-card-content" onmouseover="mouseoverhandler(3)"
+                                onmouseout="mouseouthandler(3)">
+                                <div class="image-div"><img src="Images/blogs/einsEffect.png" class="thumbnail blogimg">
+                                </div>
                                 <h5>Einstellung Effect — A Mechanized State of Mind</h5>
-                                <p>Did it ever happen to you that you were stuck with a math problem or say a bug in your code and you were 
-                                    compulsively revisiting certain parts of it, hysterically looking for the correct solution but to no avail? 
-                                    Then when you checked the answer key and all of a sudden realized that the solution was quite easy and obvious 
-                                    but what was hindering you from resolving the issue is that you were obsessively clinging to a certain 
+                                <p>Did it ever happen to you that you were stuck with a math problem or say a bug in
+                                    your code and you were
+                                    compulsively revisiting certain parts of it, hysterically looking for the correct
+                                    solution but to no avail?
+                                    Then when you checked the answer key and all of a sudden realized that the solution
+                                    was quite easy and obvious
+                                    but what was hindering you from resolving the issue is that you were obsessively
+                                    clinging to a certain
                                     preconceived solution approach.
                                 </p>
                             </div>
@@ -232,40 +364,51 @@
                                 <iconify-icon icon="zmdi:long-arrow-right"></iconify-icon>
                             </a>
                         </div>
-                        
+
                     </div>
-                    
-                    <div class="card blogCard card1" id = "card-two" >
-                        <a href="https://tedxiitguwahati.medium.com/failure-looking-beyond-the-obvious-e4538f2fb747" target="_blank" rel="noopener noreferrer" class="card-container">
-                        
-                        <div class="card-content blog-card-content" onmouseover="mouseoverhandler(4)" onmouseout="mouseouthandler(4)">
-                            <div class="image-div"><img src="Images/blogs/failure.png" class="thumbnail  blogimg"></div>
-                            <h5>Failure — Looking beyond the obvious</h5>
-                            <p>All of us have come across social media posts, and quotes about how failures weave the path toward success. 
-                                We must have heard stories of successful people, who were once a failure, and then they learned from it 
-                                and became the person they are today, right? But what does it take to entwine the strand of failures into 
-                                a knitted tapestry of success? Is learning from failures that straightforward?
-                            </p>
-                        </div>
-                    </a>
-                    <div class="blog-btn">
-                        <a href="https://tedxiitguwahati.medium.com/failure-looking-beyond-the-obvious-e4538f2fb747" target="_blank">
-                            <iconify-icon icon="zmdi:long-arrow-right"></iconify-icon>
+
+                    <div class="card blogCard card1" id="card-two">
+                        <a href="https://tedxiitguwahati.medium.com/failure-looking-beyond-the-obvious-e4538f2fb747"
+                            target="_blank" rel="noopener noreferrer" class="card-container">
+
+                            <div class="card-content blog-card-content" onmouseover="mouseoverhandler(4)"
+                                onmouseout="mouseouthandler(4)">
+                                <div class="image-div"><img src="Images/blogs/failure.png" class="thumbnail  blogimg">
+                                </div>
+                                <h5>Failure — Looking beyond the obvious</h5>
+                                <p>All of us have come across social media posts, and quotes about how failures weave
+                                    the path toward success.
+                                    We must have heard stories of successful people, who were once a failure, and then
+                                    they learned from it
+                                    and became the person they are today, right? But what does it take to entwine the
+                                    strand of failures into
+                                    a knitted tapestry of success? Is learning from failures that straightforward?
+                                </p>
+                            </div>
                         </a>
+                        <div class="blog-btn">
+                            <a href="https://tedxiitguwahati.medium.com/failure-looking-beyond-the-obvious-e4538f2fb747"
+                                target="_blank">
+                                <iconify-icon icon="zmdi:long-arrow-right"></iconify-icon>
+                            </a>
+                        </div>
                     </div>
-                    </div>
-                    <div class="card blogCard" id = "card-three">
-                        <a href="https://tedxiitguwahati.medium.com/artists-block-420a201a8079" target="_blank" rel="noopener noreferrer" class="card-container">
-                            <div class="card-content blog-card-content" onmouseover="mouseoverhandler(5)" onmouseout="mouseouthandler(5)">
-                                <div class="image-div"><img src="Images/blogs/artistBlog.png"  class="thumbnail  blogimg" ></div>
+                    <div class="card blogCard" id="card-three">
+                        <a href="https://tedxiitguwahati.medium.com/artists-block-420a201a8079" target="_blank"
+                            rel="noopener noreferrer" class="card-container">
+                            <div class="card-content blog-card-content" onmouseover="mouseoverhandler(5)"
+                                onmouseout="mouseouthandler(5)">
+                                <div class="image-div"><img src="Images/blogs/artistBlog.png"
+                                        class="thumbnail  blogimg"></div>
                                 <h5>Artist's Block — The end of Creativity?</h5>
-                                <p>"All profound distraction opens certain doors. You have to allow yourself to be distracted when you are unable to concentrate."
+                                <p>"All profound distraction opens certain doors. You have to allow yourself to be
+                                    distracted when you are unable to concentrate."
                                     —Julio Cortázar
-                                    We often might have heard the terms like Artist's block, 
-                                    creative block, and Art block at some point in our life. We might 
-                                    have also seen our favorite artists taking breaks to refresh their 
-                                    minds. Most of the time, this happens when they face a lack of 
-                                    inspiration in their artwork, which is pretty standard too. So, what 
+                                    We often might have heard the terms like Artist's block,
+                                    creative block, and Art block at some point in our life. We might
+                                    have also seen our favorite artists taking breaks to refresh their
+                                    minds. Most of the time, this happens when they face a lack of
+                                    inspiration in their artwork, which is pretty standard too. So, what
                                     exactly do these terms mean?
                                 </p>
                             </div>
@@ -276,54 +419,66 @@
                             </a>
                         </div>
                     </div>
-                    <div class="card blogCard" id = "card-four">
-                        <a href="https://tedxiitguwahati.medium.com/music-comedy-disorientation-88f8fda0f46f" target="_blank" rel="noopener noreferrer" class="card-container">
-                            
-                            <div class="card-content blog-card-content" onmouseover="mouseoverhandler(6)" onmouseout="mouseouthandler(6)">
-                                <div class="image-div"><img src="Images/blogs/music.png" class="thumbnail  blogimg" ></div>
-                                <h5>Music. Comedy. Disorientation.</h5>
-                                <p>Imagine a man in an Afro, speaking nonsense, then conversing in French followed by an American accent with a lot of music in the mix.
+                    <div class="card blogCard" id="card-four">
+                        <a href="https://tedxiitguwahati.medium.com/music-comedy-disorientation-88f8fda0f46f"
+                            target="_blank" rel="noopener noreferrer" class="card-container">
 
-                                    That is Reggie Watts, auteur extraordinaire.  
+                            <div class="card-content blog-card-content" onmouseover="mouseoverhandler(6)"
+                                onmouseout="mouseouthandler(6)">
+                                <div class="image-div"><img src="Images/blogs/music.png" class="thumbnail  blogimg">
+                                </div>
+                                <h5>Music. Comedy. Disorientation.</h5>
+                                <p>Imagine a man in an Afro, speaking nonsense, then conversing in French followed by an
+                                    American accent with a lot of music in the mix.
+
+                                    That is Reggie Watts, auteur extraordinaire.
                                 </p>
                             </div>
                         </a>
                         <div class="blog-btn">
-                            <a href="https://tedxiitguwahati.medium.com/music-comedy-disorientation-88f8fda0f46f" target="_blank">
+                            <a href="https://tedxiitguwahati.medium.com/music-comedy-disorientation-88f8fda0f46f"
+                                target="_blank">
                                 <iconify-icon icon="zmdi:long-arrow-right"></iconify-icon>
                             </a>
                         </div>
                     </div>
 
-                    <div class="card blogCard" id = "card-five">
-                        <a href="https://tedxiitguwahati.medium.com/the-boiling-frog-phenomenon-70acf93cb239" target="_blank" rel="noopener noreferrer" class="card-container">
-                            
-                            <div class="card-content blog-card-content" onmouseover="mouseoverhandler(7)" onmouseout="mouseouthandler(7)">
-                                <div class="image-div"><img src="Images/blogs/boilingfrog.png"  class="thumbnail blogimg"></div>
+                    <div class="card blogCard" id="card-five">
+                        <a href="https://tedxiitguwahati.medium.com/the-boiling-frog-phenomenon-70acf93cb239"
+                            target="_blank" rel="noopener noreferrer" class="card-container">
+
+                            <div class="card-content blog-card-content" onmouseover="mouseoverhandler(7)"
+                                onmouseout="mouseouthandler(7)">
+                                <div class="image-div"><img src="Images/blogs/boilingfrog.png"
+                                        class="thumbnail blogimg"></div>
                                 <h5>The Boiling Frog Phenomenon</h5>
-                                <p>The existence of life is one of the fascinating aspects of the cosmos. 
-                                    But living this life with no difficulties seems meaningless. Life is a 
-                                    constant cycle of challenges and the process of adapting to those challenges. 
+                                <p>The existence of life is one of the fascinating aspects of the cosmos.
+                                    But living this life with no difficulties seems meaningless. Life is a
+                                    constant cycle of challenges and the process of adapting to those challenges.
                                     Yet, often we refuse to leave our comfort zones and sometimes pay the price for it.
                                 </p>
                             </div>
                         </a>
                         <div class="blog-btn">
-                            <a href="https://tedxiitguwahati.medium.com/the-boiling-frog-phenomenon-70acf93cb239" target="_blank">
+                            <a href="https://tedxiitguwahati.medium.com/the-boiling-frog-phenomenon-70acf93cb239"
+                                target="_blank">
                                 <iconify-icon icon="zmdi:long-arrow-right"></iconify-icon>
                             </a>
                         </div>
                     </div>
-                    <div class="card blogCard" id = "card-six">
-                        <a href="https://tedxiitguwahati.medium.com/level-up-720488822d71" target="_blank" rel="noopener noreferrer" class="card-container">
-                            
-                            <div class="card-content blog-card-content" onmouseover="mouseoverhandler(8)" onmouseout="mouseouthandler(8)">
-                                <div class="image-div"><img src="Images/blogs/levelUp.png"  class="thumbnail blogimg"></div>
+                    <div class="card blogCard" id="card-six">
+                        <a href="https://tedxiitguwahati.medium.com/level-up-720488822d71" target="_blank"
+                            rel="noopener noreferrer" class="card-container">
+
+                            <div class="card-content blog-card-content" onmouseover="mouseoverhandler(8)"
+                                onmouseout="mouseouthandler(8)">
+                                <div class="image-div"><img src="Images/blogs/levelUp.png" class="thumbnail blogimg">
+                                </div>
                                 <h5>Level Up</h5>
-                                <p>I love video games! It was a chilly night in December. I was at my hostel in Delhi. 
-                                    I had my History of Architecture exams the next day. While my friends were surfing 
-                                    the Internet, browsing through class notes and referring to multiple textbooks, I 
-                                    spent my entire evening engrossed in video games. Why am I telling you this? Well, 
+                                <p>I love video games! It was a chilly night in December. I was at my hostel in Delhi.
+                                    I had my History of Architecture exams the next day. While my friends were surfing
+                                    the Internet, browsing through class notes and referring to multiple textbooks, I
+                                    spent my entire evening engrossed in video games. Why am I telling you this? Well,
                                     because this is where it all began. I passed my exams with decent grades later.
                                 </p>
                             </div>
@@ -334,17 +489,21 @@
                             </a>
                         </div>
                     </div>
-                    <div class="card blogCard" id = "card-seven">
-                        <a href="https://tedxiitguwahati.medium.com/is-innate-talent-a-myth-dfbf1ad5e008" target="_blank" rel="noopener noreferrer" class="card-container">
-                            
-                            <div class="card-content blog-card-content" onmouseover="mouseoverhandler(9)" onmouseout="mouseouthandler(9)">
-                                <div class="image-div"><img src="Images/blogs/jeff.png"  class="thumbnail blogimg"></div>
-                                <h5>Is innate talent a myth?</h5>
-                                <p>Is innate talent a myth? Or are we stuck inside an illusion bubble of inflated beliefs?
+                    <div class="card blogCard" id="card-seven">
+                        <a href="https://tedxiitguwahati.medium.com/is-innate-talent-a-myth-dfbf1ad5e008"
+                            target="_blank" rel="noopener noreferrer" class="card-container">
 
-                                    Ever wondered why is it that the vast majority of individuals feel they are incapable 
-                                    of drawing(or any other skills)? What transpires to us that ultimately drives us to 
-                                    believe such a ridiculous claim?. Here comes the answer to this ambiguity. 
+                            <div class="card-content blog-card-content" onmouseover="mouseoverhandler(9)"
+                                onmouseout="mouseouthandler(9)">
+                                <div class="image-div"><img src="Images/blogs/jeff.png" class="thumbnail blogimg"></div>
+                                <h5>Is innate talent a myth?</h5>
+                                <p>Is innate talent a myth? Or are we stuck inside an illusion bubble of inflated
+                                    beliefs?
+
+                                    Ever wondered why is it that the vast majority of individuals feel they are
+                                    incapable
+                                    of drawing(or any other skills)? What transpires to us that ultimately drives us to
+                                    believe such a ridiculous claim?. Here comes the answer to this ambiguity.
                                 </p>
                             </div>
                         </a>
@@ -354,44 +513,53 @@
                             </a>
                         </div>
                     </div>
-                    <div class="card blogCard" id = "card-eight">
-                        <a href="https://tedxiitguwahati.medium.com/living-the-ideal-dream-585e7566a5f2" target="_blank" rel="noopener noreferrer" class="card-container">
-                            
-                            <div class="card-content blog-card-content" onmouseover="mouseoverhandler(10)" onmouseout="mouseouthandler(10)">
-                                <div class="image-div"><img src="Images/blogs/liveDream.png" class="thumbnail blogimg"></div>
+                    <div class="card blogCard" id="card-eight">
+                        <a href="https://tedxiitguwahati.medium.com/living-the-ideal-dream-585e7566a5f2" target="_blank"
+                            rel="noopener noreferrer" class="card-container">
+
+                            <div class="card-content blog-card-content" onmouseover="mouseoverhandler(10)"
+                                onmouseout="mouseouthandler(10)">
+                                <div class="image-div"><img src="Images/blogs/liveDream.png" class="thumbnail blogimg">
+                                </div>
                                 <h5>Living the Ideal Dream</h5>
-                                <p>For those who aren’t exactly au fait with the concept of Utopia- the term 
-                                    was coined by Thomas More, and portrayed in his 1516 satire of the same name, 
-                                    and roughly translates into ‘nowhere’ or ‘no place’. The underlying idea is 
-                                    that perfectibility, though it doesn’t suggest, is as pre-eminent as failure itself 
-                                    is. Simply put, the notion is that of the existence of this dichotomy in our lives. 
+                                <p>For those who aren’t exactly au fait with the concept of Utopia- the term
+                                    was coined by Thomas More, and portrayed in his 1516 satire of the same name,
+                                    and roughly translates into ‘nowhere’ or ‘no place’. The underlying idea is
+                                    that perfectibility, though it doesn’t suggest, is as pre-eminent as failure itself
+                                    is. Simply put, the notion is that of the existence of this dichotomy in our lives.
                                     Let’s see it through.
                                 </p>
                             </div>
-                        </a> 
+                        </a>
                         <div class="blog-btn">
-                            <a href="https://tedxiitguwahati.medium.com/living-the-ideal-dream-585e7566a5f2" target="_blank">
+                            <a href="https://tedxiitguwahati.medium.com/living-the-ideal-dream-585e7566a5f2"
+                                target="_blank">
                                 <iconify-icon icon="zmdi:long-arrow-right"></iconify-icon>
                             </a>
                         </div>
                     </div>
-                    <div class="card blogCard" id = "card-nine">
-                        <a href="https://tedxiitguwahati.medium.com/a-jpg-sold-for-69mn-4f3316fa1f2" target="_blank" rel="noopener noreferrer" class="card-container">
-                            
-                            <div class="card-content blog-card-content" onmouseover="mouseoverhandler(11)" onmouseout="mouseouthandler(11)">
-                                <div class="image-div"><img src="Images/blogs/jpg.png"  class="thumbnail  blogimg" ></div>
+                    <div class="card blogCard" id="card-nine">
+                        <a href="https://tedxiitguwahati.medium.com/a-jpg-sold-for-69mn-4f3316fa1f2" target="_blank"
+                            rel="noopener noreferrer" class="card-container">
+
+                            <div class="card-content blog-card-content" onmouseover="mouseoverhandler(11)"
+                                onmouseout="mouseouthandler(11)">
+                                <div class="image-div"><img src="Images/blogs/jpg.png" class="thumbnail  blogimg"></div>
                                 <h5>A JPG sold for $69MN !</h5>
                                 <p>
-                                    Imagine paying $69 Million for a JPEG file that you can essentially download off the internet, 
+                                    Imagine paying $69 Million for a JPEG file that you can essentially download off the
+                                    internet,
                                     and all you get is the right to display it and say you own it but not the copyright.
-                                    Seems crazy? What about $500,000 for an internet meme or $2.9 Million for the first tweet?
+                                    Seems crazy? What about $500,000 for an internet meme or $2.9 Million for the first
+                                    tweet?
 
                                     Well, that’s the weird world of NFTs.
                                 </p>
                             </div>
                         </a>
                         <div class="blog-btn">
-                            <a href="https://tedxiitguwahati.medium.com/a-jpg-sold-for-69mn-4f3316fa1f2" target="_blank">
+                            <a href="https://tedxiitguwahati.medium.com/a-jpg-sold-for-69mn-4f3316fa1f2"
+                                target="_blank">
                                 <iconify-icon icon="zmdi:long-arrow-right"></iconify-icon>
                             </a>
                         </div>
@@ -399,74 +567,85 @@
                     <div class="clear"></div>
                 </div>
             </div>
-            <button class='flt-left'  id="right_scroll_button2" onclick="moveSlidesRight('items-blogs')()"><i class="fa fa-circle-chevron-right" aria-hidden="true" style="color:red;font-size:25px"></i></button>
-                <div class="clear"></div>
+            <button class='flt-left' id="right_scroll_button2" onclick="moveSlidesRight('items-blogs')()"><i
+                    class="fa fa-circle-chevron-right" aria-hidden="true" style="color:red;font-size:25px"></i></button>
+            <div class="clear"></div>
+        </div>
+    </div>
+
+
+    <!-- footer code starts here -->
+    <div class="footer_mainbox">
+        <div>
+            <hr>
+        </div>
+
+        <div class="footer_box">
+            <div class="tedex_logo footer_sub_boxes" id="sub_box1"><a href="https://www.iitg.ac.in/sa/tedxiitg"><img
+                        src="https://res.cloudinary.com/dtkm20qt9/image/upload/v1667908600/ted_nauf8g.png"
+                        alt="ted_image" id="ted_image"></a></div>
+
+            <div class="footer_sub_boxes" id="sub_box2">
+                <div class="headings_top"> <b>TEDxIITGuwahati </b> </div>
+                <div class="links"><a href="./index.html">Home</a></div>
+                <div class="links"><a href="./Talks/talks.html">Talks</a></div>
+                <div class="links"><a href="./About_Us/AboutUs.html">About Us</a></div>
+                <div class="links"><a href="./Contact_Us/ContactUs.html">Contact Us</a></div>
+            </div>
+
+
+
+            <div class="footer_sub_boxes" id="sub_box3">
+                <div class="headings_top"> <b> EVENTS</b></div>
+                <div class="links"><a href="./Talks/talks.html">TEDxIITGuwahati</a></div>
+                <div class="links"> <a href="./Talks/talks.html">TEDxIITGuwahati Studio</a></div>
+            </div>
+
+
+            <div class="footer_sub_boxes" id="sub_box4">
+                <div class="headings_top" id="follow_us"> <b> Follow Us</b></div>
+                <div class=" links3"><a href="https://www.facebook.com/TEDxIITGuwahati/" target="_blank">Facebook</a>
+                </div>
+                <div class=" links3"><a href="https://www.instagram.com/tedxiitguwahati/" target="_blank">Instagram</a>
+                </div>
+                <div class=" links3"><a href="https://www.linkedin.com/company/tedx-iit-guwahati"
+                        target="_blank">Linkedin</a></div>
+                <div class=" links3"><a href="https://twitter.com/tedxiitg" target="_blank">Twitter</a></div>
+                <div class=" links3"><a href="https://tedxiitguwahati.medium.com/" target="_blank">Medium</a></div>
+            </div>
+        </div>
+        <div>
+            <hr>
+        </div>
+
+
+        <div>
+            <div class="headings_bottom"> <b> Ideas Worth Spreading </b></div>
+            <div class="footer_foot">
+                <div class="foot_text" id="license_text">This independent TEDx is operated under license from TED.</div>
+                <div class="foot_text" id="copyright_text">© 2019-2022 TEDxIITGuwahati. All rights reserved</div>
             </div>
         </div>
 
 
-  <!-- footer code starts here -->
-  <div class="footer_mainbox">
-    <div><hr></div>
-    
-    <div class="footer_box">
-        <div  class="tedex_logo footer_sub_boxes" id="sub_box1"><a href="https://www.iitg.ac.in/sa/tedxiitg"><img src="https://res.cloudinary.com/dtkm20qt9/image/upload/v1667908600/ted_nauf8g.png" alt="ted_image" id="ted_image" ></a></div>  
-  
-        <div class="footer_sub_boxes" id="sub_box2">
-            <div class="headings_top"> <b>TEDxIITGuwahati </b> </div>
-            <div class="links"><a href="./index.html">Home</a></div>
-            <div class="links"><a href="./Talks/talks.html">Talks</a></div>
-            <div class="links"><a href="./About_Us/AboutUs.html">About Us</a></div>
-            <div class="links"><a href="./Contact_Us/ContactUs.html">Contact Us</a></div>
-        </div>
-  
-  
-  
-        <div class="footer_sub_boxes" id="sub_box3">
-            <div class="headings_top"> <b> EVENTS</b></div>
-            <div class="links"><a href="./Talks/talks.html">TEDxIITGuwahati</a></div>
-            <div class="links"> <a href="./Talks/talks.html">TEDxIITGuwahati Studio</a></div>
-        </div>
-  
-  
-        <div class="footer_sub_boxes" id="sub_box4">
-            <div class="headings_top" id="follow_us"> <b> Follow Us</b></div>
-            <div class=" links3"><a href="https://www.facebook.com/TEDxIITGuwahati/" target="_blank">Facebook</a></div>
-            <div class=" links3"><a href="https://www.instagram.com/tedxiitguwahati/" target="_blank">Instagram</a></div>
-            <div class=" links3"><a href="https://www.linkedin.com/company/tedx-iit-guwahati" target="_blank">Linkedin</a></div>
-            <div class=" links3"><a href="https://twitter.com/tedxiitg" target="_blank">Twitter</a></div>
-            <div class=" links3"><a href="https://tedxiitguwahati.medium.com/" target="_blank">Medium</a></div>
-        </div>
     </div>
-    <div><hr ></div>
-    
-  
-    <div>
-        <div class="headings_bottom"> <b> Ideas Worth Spreading  </b></div>
-        <div class="footer_foot">
-        <div class="foot_text" id="license_text">This independent TEDx is operated under license from TED.</div>
-        <div class="foot_text" id="copyright_text">© 2019-2022 TEDxIITGuwahati. All rights reserved</div>
-    </div>
-    </div>
-  
-  
-  </div>
-  <!-- footer code ends here -->
-  
+    <!-- footer code ends here -->
 
 
-  <!-- <script src="https://cdn.jsdelivr.net/npm/simple-parallax-js@5.5.1/dist/simpleParallax.min.js"></script> -->
+
+    <!-- <script src="https://cdn.jsdelivr.net/npm/simple-parallax-js@5.5.1/dist/simpleParallax.min.js"></script> -->
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
         AOS.init();
     </script>
     <script src="https://code.iconify.design/iconify-icon/1.0.2/iconify-icon.min.js"></script>
     <script>
-        
+
         sliderInit("items-talks");
         sliderInit("items-blogs");
         // parallaxImage('thumbnail')
     </script>
 
-  </body>
+</body>
+
 </html>

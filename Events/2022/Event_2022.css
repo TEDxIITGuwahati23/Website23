@@ -3,6 +3,278 @@
     padding: 0;
     /* box-sizing: border-box; */
 }
+
+/* Navbar starts*/
+
+#primary{
+    display: flex;
+    position: sticky;
+    top: 0px;
+    width: -webkit-fill-available;
+    height: 110px;
+    background-color: rgba(0, 0, 0);
+    transition:"padding-top" 0.5s;
+    padding-top: auto;
+    padding-bottom: auto;
+    z-index: 1;
+}
+
+#logoId{
+    margin:auto;
+}
+
+#logo:hover{
+    cursor:pointer;
+}
+
+#logo{
+    height: 70px;
+    margin: auto;
+}
+
+#list
+{
+    display: inline-flex;
+    color: white;
+    margin:auto;
+}
+
+.tabs{
+    color: white;
+    margin: 17px 40px;
+    padding: 10px 3px;
+    font-family: 'Poppins', sans-serif;
+    cursor: pointer;
+    transition: color 0.25s ease-in-out;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 14px;
+}
+
+.tabs:hover{
+    color: #FF2B06;
+    text-decoration: none;
+}
+
+.temp{
+    display: none;
+}
+
+.temp:hover{
+    display: block;
+}
+
+#toggleMenu{
+    margin:auto 20px;
+    width: 40px;
+    display: none;
+    cursor: pointer;
+}
+
+
+#leftContainer{
+    position: fixed;
+    float: left;
+    top:0px;
+    left: -2px;
+    height: 100vh;
+    background:linear-gradient(219deg, #ff0000, #000000), red;
+    width: 260px;
+    z-index: 1;
+    opacity: 1;
+    transition:all 1s ease-in-out;
+}
+
+#leftNav{
+    display: flex;
+    flex-direction: column;
+    margin-top: 40px;
+}
+
+.leftTabs{
+    text-decoration: none;
+    padding: 20px 20px;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    border-bottom:0.5px solid white;
+    transition: color 0.25s ease-in-out;
+}
+
+.leftTabs:hover{
+    color: #FF2B06;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.close{
+    display: none;
+}
+
+#closeMenu{
+    margin:auto 200px;
+    margin-bottom: 50px;
+    cursor: pointer;
+    width: 20px;
+}
+
+.dropDownMenu{
+    position: absolute;
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    top: 11vh;
+    right: 30.5vw;
+    border-radius: 4px;
+    z-index: 1;
+}
+
+#dropDownTabs{
+    margin: 13px ;
+    transition: all 0.2s ease-in-out;
+    letter-spacing: 0.05rem;
+    color: white;
+    text-decoration: none;
+}
+
+#dropDownTabs:hover{
+    text-decoration: none;
+}
+
+.leftdropDownMenu{
+    display: flex;
+    flex-direction: column;
+}
+
+#leftdropDownTabs{
+    text-decoration: none;
+    padding: 20px 40px;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    border-bottom:0.5px solid white;
+    transition: color 0.25s ease-in-out;
+    letter-spacing: 0.08rem;
+}
+
+#dropDownTabs:hover{
+    color: #FF2B06;
+}
+
+#leftdropDownTabs:hover{
+    color: #FF2B06;
+    cursor: pointer;
+}
+
+.close{
+    display: none;
+}
+
+.active{
+    color: #FF2B06;
+}
+.card-container{
+    display:block;
+}
+
+@media only screen and (max-width:1020px) {
+    .tabs{
+        display: none;
+    }
+
+    #toggleMenu{
+        display: block;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    #logo{
+        height: 50px;
+        margin: auto;
+    }
+
+    #toggleMenu{
+        margin:auto 20px;
+        width: 30px;
+        cursor: pointer;
+    }
+}
+
+#myDropdownEvents
+{
+    width: 220px;
+    position: absolute;
+    top: 70%;
+    right: 25%;
+    z-index: 1;
+}
+
+.eventDropTabs
+{
+    margin: 12px auto;
+    display: flex;
+}
+
+.upcomingTab
+{
+    padding:7px;
+    border-radius: 5px;
+    animation: 0.75s linear 1s infinite alternate glow;
+    
+}
+
+
+.eventsLogo
+{
+    margin:auto 12px;
+    border-radius: 3px;
+}
+
+
+.eventDropTabsleft
+{
+    display: flex;
+    padding: 10px 0 20px 10px;
+    /* margin: 20px 0; */
+    border-bottom:0.5px solid white;
+}
+
+.upcomingTableft
+{
+    animation: 0.75s linear 1s infinite alternate glow2;
+}
+
+#dropDownTabsleft
+{
+    margin: 10px 20px;
+    padding: 9px 5px;
+    border-radius: 5px;
+}
+
+@keyframes glow
+{
+    0%
+    {
+        box-shadow: 0px 0px 25px red;
+    }  
+    100%
+    {
+        box-shadow: 0px 0px 5px red; 
+    }
+}
+
+@keyframes glow2
+    {
+        0%
+        {
+            box-shadow: 0px 0px 25px black;
+        }  
+        100%
+        {
+            box-shadow: 0px 0px 5px black; 
+        }
+    }
+
+/* Navbar ends*/
+
 body{
     background: black;
     width: 100%;
@@ -120,7 +392,7 @@ h6{
     font-weight: bold;
 }
 a{
-    color: #9999;
+    color:white;
     transition: none;
 }
 @media only screen and (max-width: 500px) {

@@ -59,6 +59,16 @@ function myFunctionleft()
 document.getElementById("myDropdownleft").classList.toggle("close");
 }
 
+function myFunctionEvents()
+{
+    document.getElementById("myDropdownEvents").classList.toggle("close");
+}
+
+function myFunctionEventsleft()
+{
+    document.getElementById("myDropdownEventsleft").classList.toggle("close");
+}
+
 
 
 function play(id){
