@@ -296,8 +296,9 @@ body{
 .descript{
     color: white;
     text-align: center;
-    font-size: 1rem;
-    /* padding-bottom: 10px; */
+    font-size: 1.15rem;
+    letter-spacing: 1.5px;
+    word-spacing: 2px;
     padding-top: 30px;
     font-family: 'Inter', sans-serif;
 }
@@ -333,7 +334,7 @@ h2{
     /* text-decoration-line: underline;  */
     /* text-align: center; */
     font-size: 200%;
-    margin: 0;
+    margin: 2% 0 0.5% 0;
     padding: 0;
 }
 a:hover{
@@ -343,7 +344,7 @@ a:hover{
 .linehr{
     margin: 0;
     padding: 0;
-    margin-bottom: 20px;
+    margin-bottom: 25px;
     height:3.5px;
     width: 28rem;
     background-color: red;
@@ -383,6 +384,7 @@ a:hover{
 h5{
     padding-top: 5px;
     color: red;
+    letter-spacing: 0.5px;
     margin: 0;
     font-weight: bold;
 }
@@ -390,7 +392,9 @@ h6{
     color: whitesmoke;
     margin: 0;
     font-weight: bold;
+    letter-spacing: 1px;
 }
+
 a{
     color: white;
     transition: none;
