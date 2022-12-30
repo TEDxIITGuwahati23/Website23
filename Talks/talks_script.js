@@ -50,8 +50,16 @@ function changeMenu() {
   leftMenu.classList.toggle('close');
 }
 
+const talksDropDown = document.getElementById("myDropdown");
+const EventsDropDown = document.getElementById("myDropdownEvents");
+const Tabs = document.getElementById("list");
+
 function myFunction() {
-  document.getElementById("myDropdown").classList.toggle("close");
+    talksDropDown.classList.toggle("close");
+    if (!EventsDropDown.classList.contains("close")) {
+        EventsDropDown.classList.toggle("close");
+        Tabs.children[3].classList.toggle("active");
+    }
 }
 
 function myFunctionleft() {
@@ -59,7 +67,11 @@ function myFunctionleft() {
 }
 
 function myFunctionEvents() {
-  document.getElementById("myDropdownEvents").classList.toggle("close");
+  EventsDropDown.classList.toggle("close");
+  Tabs.children[3].classList.toggle("active");
+  if (!talksDropDown.classList.contains("close")) {
+      talksDropDown.classList.toggle("close");
+  }
 }
 
 function myFunctionEventsleft() {
